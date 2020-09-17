@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit{
 
   alert: boolean;
 
-  constructor(private service: DoUsersService, private router: Router) { }
+  constructor(private service: DoUsersService) { }
 
   ngOnInit(): void {
   }

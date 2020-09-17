@@ -10,3 +10,8 @@
   </label>
  <div> <a href (click) ="logout()" style="font-size: 3rem">Logout</a> </div>
 </div>
+<form [formGroup]="editUsers" (ngSubmit)="userForm()">
+  <div class="form-group">
+    <input formControlName="username" type="text" class="form-control" placeholder="Enter username" required>
+  </div>
+</form>

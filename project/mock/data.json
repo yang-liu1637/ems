@@ -3,10 +3,10 @@
     {
       "username": "user1",
       "role": "User",
-      "sex": "男",
-      "email": "user1@users.com",
+      "sex": "女",
+      "email": "User1@users.com",
       "address": "辽宁省大连市",
-      "tNum": "18304110101",
+      "tNum": "12345678918",
       "password": "password1",
       "id": 1
     },
@@ -22,12 +22,12 @@
     },
     {
       "username": "user3",
-      "email": "user1@users.com",
-      "password": "password3",
       "role": "User",
-      "address": "辽宁省大连市",
       "sex": "男",
+      "email": "user3@users.com",
+      "address": "辽宁省大连市",
       "tNum": "18304110101",
+      "password": "password3",
       "id": 3
     },
     {
@@ -62,11 +62,11 @@
     },
     {
       "username": "admin3",
-      "email": "admin3@admin.com",
-      "sex": "女",
-      "address": "辽宁省大连市",
-      "tNum": "18304381666",
       "role": "Admin",
+      "sex": "女",
+      "email": "admin3@admin.com",
+      "address": "辽宁省大连市",
+      "tNum": "12345645611",
       "password": "pass3",
       "id": 7
     }

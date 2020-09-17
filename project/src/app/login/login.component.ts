@@ -4,6 +4,7 @@ import {LoginUsersService} from '../service/loginUsers.service';
 import { Router } from '@angular/router';
 import {CommonService} from '../service/common.service';
 import {Observable} from 'rxjs';
+import {DoUsersService} from '../service/doUsers.service';
 
 @Component({
   selector: 'app-login',
@@ -16,16 +17,15 @@ export class LoginComponent {
   username;
   email;
   password;
-  userRole;
   msg = false;
   users: object;
-  arr: Observable<any>;
-
   constructor(private loginService: LoginUsersService, private router: Router,
-              private formBuilder: FormBuilder , private message: CommonService) { }
+              private formBuilder: FormBuilder , private message: CommonService,
+              private findId: DoUsersService) { }
 // Validation Function
   // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit(): void {
+
     this.loginForm  =  this.formBuilder.group({
       username: ['', Validators.required],
       email: ['', Validators.required],
@@ -53,12 +53,15 @@ export class LoginComponent {
             if (val.role === 'Admin'){
               localStorage.setItem('username', this.username);
               this.router.navigateByUrl('/admin');
-              this.message.add('OK');
+              this.message.add(this.username);
             }
             if (val.role === 'User'){
               localStorage.setItem('username', this.username);
-              this.router.navigateByUrl('/users');
-              this.message.add('OK');
+              this.router.navigate(['./main']).then(
+                (res) => {
+                res = true ;
+              });
+              this.message.add(this.username);
             }
           } else{
             this.msg = true;
