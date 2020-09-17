@@ -1,11 +1,74 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment1", "author": { "name": "typicode1", "age": 10 },"postId": 1 },
-    { "id": 2, "body": "some comment2", "author": { "name": "typicode2", "age": 12 },"postId": 2 },
-    { "id": 3, "body": "some comment3", "author": { "name": "typicode3", "age": 15 },"postId": 3 }
-  ],
-  "profile": { "name": "typicode" }
+  "users": [
+    {
+      "username": "user1",
+      "role": "User",
+      "sex": "男",
+      "email": "user1@users.com",
+      "address": "辽宁省大连市",
+      "tNum": "18304110101",
+      "password": "password1",
+      "id": 1
+    },
+    {
+      "username": "user2",
+      "role": "User",
+      "sex": "男",
+      "email": "user2@users.com",
+      "address": "辽宁省大连市",
+      "tNum": "18304110101",
+      "password": "password2",
+      "id": 2
+    },
+    {
+      "username": "user3",
+      "email": "user1@users.com",
+      "password": "password3",
+      "role": "User",
+      "address": "辽宁省大连市",
+      "sex": "男",
+      "tNum": "18304110101",
+      "id": 3
+    },
+    {
+      "username": "user4",
+      "email": "user4@users.com",
+      "password": "password4",
+      "role": "User",
+      "address": "辽宁省大连市",
+      "sex": "男",
+      "tNum": "18304110101",
+      "id": 4
+    },
+    {
+      "username": "admin1",
+      "email": "admin1@admin.com",
+      "password": "pass1",
+      "role": "Admin",
+      "address": "辽宁省大连市",
+      "sex": "男",
+      "tNum": "18304110101",
+      "id": 5
+    },
+    {
+      "username": "admin2",
+      "sex": "男",
+      "email": "admin2@admin.com",
+      "address": "辽宁省大连市",
+      "password": "pass1",
+      "role": "Admin",
+      "tNum": "12345678901",
+      "id": 6
+    },
+    {
+      "username": "admin3",
+      "email": "admin3@admin.com",
+      "sex": "女",
+      "address": "辽宁省大连市",
+      "tNum": "18304381666",
+      "role": "Admin",
+      "password": "pass3",
+      "id": 7
+    }
+  ]
 }

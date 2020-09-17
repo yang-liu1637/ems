@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -8,6 +8,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component';
 import { MainComponent } from './main/main.component';
 import { UsersComponent } from './users/users.component';
+import {HttpClientModule} from '@angular/common/http';
+import {LoginUsersService} from './service/loginUsers.service';
+import { AdminComponent } from './admin/admin.component';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { UsersComponent } from './users/users.component';
     NavbarComponent,
     RegisterComponent,
     MainComponent,
-    UsersComponent
+    UsersComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent, NavbarComponent]
