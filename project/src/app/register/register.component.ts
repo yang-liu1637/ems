@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 import { validateRex } from './validate-register';
-import {DoUsersService} from '../service/doUsers.service';
+import {DoUsersService} from '../../assets/service/doUsers.service';
 import {Router} from '@angular/router';
 import {timeInterval} from 'rxjs/operators';
 
@@ -41,7 +41,7 @@ export class RegisterComponent implements OnInit{
 
   onSubmit(): any {
     this.service.saveUsers(this.addUsers.value).subscribe((result) => {
-      console.warn(result);
+      console.log(result);
     });
     this.alert = true;
     this.addUsers.reset({});

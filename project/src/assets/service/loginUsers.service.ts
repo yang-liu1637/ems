@@ -1,9 +1,8 @@
+// login
 import { Injectable } from '@angular/core';
 import { LoginUser } from '../models/loginUser.model';
 import { Observable } from 'rxjs';
-import { catchError } from 'rxjs/operators';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { throwError } from 'rxjs/internal/Observable/throwError';
+import { HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
 
 @Injectable(
@@ -23,7 +22,8 @@ export class LoginUsersService {
 
 // REST - GET
         getUsers(): Observable<LoginUser[]>{
-            return this.httpClient.get<LoginUser[]>('http://localhost:3000/users').pipe(catchError(this.handleError));
+            return this.httpClient.get<LoginUser[]>('http://localhost:3000/users'); }
+          /*.pipe(catchError(this.handleError));
         }
         handleError(errorResponse: HttpErrorResponse): Observable<never>{
           if (errorResponse.error instanceof ErrorEvent){
@@ -33,7 +33,7 @@ export class LoginUsersService {
             console.error('Server Side Error', errorResponse);
           }
           return throwError('There is a problem with the service.Please Try again Later ');
-        }
+        }*/
         /*postCheck():Observable*/
 // Return to login page
   public isLoggedIn(): boolean{

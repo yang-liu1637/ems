@@ -1,6 +1,11 @@
+<app-log-nav></app-log-nav>
 <h3>这里是用户页面</h3>
 <div>
   <h2>登出</h2>
   <a href (click) ="logout()" style="font-size: 3rem">Logout</a>
 </div>
-<p>{{a}}</p>
+<form [formGroup]="editUsers">
+  <div class="form-group">
+    <input formControlName="username" type="text" class="form-control" placeholder="Enter username" required>
+  </div>
+</form>

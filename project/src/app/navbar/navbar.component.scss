@@ -7,39 +7,39 @@
 }
 a{
   text-decoration: none;
-  color: black;
+  color: #fff;
   text-align: center;
+  font-family: "Gill Sans MT Condensed", serif;
 }
 $maxwidth:100%;
 nav {
   width: $maxwidth;
   font-size: 2rem;
-  line-height: 4rem;
-  background-color: lightgray;
+  line-height: 6rem;
+  background-color: #24292e;
   font-weight: bold;
   border-radius: 0.2rem;
   .login_nav{
-    width: $maxwidth;
+    width: 100%;
     display: flex;
     .nav_left{
-      width: $maxwidth/5;
+      width: 25%;
       display: flex;
       padding: 0.3rem;
       li{
-        width: $maxwidth/3;
+        width: 33%;
         p{
-          color: black;
+          color: #fff;
           text-align: center;
         }
       }
     }
-    .nav_centre{
-      width: 65%;
-    }
+
     .nav_right{
       width: 15%;
       display: flex;
       padding: 0.3rem;
+      margin-left: 60%;
       li{
         width: 50%;
       }
@@ -47,7 +47,8 @@ nav {
   }
 }
 .out{
-  background-color: #808080;
+  color: #a7a4a4;
   border-radius: 0.3rem;
-  font-size: larger;
+  font-size:1.8rem;
+  font-family: "Gill Sans MT Condensed", "Segoe MDL2 Assets", serif;
 }

@@ -1,3 +1,4 @@
+// 登录守卫  未登录无法url访问其他页面
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';

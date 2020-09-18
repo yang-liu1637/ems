@@ -4,9 +4,9 @@
       "username": "user1",
       "role": "User",
       "sex": "女",
-      "email": "User1@users.com",
+      "email": "user1@users.com",
       "address": "辽宁省大连市",
-      "tNum": "12345678918",
+      "tNum": "12345678900",
       "password": "password1",
       "id": 1
     },
@@ -59,16 +59,6 @@
       "role": "Admin",
       "tNum": "12345678901",
       "id": 6
-    },
-    {
-      "username": "admin3",
-      "role": "Admin",
-      "sex": "女",
-      "email": "admin3@admin.com",
-      "address": "辽宁省大连市",
-      "tNum": "12345645611",
-      "password": "pass3",
-      "id": 7
     }
   ]
 }

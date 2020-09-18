@@ -9,8 +9,13 @@ import { RegisterComponent } from './register/register.component';
 import { MainComponent } from './main/main.component';
 import { UsersComponent } from './users/users.component';
 import {HttpClientModule} from '@angular/common/http';
-import {LoginUsersService} from './service/loginUsers.service';
 import { AdminComponent } from './admin/admin.component';
+import { ShowComponent } from './show/show.component';
+import { LogNavComponent } from './log-nav/log-nav.component';
+import { ListComponent } from './admin/list/list.component';
+import { UpdateComponent } from './admin/update/update.component';
+import { AddComponent } from './admin/add/add.component';
+
 
 
 @NgModule({
@@ -21,7 +26,12 @@ import { AdminComponent } from './admin/admin.component';
     RegisterComponent,
     MainComponent,
     UsersComponent,
-    AdminComponent
+    AdminComponent,
+    ShowComponent,
+    LogNavComponent,
+    ListComponent,
+    UpdateComponent,
+    AddComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +41,6 @@ import { AdminComponent } from './admin/admin.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent, NavbarComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,8 +8,12 @@
     </ul>
     <ul class="nav_centre"></ul>
     <ul class="nav_right">
-      <li onmouseover="this.className='out'" onmouseout="this.className=''"><a routerLink="/login" onmouseover="this.className='out'" onmouseout="this.className=''">登录</a></li>
-      <li onmouseover="this.className='out'" onmouseout="this.className=''"><a routerLink="/register" onmouseover="this.className='out'" onmouseout="this.className=''">注册</a></li>
+      <li onmouseover="this.className='out'" onmouseout="this.className=''">
+        <a routerLink="/login" onmouseover="this.className='out'"
+           onmouseout="this.className=''" (click) ="logout()" >
+          登出
+        </a>
+      </li>
     </ul>
   </div>
 </nav>
