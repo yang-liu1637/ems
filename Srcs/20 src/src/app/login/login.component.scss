@@ -1,0 +1,70 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.login {
+  width: 100%;
+  background: url("../../assets/img/jpg3.svg"), center 10%, #2b3137;
+  height: 871px;
+  position: absolute;
+
+  .logBorder{
+    border: 1px;
+    border-radius: 1rem;
+    position: relative;
+    top:8%;
+    left: 25%;
+    width: 50%;
+    height: 55%;
+    background-color: rgba(232, 245, 245, 0.02);
+    p {
+      font-size: 2.3rem;
+      line-height: 4.6rem;
+      font-family: "Gill Sans MT Condensed", serif;
+      color: #fff;
+      text-align: center;
+  }
+    .formBorder {
+      position: absolute;
+      width: 100%;
+      .from_login {
+        display: block;
+        max-width: 70%;
+        margin: 7% auto;
+
+        label {
+          color: #fff;
+          font-size: 1.6rem;
+          line-height: 3.2rem;
+          font-family: "Gill Sans MT Condensed", serif;
+        }
+        .alert{
+          color: #e06c6c;
+          font-family: "Gill Sans MT Condensed", serif;
+        }
+        .login_submit {
+          width: 60%;
+          margin: 10% 0 0 20%;;
+          border-radius: 0.5rem;
+          background-color: #085063;
+          color: #fff;
+          font-size: 1.6rem;
+          line-height: 3.2rem;
+          font-weight: bold;
+          font-family: "Gill Sans MT Condensed", serif;
+        }
+        .log-alert{
+          color: #e06c6c;
+          margin:2% 0 0 30%;
+          font-family: "Gill Sans MT Condensed", serif;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+

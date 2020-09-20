@@ -1,0 +1,42 @@
+/* 2019-12-19 17110100525 刘洋 高级网页设计 */
+#ju{
+    width:98%;
+    margin: 0.2rem;
+    display: flex;
+}
+#ju>.ju-top{
+    width: 100%;
+    flex-wrap: nowrap;
+}
+#ju>.ju-top>.tt{
+    width:20%;
+}
+#ju>.ju-top>.tt>a{
+    margin-top: 0;
+}
+#ju>.ju-top:nth-child(1){
+    display: flex;
+    font-size: 2rem;
+    color: rgba(16, 6, 8, 0.92);
+    font-weight: bold;
+}
+#ju>.ju-top>.itext{
+    flex-grow: 1;
+    height: 2rem;
+    line-height: 4rem;
+    margin-top:0.5rem;
+
+}
+
+.swiper-slide>.jx{
+   background-color: #bd2c00;
+    color: #FFFFFF;
+    font-size:1.3rem;
+    line-height:2.5rem;
+    font-weight: normal;
+}
+.swiper-slide>a{
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 3;
+}

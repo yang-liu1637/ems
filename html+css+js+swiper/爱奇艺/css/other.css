@@ -1,0 +1,118 @@
+/* 2019-12-22 17110100525 刘洋 高级网页设计 */
+#main{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+#main>.sx{
+    width:100%;
+    overflow: hidden;/* 清除子元素的浮动效果 */
+}
+.sx li{
+    width:100%;
+    float: left;
+    position: relative;
+}        .sx .sm{
+             line-height:2rem;
+             font-size: 2rem;
+             color:#FFFFFF;
+             bottom:1.2rem;
+             position: absolute;
+             width:100%;
+         }
+.sx .sm .right span{
+    bottom:0;
+    flex-wrap: wrap;
+    line-height:2rem;
+    font-size: 2rem;
+    color:#00ff00;
+    position: absolute;
+    right: 0.2rem;
+}
+.sx .zj{
+    width:100%;
+    background: linear-gradient(#064f4a,#08857f);
+    font-size:2rem;
+    line-height:4rem;
+}
+.sx .zj p{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.ch-t{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: .5rem;
+}
+.ch-t-a-top{
+    background-color: rgba(210,210,210,0.6);;
+    border-radius:0.33rem;
+    text-align: center;
+}
+.ch-t-a>a{
+    flex: 1 0 auto;
+    padding: 0 .5rem;
+    margin-right: 1rem;
+    font-size:1rem;
+}
+.ch-t-a-top>a{
+    flex: 1 0 auto;
+    padding: 0 .5rem;
+    margin-right: 1rem;
+    font-size:1.3rem;
+
+}
+.ch-t-a>a{
+    flex: 1 0 auto;
+    padding: 0 .5rem;
+    margin-right:1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.ch-head{
+    padding: .5rem;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: auto;
+    font-size:1rem;
+}
+.head-a {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    padding: 0 .5rem;
+    margin-right: 1rem;
+    line-height: 2rem;
+}
+#pic{
+    width:96%;
+    margin: 0.5rem;
+    flex-wrap:wrap;
+    display:flex;
+}
+#pic>.i-pic{
+    display: inline;
+    border: 0.3rem solid rgba(5, 65, 71, 0.02);
+    background-color: rgba(148, 148, 148, 0.36);
+    border-radius:0.33rem;
+    margin-left: 0.35rem;
+    margin-right:2rem;
+    margin-bottom: 1rem;
+}
+#pic>.i-pic>p:nth-child(1){
+    font-size: 1.4rem;
+}

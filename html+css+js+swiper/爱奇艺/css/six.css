@@ -1,0 +1,15 @@
+/*
+2019-12-9 17110100525 刘洋
+高级网页设计*/
+.elist>li{
+    width:40%;
+    text-align: center;
+    border: 0.1rem solid #97cbcc;
+    margin:1rem auto;
+    letter-spacing:.2rem;/* 字间距 */
+}
+.elist>li>p{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height:2rem;
+}

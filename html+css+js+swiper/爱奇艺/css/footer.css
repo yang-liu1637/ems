@@ -1,0 +1,35 @@
+/* 2019-12-10 17110100525 刘洋 高级网页设计 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* 加了position值的可以加这个属性，z-index值大的覆盖小的，不要设置999 */
+    display: flex;
+    background-color: #FFFFFF;
+}
+.footer>a{
+    width: 20%;
+}
+.item>span{
+    font-size:2rem;
+    line-height:3rem;
+    text-align: center;
+    color: #404040;
+    display: block;
+
+}
+.item>p{
+    font-size: 1rem;
+    color:#404040;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.item>span:hover{
+    font-size:2rem;
+    color: #55a532;
+    font-weight: bold;
+    margin-top: -5px;/* 往上的同时总高度不变，这是一个技巧 */
+    margin-bottom: 3px;/* 往上的同时总高度不变，这是一个技巧 */
+}

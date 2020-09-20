@@ -1,0 +1,98 @@
+/* 2019-12-20 17110100525 刘洋 高级网页设计 */
+.hd{
+    width: 100%;
+}
+.hd>.hd-head{
+    margin-top: 0.8rem;
+}
+
+.tab-head-item>a {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.hd>.hd-head {
+    padding: .5rem;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: auto;
+    font-size: 2rem;
+}
+.hdbox {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    padding: 0 .5rem;
+    margin-right: 1rem;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+.hdbox>a{
+    flex: 1 0 auto;
+    padding: 0 .5rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+#i-header>.header-top>#shx{
+    flex-grow: 1;
+    order:3;
+    border: 0.5rem;
+    border-radius: 0.23rem;
+    background-color: rgba(188, 188, 188, 0.14);
+    margin-left: 0.3rem;
+
+}
+#i-header>.header-top>#shx>span{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin:0.8rem;
+}
+
+
+.i-header{
+    width: 100%;
+    color: #FFFFFF;
+}
+.i-header>.hb{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hb>li{
+    width:40%;
+    display: flex;
+    border: 0.2rem;
+    border-radius: 0.23rem;
+    background-color: rgba(113, 113, 113, 0.25);
+    margin: 1rem 1rem 1rem 1.7rem;
+}
+.hb>li>a{
+    font-size: 1rem;
+    line-height: 3rem;
+
+}
+.hb>li>span{
+    width: 40%;
+    display: block;
+    color: #0d5815;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+
+
+
+
+

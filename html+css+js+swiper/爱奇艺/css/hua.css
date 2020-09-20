@@ -1,0 +1,49 @@
+/* 2019-12-17 17110100525 刘洋 高级网页设计 */
+.hd{
+    width: 100%;
+}
+.hd>.hd-head{
+    margin-top: 2rem;
+}
+
+.tab-head-item>a {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.hd>.hd-head {
+    padding: .5rem;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /* padding:0; */
+     overflow: auto;
+    font-size: 2rem;
+}
+.hd-box {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    padding: 0 .5rem;
+    margin-right: 1rem;
+    background-color: #f5f5f5;
+    border-radius:2rem;
+    text-align: center;
+}
+.hd-box>a{
+    flex: 1 0 auto;
+    padding: 0 .5rem;
+    margin-right: 1rem;
+
+    font-size: 2rem;
+}

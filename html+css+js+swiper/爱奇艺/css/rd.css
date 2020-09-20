@@ -1,0 +1,172 @@
+/* 2019-12-20 17110100525 刘洋 高级网页设计 */
+#header
+{
+    width: 100%;
+    background: linear-gradient(#064f4a,#08857f);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.retop{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+}
+#header>.hg{
+   width: 100%;
+    display: flex;
+}
+#header>.hg>.icon-yi{
+    font-size:1.7rem;
+    color: #55a532;
+    font-weight: bold;
+    margin-left: 7.4rem;
+}
+.retop>li{
+    width:18%;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+margin-left: 0.3rem;
+    line-height: 2rem;
+}
+.retop>li>a{
+    color: #FFFFFF;
+}
+.retop>.last{
+    /*width: 50%;*/
+    flex-grow: 1;
+}
+li>a>.icon-sousuo1{
+    width: 10%;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    color: #56a528;
+    right: 0;
+    font-weight: bold;
+
+}
+li>.icon-shipin{
+    font-size: 1.7rem;
+    margin: 1rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.main{
+    width: 100%;
+}
+
+.main>span{
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 4rem;
+}
+
+.sx{
+    width:100%;
+    overflow: hidden;/* 清除子元素的浮动效果 */
+}
+.sx li{
+    width:100%;
+    position: relative;
+}
+.sx .sm{
+    font-size:1.5rem;
+    color:white;
+    position: absolute;
+    width:100%;
+}
+.sx .sm .right p{
+    bottom: 0;
+    flex-wrap: wrap;
+    font-size: 0.5rem;
+    color:white;
+    position: absolute;
+    right: 0.2rem;
+}
+
+.sx .bf{
+    bottom:50%;
+    color: rgba(216, 216, 216, 0.49);
+    position: absolute;
+    right:47%;
+}
+.sx .bf a{
+    width: 10%;
+}
+.sx .bf .icon-bofang{
+    line-height:1rem;
+    font-size:3rem;
+    color: rgba(231, 231, 231, 0.72);
+}
+
+
+/*.zj{
+    width:100%;
+    position: relative;
+}*/
+
+
+
+
+
+
+.gz{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+}
+.gz>.gz-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.gz>.gz-top>img{
+    width: 8%;
+    border-radius: 50%;
+    margin-left: 0.3rem;
+    margin-bottom: 0.3rem;
+    order:1;
+}
+.gz>.gz-top>.gzp{
+    order:3;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-left: 0.3rem;
+
+}
+.gz>.gz-top>.gzp>p{
+    display: inline;
+}
+.gz>.gz-top>.gzp>.zz{
+    width: 20%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.gz>.gz-top>.gzp>.yy{
+    margin-left: 0.5rem;
+    width: 20%;
+    font-size: 0.8rem;
+    color: #61b434;
+    font-weight: bold;
+}
+.ispan{
+    width:15%;
+    order: 4;
+}
+.gz-top>.ispan>a>.icon-xiaoxi{
+    font-size: 1rem;
+}
+.gz-top>.ispan>a>.icon-xin{
+    font-size: 1rem;
+
+}
+.sd{
+    order:4;
+    width: 5%;
+    font-size: 1rem;
+}
+.gz-top>.sd>.icon-sandian{
+    font-size: 2rem;
+}
