@@ -1,0 +1,40 @@
+*{
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.show {
+  width: 100%;
+  background: url("../../assets/img/jpg3.svg"), center 10%, #2b3137;
+  height: 89rem;
+
+  .infor-body {
+    position: absolute;
+    width: 100%;
+    .infor{
+      position: relative;
+      left: 23%;
+      top: 20rem;
+      width: 30%;
+      .infor-title{
+        font-size: 3rem;
+        color: #fff;
+        font-family: "Segoe MDL2 Assets",fantasy;
+        font-weight: bold;
+      }
+      .infor-content{
+        font-size: 1.5rem;
+        color: #fff;
+        width: 80%;
+      }
+    }
+    .register{
+      width: 45%;
+      position: relative;
+      left: 55%;
+      height: 70rem;
+      border-radius: 1rem;
+      overflow:hidden;
+    }
+  }
+}
