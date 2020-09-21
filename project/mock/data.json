@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "username": "user1",
+      "username": "刘洋",
       "role": "User",
       "sex": "女",
       "email": "user1@users.com",
@@ -59,6 +59,33 @@
       "role": "Admin",
       "tNum": "12345678901",
       "id": 6
+    },
+    {
+      "username": "",
+      "password": "",
+      "sex": "",
+      "email": "",
+      "address": "",
+      "tNum": "",
+      "id": 7
+    },
+    {
+      "username": "",
+      "password": "",
+      "sex": "",
+      "email": "",
+      "address": "",
+      "tNum": "",
+      "id": 8
+    },
+    {
+      "username": "",
+      "password": "",
+      "sex": "",
+      "email": "",
+      "address": "",
+      "tNum": "",
+      "id": 9
     }
   ]
 }

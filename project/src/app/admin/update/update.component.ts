@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {DoUsersService} from '../../../assets/service/doUsers.service';
 import {FormControl, FormGroup} from '@angular/forms';
+import {url} from 'inspector';
 
 @Component({
   selector: 'app-update',
@@ -9,8 +10,6 @@ import {FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./update.component.scss']
 })
 export class UpdateComponent implements OnInit {
-  alert = false;
-
   editUsers = new FormGroup({
     username: new FormControl(''),
     role: new FormControl(''),
@@ -49,11 +48,8 @@ export class UpdateComponent implements OnInit {
     this.service.updateUsers(this.router.snapshot.params.id, this.editUsers.value).subscribe((result) => {
       console.log(result);
     });
-    this.alert = true;
+    setTimeout('window.location.href = "http://localhost:4200/admin/list";', 500);
   }
 
-  closeAlert(): any {
-    this.alert = false;
-  }
 
 }

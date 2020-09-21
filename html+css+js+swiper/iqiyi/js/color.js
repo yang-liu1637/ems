@@ -1,7 +1,7 @@
 /* 2019-12-20 17110100525 刘洋 高级网页设计 */
 changeColor();
 
-inps[0].οnclick=function(){
+inps[0].onclick=function(){
     changeColor();
 
 };

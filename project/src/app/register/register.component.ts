@@ -49,16 +49,16 @@ export class RegisterComponent implements OnInit{
       notdown: '用户性别只能是男或女', only: '用户性别只能为文字'
     },
     email: {
-      minlength: '邮箱地址最少为10个字符', required: '请填写邮箱地址',
-      notdown: '邮箱地址不能以下划线开头', only: '邮箱地址只能包含数字、字母、下划线'
+      minlength: '邮箱地址最少为6个字符', required: '请填写邮箱地址',
+      notdown: '邮箱地址不能以下划线开头', only: '邮箱地址可以包含数字、字母、下划线'
     },
     address: {
       minlength: '地址长度最少为6个字符', maxlength: '地址长度最多为10个字符', required: '请填写地址',
       notdown: '公司地址不能以下划线开头', only: '公司地址只能包含数字、字母、下划线'
     },
     tNum: {
-      minlength: '密码长度必须为11个数字组成', required: '请正确填写电话号',
-      notdown: '电话号码不能以下划线开头', only: '电话号码只能包含数字'
+      minlength: '手机号码至多为11个字符', required: '请正确填写手机号',
+      notdown: '手机号码不能以下划线开头', only: '手机号码只能包含数字'
     }
   };
 // 每次数据发生改变时触发此方法
@@ -129,16 +129,18 @@ export class RegisterComponent implements OnInit{
 
         validateRex('notdown', /^(?!_)/),
 
-        validateRex('only', /^[1-9a-zA-Z_]+$/)
+        validateRex('only', /^[\u4e00-\u9fa5-Z_]+$/)
 
       ]],
       email: [ '', [
 
-      Validators.required,
+        Validators.required,
 
-      validateRex('notdown', /^(?!_)/),
+        Validators.minLength(6),
 
-      validateRex('only', /^[1-9a-zA-Z-@_]+$/)
+        validateRex('notdown', /^(?!_)/),
+
+        validateRex('only', /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}$/)
 
     ]],
       address: [ '', [
@@ -162,7 +164,7 @@ export class RegisterComponent implements OnInit{
 
         validateRex('notdown', /^(?!_)/),
 
-        validateRex('only', /^[1-9_]+$/)
+        validateRex('only', /0?(13|14|15|18|17)[0-9]{9}$/)
 
       ]]
 

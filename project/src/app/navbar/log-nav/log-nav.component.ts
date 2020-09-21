@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {LoginUsersService} from '../../assets/service/loginUsers.service';
+import {LoginUsersService} from '../../../assets/service/loginUsers.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -8,7 +8,6 @@ import {Router} from '@angular/router';
   styleUrls: ['./log-nav.component.scss']
 })
 export class LogNavComponent implements OnInit {
-
   constructor(private loginUsersService: LoginUsersService , private router: Router) { }
 
   ngOnInit(): void {

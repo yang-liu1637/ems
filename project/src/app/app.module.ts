@@ -11,7 +11,7 @@ import { UsersComponent } from './users/users.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AdminComponent } from './admin/admin.component';
 import { ShowComponent } from './show/show.component';
-import { LogNavComponent } from './log-nav/log-nav.component';
+import { LogNavComponent } from './navbar/log-nav/log-nav.component';
 import { ListComponent } from './admin/list/list.component';
 import { UpdateComponent } from './admin/update/update.component';
 import { AddComponent } from './admin/add/add.component';
