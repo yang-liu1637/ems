@@ -6,7 +6,7 @@
 .show {
   width: 100%;
   background: url("../../assets/img/jpg3.svg"), center 10%, #2b3137;
-  height: 871px;
+  height: 89rem;
 
   .infor-body {
     position: absolute;
@@ -14,29 +14,26 @@
     .infor{
       position: relative;
       left: 23%;
-      top: 20rem;
+      top: 26rem;
       width: 30%;
       .infor-title{
         font-size: 3rem;
-        color: white;
+        color: #fff;
         font-family: "Segoe MDL2 Assets",fantasy;
         font-weight: bold;
       }
       .infor-content{
         font-size: 1.5rem;
-        color: white;
+        color: #fff;
         width: 80%;
       }
     }
-    .register {
-      border: 1px solid white;
-      padding: 0;
-      width: 20%;
-      color: #2b2a2a;
-      background-color: white;
+    .register{
+      width: 50%;
       position: relative;
-      left: 63%;
-      border-radius: 0.8rem;
+      left: 50%;
+      height: 70rem;
+      overflow:hidden;
     }
   }
 }

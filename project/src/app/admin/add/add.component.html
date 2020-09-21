@@ -1,7 +1,7 @@
-<app-admin></app-admin>
+<app-admin-nav></app-admin-nav>
+  <div class="control">
 <h3 class="text-center" *ngIf="!alert">添加角色</h3>
-<h3 *ngIf="alert" class="shower alert alert-success text-center" style="border: 0;margin: 0">添加成功！即将跳转用户列表......</h3>
-<div class="control">
+<h3 *ngIf="alert" class="text-center">添加成功！即将转到用户列表</h3>
   <form [formGroup]="addUsers" (ngSubmit)="onSubmit()">
 
     <div class="form-group">
@@ -38,7 +38,8 @@
       <label>电话号码：</label>
       <input formControlName="tNum" type="text" class="form-control" placeholder="Telephone Number" required>
       <span class="error" *ngIf="tNum.invalid && tNum.touched">请填写电话号</span>
-    </div> <!-- -->
+    </div>
     <button type="submit" class="btn btn-primary" [disabled]="addUsers.invalid">添加</button>
   </form>
 </div>
+

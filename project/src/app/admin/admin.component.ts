@@ -11,17 +11,13 @@ import {Router} from '@angular/router';
 })
 export class AdminComponent implements OnInit {
   // 表单 username
-  editUsers = new FormGroup({
-    username: new FormControl('')
-  });
+ username: string[];
   constructor(private message: CommonService, private  loginUsersService: LoginUsersService , private router: Router) { }
 
   ngOnInit(): void {
     // 通过 login更新用户名
     this.message.getMessage().subscribe((result) => {
-      this.editUsers = new FormGroup({
-        username: new FormControl(result),
-      });
+      this.username = result;
     });
   }
   logout(): any{

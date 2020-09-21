@@ -59,8 +59,8 @@ export class LoginComponent {
               localStorage.setItem('username', this.username);
               this.router.navigate(['./main']).then(
                 (res) => {
-                res = true ;
-              });
+                  res = true ;
+                });
               this.message.add(this.username);
             }
           } else{

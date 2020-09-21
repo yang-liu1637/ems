@@ -23,21 +23,21 @@ nav {
     display: flex;
     flex-wrap: wrap;
     .nav_left{
-      width: 25%;
+      width: 30%;
       display: flex;
       li:nth-child(1){
-        width: 15%;
+        width: 30%;
         margin-left: 0.8rem;
       }
       li:nth-child(2){
-        width: 15%;
-        margin-left: 7%;
+        width: 10%;
       }
       li:nth-child(3){
-        width: 18%;
+        width: 30%;
+        margin-left: 2%;
       }
       li:nth-child(4){
-        width: 40%;
+        width: 30%;
       }
       p{
         color: #fff;
@@ -50,7 +50,7 @@ nav {
       width: 5%;
       display: flex;
       padding: 0.3rem;
-      margin-left: 70%;
+      margin-left: 65%;
       flex-wrap: wrap;
       li{
         display: block;

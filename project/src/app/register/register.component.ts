@@ -21,14 +21,52 @@ export class RegisterComponent implements OnInit{
     role: new FormControl('User'),
     password: new FormControl('')
   });
+// 添加 fb 属性，用来创建表单
+  constructor(private fb: FormBuilder , private service: DoUsersService) { }
+// 定义表单
 
-  alert: boolean;
-
-  constructor(private service: DoUsersService) { }
-
+// 表单验证不通过时显示的错误消息
+  formErrors = {
+    username: '',
+    password: '',
+    sex: '',
+    email: '',
+    address: '',
+    tNum: ''
+  };
+// 为每一项表单验证添加说明文字
+  validationMessage = {
+    username: {
+      minlength: '用户名长度最少为3个字符', maxlength: '用户名长度最多为10个字符', required: '请填写用户名',
+      notdown: '用户名不能以下划线开头', only: '用户名只能包含数字、字母、下划线'
+    },
+    password: {
+      minlength: '密码长度最少为6个字符', maxlength: '密码长度最多为10个字符', required: '请填写用户密码',
+      notdown: '用户密码不能以下划线开头', only: '用户密码只能包含数字、字母、下划线'
+    },
+    sex: {
+      minlength: '请至少填写一个字符', maxlength: '至多填写一个字符', required: '请填写用户性别',
+      notdown: '用户性别只能是男或女', only: '用户性别只能为文字'
+    },
+    email: {
+      minlength: '邮箱地址最少为10个字符', required: '请填写邮箱地址',
+      notdown: '邮箱地址不能以下划线开头', only: '邮箱地址只能包含数字、字母、下划线'
+    },
+    address: {
+      minlength: '地址长度最少为6个字符', maxlength: '地址长度最多为10个字符', required: '请填写地址',
+      notdown: '公司地址不能以下划线开头', only: '公司地址只能包含数字、字母、下划线'
+    },
+    tNum: {
+      minlength: '密码长度必须为11个数字组成', required: '请正确填写电话号',
+      notdown: '电话号码不能以下划线开头', only: '电话号码只能包含数字'
+    }
+  };
+// 每次数据发生改变时触发此方法
+  RegisterComponent;
   ngOnInit(): void {
+    // 初始化时构建表单
+    this.buildForm();
   }
-
   get username(): any { return this.addUsers.get('username'); }
   get sex(): any { return this.addUsers.get('sex'); }
   get email(): any { return this.addUsers.get('email'); }
@@ -43,44 +81,9 @@ export class RegisterComponent implements OnInit{
     this.service.saveUsers(this.addUsers.value).subscribe((result) => {
       console.log(result);
     });
-    this.alert = true;
     this.addUsers.reset({});
+    setTimeout('alert("注册成功！即将跳转登录页面")', 0);
     setTimeout('window.location.href = "http://localhost:4200/login";', 1500);
-  }
-
-  closeAlert(): any {
-    this.alert = false;
-  }
-
-
-/*
-
-  bothoter = false;
-// 添加 fb 属性，用来创建表单
-  constructor(private fb: FormBuilder) { }
-// 定义表单
-  registerForm: FormGroup;
-// 表单验证不通过时显示的错误消息
-  formErrors = {
-    userid: '',
-    password: ''
-  };
-// 为每一项表单验证添加说明文字
-  validationMessage = {
-    userid: {
-      minlength: '用户名长度最少为3个字符', maxlength: '用户名长度最多为10个字符', required: '请填写用户名',
-      notdown: '用户名不能以下划线开头', only: '用户名只能包含数字、字母、下划线'
-    },
-    password: {
-      minlength: '密码长度最少为6个字符', maxlength: '密码长度最多为10个字符', required: '请填写用户密码',
-      notdown: '用户密码不能以下划线开头', only: '用户密码只能包含数字、字母、下划线'
-    }
-  };
-// 每次数据发生改变时触发此方法
-  RegisterComponent;
-  ngOnInit(): void {
-    // 初始化时构建表单
-    this.buildForm();
   }
 // 构建表单方法
 
@@ -88,17 +91,9 @@ export class RegisterComponent implements OnInit{
 
     // 通过 formBuilder构建表单
 
-    this.registerForm = this.fb.group({
+    this.addUsers = this.fb.group({
 
-      /!* 为 username 添加3项验证规则：
-
-      * 1.必填， 2.最大长度为10， 3.最小长度为3， 4.不能以下划线开头， 5.只能包含数字、字母、下划线
-
-      * 其中第一个空字符串参数为表单的默认值
-
-      *!/
-
-      userid: [ '', [
+      username: [ '', [
 
         Validators.required,
 
@@ -123,6 +118,52 @@ export class RegisterComponent implements OnInit{
 
         validateRex('only', /^[1-9a-zA-Z_]+$/)
 
+      ]],
+      sex: [ '', [
+
+        Validators.required,
+
+        Validators.maxLength(1),
+
+        Validators.minLength(1),
+
+        validateRex('notdown', /^(?!_)/),
+
+        validateRex('only', /^[1-9a-zA-Z_]+$/)
+
+      ]],
+      email: [ '', [
+
+      Validators.required,
+
+      validateRex('notdown', /^(?!_)/),
+
+      validateRex('only', /^[1-9a-zA-Z-@_]+$/)
+
+    ]],
+      address: [ '', [
+
+        Validators.required,
+
+        Validators.maxLength(10),
+
+        Validators.minLength(6),
+
+        validateRex('notdown', /^(?!_)/),
+
+        validateRex('only', /^[1-9a-zA-Z_]+$/)
+
+      ]],
+      tNum: [ '', [
+
+        Validators.required,
+
+        Validators.minLength(11),
+
+        validateRex('notdown', /^(?!_)/),
+
+        validateRex('only', /^[1-9_]+$/)
+
       ]]
 
     });
@@ -131,7 +172,7 @@ export class RegisterComponent implements OnInit{
 
     // 每次表单数据发生变化的时候更新错误信息
 
-    this.registerForm.valueChanges
+    this.addUsers.valueChanges
 
       .subscribe(data => this.onValueChanged(data));
 
@@ -146,13 +187,9 @@ export class RegisterComponent implements OnInit{
 
     // 如果表单不存在则返回
 
-    if (!this.registerForm) {
-      this.bothoter = true;
-      return; }
-
     // 获取当前的表单
 
-    const form = this.registerForm;
+    const form = this.addUsers;
     // 遍历错误消息对象
 
     for (const field in this.formErrors) {
@@ -187,5 +224,6 @@ export class RegisterComponent implements OnInit{
 
     }
 
-  }*/
+  }
 }
+

@@ -16,12 +16,12 @@ const routes: Routes = [
   {path: '', component: ShowComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'users', component: UsersComponent,  canActivate: [LoginUsersGuard]},
-  {path: 'main', component: MainComponent , canActivate: [LoginUsersGuard]},
-  {path: 'admin', component: AdminComponent, canActivate: [LoginUsersGuard]},
-  {path: 'admin/list', component: ListComponent, canActivate: [LoginUsersGuard]},
-  {path: 'admin/add', component: AddComponent, canActivate: [LoginUsersGuard]},
-  {path: 'admin/update/:id', component: UpdateComponent, canActivate: [LoginUsersGuard]}
+  {path: 'users', component: UsersComponent}, /*,  canActivate: [LoginUsersGuard]*/
+  {path: 'main', component: MainComponent},
+  {path: 'admin', component: AdminComponent},
+  {path: 'admin/list', component: ListComponent},
+  {path: 'admin/add', component: AddComponent},
+  {path: 'admin/update/:id', component: UpdateComponent}
 ];
 
 @NgModule({

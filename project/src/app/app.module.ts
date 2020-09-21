@@ -15,7 +15,7 @@ import { LogNavComponent } from './log-nav/log-nav.component';
 import { ListComponent } from './admin/list/list.component';
 import { UpdateComponent } from './admin/update/update.component';
 import { AddComponent } from './admin/add/add.component';
-
+import { AdminNavComponent } from './navbar/admin-nav/admin-nav.component';
 
 
 @NgModule({
@@ -32,6 +32,7 @@ import { AddComponent } from './admin/add/add.component';
     ListComponent,
     UpdateComponent,
     AddComponent,
+    AdminNavComponent
   ],
   imports: [
     BrowserModule,
