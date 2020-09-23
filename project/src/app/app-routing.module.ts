@@ -21,7 +21,7 @@ const routes: Routes = [
   {path: 'admin', component: AdminComponent},
   {path: 'admin/list', component: ListComponent},
   {path: 'admin/add', component: AddComponent},
-  {path: 'admin/update/:id', component: UpdateComponent}
+  {path: 'admin/update/:id', component: UpdateComponent},
 ];
 
 @NgModule({

@@ -1,6 +1,5 @@
 *{
   list-style: none;
-  display: block;
   text-decoration:none;
   padding: 0;
   margin: 0;
@@ -18,32 +17,49 @@ nav {
   line-height: 6rem;
   background-color: #24292e;
   font-weight: bold;
-  border-radius: 0.2rem;
   .login_nav{
     width: $maxwidth;
     display: flex;
     .nav_left{
-      width: $maxwidth/5;
+      flex: 2;
       display: flex;
-      padding: 0.3rem;
-      li{
-        width: $maxwidth/3;
-        p{
-          color: #fff;
-          text-align: center;
-        }
+      li:nth-child(1){
+        width: 15%;
+      }
+      li:nth-child(2){
+        width: 15%;
+
+      }
+      li:nth-child(3){
+        width: 18%;
+      }
+      li:nth-child(4){
+        width: 40%;
+      }
+      p{
+        color: #fff;
+        text-align: center;
       }
     }
-    .nav_right{
-      width: 5%;
-      margin-left: 75%;
+  }
+  .nav-center{
+    flex: 3.5;
+  }
+  .nav_right{
+    flex: 0.5;
+
+    display: flex;
+    li{
+      width: 100%;
+      margin-left:60%;
     }
   }
 }
 .out{
+  padding: 0;
+  margin: 0;
   color: #a7a4a4;
-  border-radius: 0.3rem;
   font-size:1.8rem;
+  line-height: 3.6rem;
   font-family: "Gill Sans MT Condensed", "Segoe MDL2 Assets", serif;
 }
-

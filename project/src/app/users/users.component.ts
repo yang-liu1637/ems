@@ -10,25 +10,15 @@ import {FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit {
-  // 表单 username
-  editUsers = new FormGroup({
-    username: new FormControl('')
-  });
+    username: string[];
 constructor(private loginUsersService: LoginUsersService, private router: Router ,
             private message: CommonService) { }
   ngOnInit(): void {
+  // 通过 login add（username）显示当前用户名
     // 通过 login更新用户名
     this.message.getMessage().subscribe((result) => {
-      this.editUsers = new FormGroup({
-        username: new FormControl(result),
-      });
+      this.username = result;
     });
-  }
-  // 读取当前用户
-  // 登出
-  logout(): any{
-    this.loginUsersService.logout();
-    this.router.navigateByUrl('/login');
   }
 
 }

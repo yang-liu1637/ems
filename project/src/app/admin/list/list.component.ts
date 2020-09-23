@@ -9,6 +9,7 @@ import {DoUsersService} from '../../../assets/service/doUsers.service';
 export class ListComponent implements OnInit {
 
   collection: any = [];
+  alert = true;
 
   constructor(private users: DoUsersService) { }
 

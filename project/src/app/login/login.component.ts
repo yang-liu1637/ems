@@ -90,7 +90,7 @@ export class LoginComponent implements OnInit{
 
         Validators.maxLength(10),
 
-        Validators.minLength(3),
+        Validators.minLength(1),
 
         validateRex('notdown', /^(?!_)/),
 
@@ -103,7 +103,7 @@ export class LoginComponent implements OnInit{
 
         Validators.maxLength(10),
 
-        Validators.minLength(6),
+        Validators.minLength(3),
 
         validateRex('notdown', /^(?!_)/),
 

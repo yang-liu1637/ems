@@ -60,7 +60,7 @@ import {DoUsersService} from '../../../assets/service/doUsers.service';
    onSubmit(): any {
      this.service.saveUsers(this.addUsers.value).subscribe((result) => {
        console.log(result);
-       setTimeout('window.location.href = "http://localhost:4200/admin/list";', 1500);
+       setTimeout('window.location.href = "http://localhost:4200/admin/list";', 1000);
      });
      this.alert = true;
      this.addUsers.reset({});

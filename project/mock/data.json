@@ -1,12 +1,12 @@
 {
   "users": [
     {
-      "username": "刘洋",
+      "username": "user1",
       "role": "User",
       "sex": "女",
       "email": "user1@users.com",
       "address": "辽宁省大连市",
-      "tNum": "12345678900",
+      "tNum": "18304381637",
       "password": "password1",
       "id": 1
     },
@@ -59,33 +59,6 @@
       "role": "Admin",
       "tNum": "12345678901",
       "id": 6
-    },
-    {
-      "username": "",
-      "password": "",
-      "sex": "",
-      "email": "",
-      "address": "",
-      "tNum": "",
-      "id": 7
-    },
-    {
-      "username": "",
-      "password": "",
-      "sex": "",
-      "email": "",
-      "address": "",
-      "tNum": "",
-      "id": 8
-    },
-    {
-      "username": "",
-      "password": "",
-      "sex": "",
-      "email": "",
-      "address": "",
-      "tNum": "",
-      "id": 9
     }
   ]
 }

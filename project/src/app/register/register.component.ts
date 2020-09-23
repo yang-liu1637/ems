@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit{
     sex: new FormControl(''),
     address: new FormControl(''),
     tNum: new FormControl(''),
-    role: new FormControl('User'),
+    role: new FormControl('User'), // 注册时自动把角色设置为用户
     password: new FormControl('')
   });
 // 添加 fb 属性，用来创建表单
@@ -37,28 +37,28 @@ export class RegisterComponent implements OnInit{
 // 为每一项表单验证添加说明文字
   validationMessage = {
     username: {
-      minlength: '用户名长度最少为3个字符', maxlength: '用户名长度最多为10个字符', required: '请填写用户名',
-      notdown: '用户名不能以下划线开头', only: '用户名只能包含数字、字母、下划线'
+      minlength: '用户名长度最少为2个字符', maxlength: '用户名长度最多为10个字符', required: '请填写用户名',
+      notdown: '用户名不能以下划线开头', only: '用户名只能包含文字、字母、下划线'
     },
     password: {
       minlength: '密码长度最少为6个字符', maxlength: '密码长度最多为10个字符', required: '请填写用户密码',
       notdown: '用户密码不能以下划线开头', only: '用户密码只能包含数字、字母、下划线'
     },
     sex: {
-      minlength: '请至少填写一个字符', maxlength: '至多填写一个字符', required: '请填写用户性别',
-      notdown: '用户性别只能是男或女', only: '用户性别只能为文字'
+      minlength: '请至少填写1个字符', maxlength: '至多填写5个字符', required: '请填写用户性别',
+      only: '用户性别只能是男或女'
     },
     email: {
       minlength: '邮箱地址最少为6个字符', required: '请填写邮箱地址',
       notdown: '邮箱地址不能以下划线开头', only: '邮箱地址可以包含数字、字母、下划线'
     },
     address: {
-      minlength: '地址长度最少为6个字符', maxlength: '地址长度最多为10个字符', required: '请填写地址',
-      notdown: '公司地址不能以下划线开头', only: '公司地址只能包含数字、字母、下划线'
+      minlength: '地址长度最少为6个字符', required: '请填写地址',
+      notdown: '公司地址不能以下划线开头', only: '公司地址只能包含文字、字母、数字、下划线'
     },
     tNum: {
-      minlength: '手机号码至多为11个字符', required: '请正确填写手机号',
-      notdown: '手机号码不能以下划线开头', only: '手机号码只能包含数字'
+      minlength: '手机号码必须由11个数字组成', required: '请正确填写手机号',
+      notdown: '手机号码只能为数字', only: '请正确填写手机号（中国大陆）'
     }
   };
 // 每次数据发生改变时触发此方法
@@ -99,11 +99,11 @@ export class RegisterComponent implements OnInit{
 
         Validators.maxLength(10),
 
-        Validators.minLength(3),
+        Validators.minLength(2),
 
         validateRex('notdown', /^(?!_)/),
 
-        validateRex('only', /^[1-9a-zA-Z_]+$/)
+        validateRex('only', /^[\u4e00-\u9fa5-1-9a-zA-Z_]+$/)
 
       ]],
       password: [ '', [
@@ -123,13 +123,11 @@ export class RegisterComponent implements OnInit{
 
         Validators.required,
 
-        Validators.maxLength(1),
+        Validators.maxLength(10),
 
         Validators.minLength(1),
 
-        validateRex('notdown', /^(?!_)/),
-
-        validateRex('only', /^[\u4e00-\u9fa5-Z_]+$/)
+        validateRex('only', /^[/^男$|^女&/]+$/)
 
       ]],
       email: [ '', [
@@ -147,13 +145,11 @@ export class RegisterComponent implements OnInit{
 
         Validators.required,
 
-        Validators.maxLength(10),
-
         Validators.minLength(6),
 
         validateRex('notdown', /^(?!_)/),
 
-        validateRex('only', /^[1-9a-zA-Z_]+$/)
+        validateRex('only', /^[\u4e00-\u9fa5-1-9a-zA-Z_]+$/)
 
       ]],
       tNum: [ '', [
@@ -162,9 +158,9 @@ export class RegisterComponent implements OnInit{
 
         Validators.minLength(11),
 
-        validateRex('notdown', /^(?!_)/),
+        validateRex('notdown', /^\d+$/),
 
-        validateRex('only', /0?(13|14|15|18|17)[0-9]{9}$/)
+        validateRex('only', /^(13[0-9]|14[0-9]|15[0-9]|166|17[0-9]|18[0-9]|19[8|9])\d{8}$/)
 
       ]]
 

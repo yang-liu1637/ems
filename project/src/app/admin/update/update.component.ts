@@ -48,7 +48,7 @@ export class UpdateComponent implements OnInit {
     this.service.updateUsers(this.router.snapshot.params.id, this.editUsers.value).subscribe((result) => {
       console.log(result);
     });
-    setTimeout('window.location.href = "http://localhost:4200/admin/list";', 500);
+    setTimeout('window.location.href = "http://localhost:4200/admin/list";', 0);
   }
 
 

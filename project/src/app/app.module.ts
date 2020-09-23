@@ -39,7 +39,7 @@ import { AdminNavComponent } from './navbar/admin-nav/admin-nav.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
