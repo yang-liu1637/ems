@@ -52,12 +52,12 @@
     },
     {
       "username": "admin2",
+      "role": "Admin",
       "sex": "男",
       "email": "admin2@admin.com",
       "address": "辽宁省大连市",
+      "tNum": "1830438 ",
       "password": "pass1",
-      "role": "Admin",
-      "tNum": "12345678901",
       "id": 6
     }
   ]
