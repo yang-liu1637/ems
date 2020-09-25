@@ -18,6 +18,7 @@ import { AddComponent } from './admin/add/add.component';
 import {LogNavComponent} from './navbar/log-nav/log-nav.component';
 import {AdminNavComponent} from './navbar/admin-nav/admin-nav.component';
 import {NavbarComponent} from './navbar/navbar.component';
+import { RadioComponent } from './radio/radio.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {NavbarComponent} from './navbar/navbar.component';
     UpdateComponent,
     AddComponent,
     AdminNavComponent,
-    NavbarComponent
+    NavbarComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
-import {DoUsersService} from '../../../assets/service/doUsers.service';
+import {DoUsersService} from '../../service/doUsers.service';
 
 @Component({
    selector: 'app-add',
@@ -8,24 +8,25 @@ import {DoUsersService} from '../../../assets/service/doUsers.service';
    styleUrls: ['./add.component.scss']
  })
  export class AddComponent implements OnInit {
+  // 建立新的FormGroup
    addUsers = new FormGroup({
      username: new FormControl(''),
      email: new FormControl(''),
      sex: new FormControl(''),
      address: new FormControl(''),
      tNum: new FormControl(''),
-     role: new FormControl('User'),
-     password: new FormControl('')
+     role: new FormControl(''),
+     password: new FormControl(''),
+     hobby: new FormControl('')
    });
-
+   // 跳转提示
    alert: boolean;
 
-   constructor(private service: DoUsersService) {
-   }
+   constructor(private service: DoUsersService) { }
 
    ngOnInit(): void {
    }
-
+   // formControl 更新输入的表单信息
    get username(): any {
      return this.addUsers.get('username');
    }
@@ -53,7 +54,9 @@ import {DoUsersService} from '../../../assets/service/doUsers.service';
    get password(): any {
      return this.addUsers.get('password');
    }
-
+  get hobby(): any {
+    return this.addUsers.get('hobby');
+  }
 
    onSubmit(): any {
      this.service.saveUsers(this.addUsers.value).subscribe((result) => {
@@ -62,6 +65,8 @@ import {DoUsersService} from '../../../assets/service/doUsers.service';
      });
      this.alert = true;
      this.addUsers.reset({});
+     const {sex} = this.addUsers.value;
+     console.log(sex);
    }
 
  }

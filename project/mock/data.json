@@ -32,22 +32,24 @@
     },
     {
       "username": "user4",
-      "email": "user4@users.com",
-      "password": "password4",
       "role": "User",
-      "address": "辽宁省大连市",
       "sex": "男",
+      "email": "user4@users.com",
+      "address": "辽宁省锦州市",
       "tNum": "18304110101",
+      "password": "password4",
+      "hobby": null,
       "id": 4
     },
     {
       "username": "admin1",
-      "email": "admin1@admin.com",
-      "password": "pass1",
       "role": "Admin",
-      "address": "辽宁省大连市",
       "sex": "男",
+      "email": "admin1@admin.com",
+      "address": "辽宁省大连市",
       "tNum": "18304110101",
+      "password": "password",
+      "hobby": null,
       "id": 5
     },
     {
@@ -56,9 +58,20 @@
       "sex": "男",
       "email": "admin2@admin.com",
       "address": "辽宁省大连市",
-      "tNum": "1830438 ",
-      "password": "pass1",
+      "tNum": "18304381637",
+      "password": "password",
+      "hobby": null,
       "id": 6
+    },
+    {
+      "username": "洋err",
+      "password": "123456",
+      "sex": "女",
+      "email": "852725233@qq.com",
+      "address": "辽宁省大连市",
+      "tNum": "18304381637",
+      "role": "User",
+      "id": 7
     }
   ]
 }

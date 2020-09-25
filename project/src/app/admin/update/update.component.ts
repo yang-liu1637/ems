@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {DoUsersService} from '../../../assets/service/doUsers.service';
+import {DoUsersService} from '../../service/doUsers.service';
 import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
@@ -16,7 +16,8 @@ export class UpdateComponent implements OnInit {
     sex: new FormControl(''),
     address: new FormControl(''),
     tNum: new FormControl(''),
-    password: new FormControl('')
+    password: new FormControl(''),
+    hobby: new FormControl('')
   });
 
 
@@ -27,6 +28,7 @@ export class UpdateComponent implements OnInit {
   get address(): any { return this.editUsers.get('address'); }
   get tNum(): any { return this.editUsers.get('tNum'); }
   get password(): any { return this.editUsers.get('password'); }
+  get hobby(): any { return this.editUsers.get('password'); }
   constructor(private router: ActivatedRoute, private service: DoUsersService) { }
 
   ngOnInit(): void {
@@ -38,7 +40,8 @@ export class UpdateComponent implements OnInit {
         email: new FormControl(result.email),
         address: new FormControl(result.address),
         tNum: new FormControl(result.tNum),
-        password: new FormControl(result.password)
+        password: new FormControl(result.password),
+        hobby: new FormControl(result.hobby)
       });
     });
   }

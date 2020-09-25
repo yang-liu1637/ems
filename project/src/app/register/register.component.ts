@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 import { validateRex } from './validate-register';
-import {DoUsersService} from '../../assets/service/doUsers.service';
+import {DoUsersService} from '../service/doUsers.service';
 import {Router} from '@angular/router';
 import {timeInterval} from 'rxjs/operators';
 
@@ -23,8 +23,6 @@ export class RegisterComponent implements OnInit{
   });
 // 添加 fb 属性，用来创建表单
   constructor(private fb: FormBuilder , private service: DoUsersService) { }
-// 定义表单
-
 // 表单验证不通过时显示的错误消息
   formErrors = {
     username: '',
@@ -168,7 +166,8 @@ export class RegisterComponent implements OnInit{
     });
     // 每次表单数据发生变化的时候更新错误信息
 
-    this.addUsers.valueChanges.subscribe(data => this.onValueChanged(data));
+    this.addUsers.valueChanges
+      .subscribe(data => this.onValueChanged(data));
     // 初始化错误信息
 
     this.onValueChanged();

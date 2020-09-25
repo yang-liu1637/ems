@@ -1,0 +1,8 @@
+<form [formGroup]="fg">
+  <label>性别:</label>
+  <input type="radio" id="male" name="sex" value='1' formControlName="sex">
+  <label for="male">男</label>
+  <input type="radio" id="female" name="sex"  value='2' formControlName="sex">
+  <label for="female">女</label>
+  <button (click)="run()">跳转</button>
+</form>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DoUsersService} from '../../../assets/service/doUsers.service';
+import {DoUsersService} from '../../service/doUsers.service';
 
 @Component({
   selector: 'app-list',
@@ -15,6 +15,7 @@ export class ListComponent implements OnInit {
 
   ngOnInit(): void {
     this.users.getList().subscribe((result) => {
+      // 订阅server里面的list
       this.collection = result;
     });
   }

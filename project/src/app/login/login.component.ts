@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {LoginUsersService} from '../../assets/service/loginUsers.service';
+import {LoginUsersService} from '../service/loginUsers.service';
 import { Router } from '@angular/router';
-import {CommonService} from '../../assets/service/common.service';
+import {CommonService} from '../service/common.service';
 import {Observable} from 'rxjs';
-import {DoUsersService} from '../../assets/service/doUsers.service';
+import {DoUsersService} from '../service/doUsers.service';
 import {validateRex} from '../register/validate-register';
 
 @Component({

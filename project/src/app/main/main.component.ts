@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {Hero} from '../hero';
-import {LoginUsersService} from '../../assets/service/loginUsers.service';
+import {LoginUsersService} from '../service/loginUsers.service';
 import {ActivatedRoute, Router} from '@angular/router';
-import {DoUsersService} from '../../assets/service/doUsers.service';
+import {DoUsersService} from '../service/doUsers.service';
 import {FormControl, FormGroup} from '@angular/forms';
-import {CommonService} from '../../assets/service/common.service';
+import {CommonService} from '../service/common.service';
 import {Observable} from 'rxjs';
 
 
@@ -19,11 +19,14 @@ export class MainComponent implements OnInit {
     name: 'Windstorm'
   };
 
- constructor() { }
+  username: string[];
+  constructor(private message: CommonService, private  loginUsersService: LoginUsersService , private router: Router) { }
 
   ngOnInit(): void {
-
+    this.message.getMessage().subscribe((result) => {
+      this.username = result;
+     /* setTimeout('window.location.reload();', 0);*/
+    });
   }
-
 }
 

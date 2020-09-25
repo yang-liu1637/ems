@@ -10,15 +10,17 @@
       <span class="error" *ngIf="username.invalid && username.touched">请填写用户名</span>
     </div>
     <div class="form-group">
-      <label>性别：</label>
-      <input formControlName="sex" type="text" class="form-control" placeholder="sex" required>
-      <span class="error" *ngIf="sex.invalid && sex.touched">请填写性别</span>
+      <label>性别:</label>
+      <input type="radio" id="male" name="sex" value='男' formControlName="sex" checked>
+      <label for="male">男</label>
+      <input type="radio" id="female" name="sex"  value='女' formControlName="sex">
+      <label for="female">女</label>
     </div>
-<!--     <div class="form-group">
+     <div class="form-group">
        <label>角色：</label>
        <input formControlName="role" type="text" class="form-control" placeholder="role" required>
        <span class="error" *ngIf="role.invalid && role.touched">请填写角色</span>
-</div>-->
+     </div>
     <div class="form-group">
       <label>个人邮箱：</label>
       <input email formControlName="email" type="email" class="form-control" placeholder="email" required>
@@ -31,8 +33,13 @@
     </div>
     <div class="form-group">
       <label>公司地址：</label>
-      <input formControlName="address" type="text" class="form-control" placeholder="address" required>
-      <span class="error" *ngIf="address.invalid && address.touched">请填写地址</span>
+      <select formControlName="address" style="color: #000" >
+        <option  value="辽宁省大连市" class="form-control" selected="selected">辽宁省大连市</option>
+        <option  value="辽宁省锦州市" class="form-control">辽宁省锦州市</option>
+        <option  value="山东省烟台市" class="form-control">山东省烟台市</option>
+      </select>
+     <!-- <input formControlName="address" type="text" class="form-control" placeholder="address" required>
+      <span class="error" *ngIf="address.invalid && address.touched">请填写地址</span>-->
     </div>
     <div class="form-group">
       <label>电话号码：</label>

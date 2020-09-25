@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {LoginUsersService} from '../../assets/service/loginUsers.service';
+import {LoginUsersService} from '../service/loginUsers.service';
 import {Router} from '@angular/router';
-import {CommonService} from '../../assets/service/common.service';
+import {CommonService} from '../service/common.service';
 import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
