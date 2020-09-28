@@ -3,10 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import {BrowserModule} from '@angular/platform-browser';
 import {LoginUsersService} from './service/loginUsers.service';
 import {DoUsersService} from './service/doUsers.service';
+import {AuthorizationGuardService} from './service/authorizationGuard.service';
+import {HttpClientModule} from '@angular/common/http';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./show/show.module').then(m => m.ShowModule), pathMatch: 'full' },
-  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule), },
+  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule),
+    canActivate: [AuthorizationGuardService] },
   { path: 'admin/add', loadChildren: () => import('./admin/add/add.module').then(m => m.AddModule) },
   { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
   { path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) },
@@ -17,8 +20,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, RouterModule.forRoot(routes), HttpClientModule],
   exports: [RouterModule],
-  providers: [ LoginUsersService, DoUsersService]
+  providers: [ LoginUsersService, DoUsersService, AuthorizationGuardService]
 })
 export class AppRoutingModule { }
