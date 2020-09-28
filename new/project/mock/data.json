@@ -8,7 +8,7 @@
       "address": "辽宁省大连市",
       "tNum": "18304381637",
       "password": "password1",
-      "hobby": null,
+      "hobby": "唱歌",
       "id": 1
     },
     {
@@ -19,7 +19,7 @@
       "address": "辽宁省大连市",
       "tNum": "18304110101",
       "password": "password2",
-      "hobby": null,
+      "hobby": "跳舞",
       "id": 2
     },
     {
@@ -30,7 +30,7 @@
       "address": "辽宁省大连市",
       "tNum": "18304110101",
       "password": "password3",
-      "hobby": null,
+      "hobby": "下棋",
       "id": 3
     },
     {
@@ -41,7 +41,7 @@
       "address": "辽宁省锦州市",
       "tNum": "18304110101",
       "password": "password4",
-      "hobby": null,
+      "hobby": "打篮球",
       "id": 4
     },
     {
@@ -52,7 +52,7 @@
       "address": "辽宁省大连市",
       "tNum": "18304110101",
       "password": "password",
-      "hobby": null,
+      "hobby": "游泳",
       "id": 5
     },
     {
@@ -61,9 +61,9 @@
       "sex": "男",
       "email": "admin2@admin.com",
       "address": "辽宁省大连市",
-      "tNum": "18304381633",
+      "tNum": "18304381637",
       "password": "password",
-      "hobby": null,
+      "hobby": "打游戏",
       "id": 6
     }
   ]
