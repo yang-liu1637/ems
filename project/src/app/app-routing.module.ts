@@ -16,9 +16,9 @@ import {RadioComponent} from './radio/radio.component';
 const routes: Routes = [
   {path: '', component: ShowComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent},
+  {path: 'register', component: RegisterComponent,  canActivate: [LoginUsersGuard]},
   {path: 'users', component: UsersComponent}, /*,  canActivate: [LoginUsersGuard]*/
-  {path: 'main', component: MainComponent},
+  {path: 'main', component: MainComponent,  canActivate: [LoginUsersGuard]},
   {path: 'admin', component: AdminComponent},
   {path: 'admin/list', component: ListComponent},
   {path: 'admin/add', component: AddComponent},

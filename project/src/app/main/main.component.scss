@@ -57,12 +57,36 @@
       height: 100rem;
       background-color: #b42525 ;
       color: white;
+      .swiper{
+        width: 100%;
+        text-align: center;
+        color: #51d5e2;
+      }
+      .main_lis{
+        width: 100%;
+        li{
+          font-size: 2rem;
+          line-height: 4rem;
+          text-align: center;
+          color: #085063;
+          border-bottom: 1px solid #666;
+          border-radius: 0.5rem;
+          background-color: white;
+          margin: 0.5rem;
+        }
+      }
     }
     .main_right{
       flex: 2;
       height: 100rem;
       background-color: #085063;
       color:white ;
+      .users_image{
+        width: 100%;
+        height: 300px;
+        border: 2px solid #000;
+        text-align: center;
+      }
     }
   }
 
