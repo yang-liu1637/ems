@@ -24,8 +24,7 @@ const route: Routes = [{ path: '', component: MainComponent }];
   ],
   exports: [
     MainComponent
-  ],
-  providers: [LoginUsersService, DoUsersService]
+  ]
 })
 export class MainModule { }
 

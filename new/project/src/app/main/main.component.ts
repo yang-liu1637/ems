@@ -12,15 +12,9 @@ import {CommonService} from '../service/common.service';
 })
 export class MainComponent implements OnInit {
 
-
-  username: string[];
-  constructor(private message: CommonService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.message.getMessage().subscribe((result) => {
-      this.username = result;
-     /* setTimeout('window.location.reload();', 0);*/
-    });
   }
 }
 

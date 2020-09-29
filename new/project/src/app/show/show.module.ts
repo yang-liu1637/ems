@@ -23,13 +23,6 @@ const route: Routes = [{ path: '', component: ShowComponent }];
     ReactiveFormsModule,
     NavbarModule,
     RegisterModule,
-  ],
-  providers: [
-    HttpClient,
-    LoginUsersService,
-    LoginUser,
-    CommonService,
-    DoUsersService
   ]
 })
 export class ShowModule { }

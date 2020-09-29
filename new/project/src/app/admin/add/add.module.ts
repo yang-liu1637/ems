@@ -22,7 +22,6 @@ const route: Routes = [{ path: '', component: AddComponent }];
     ReactiveFormsModule,
     AdminNavModule,
 
-  ],
-  providers: [DoUsersService, LoginUsersService]
+  ]
 })
 export class AddModule { }

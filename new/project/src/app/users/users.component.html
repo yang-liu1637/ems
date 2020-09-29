@@ -1,4 +1,8 @@
 <app-log-nav></app-log-nav>
-<h3>这里是用户页面</h3>
-<div>当前用户 {{username }} </div>
-
+<h3 style="text-align: center">多次点击怎么才能做到只响应最后一次 angular防抖事件</h3>
+<div class="try">
+  <button   (click.once)="login()" style="display: block; margin: 3rem auto;font-size: 28px;line-height: 56px">请点击</button>
+  <div class="timer" *ngIf="res">
+    <p class="alert alert-danger">成功</p>
+  </div>
+</div>

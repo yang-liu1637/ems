@@ -17,8 +17,7 @@ const route: Routes = [{ path: 'admin', component: AdminComponent }, { path: '/a
     CommonModule,
     RouterModule,
     RouterModule.forChild(route),
-  ],
-  providers: [DoUsersService]
+  ]
 })
 export class AdminNavModule {
 

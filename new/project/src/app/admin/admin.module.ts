@@ -18,7 +18,6 @@ const route: Routes = [{ path: '', component: AdminComponent }];
     HttpClientModule,
     RouterModule.forChild(route),
     AdminNavModule,
-  ],
-  providers: [LoginUsersService]
+  ]
 })
 export class AdminModule { }

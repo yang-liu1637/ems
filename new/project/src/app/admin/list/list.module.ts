@@ -20,10 +20,6 @@ const route: Routes = [{ path: '', component: ListComponent }];
     RouterModule.forChild(route),
     AdminNavModule,
 
-  ],
-  providers: [
-    DoUsersService,
-    LoginUsersService
   ]
 })
 

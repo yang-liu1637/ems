@@ -21,9 +21,6 @@ const route: Routes = [{ path: '', component: UpdateComponent }];
     AdminNavModule,
     ReactiveFormsModule,
    RouterModule.forChild(route),
-  ],
-  providers: [
-    DoUsersService
   ]
 })
 

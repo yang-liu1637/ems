@@ -6,7 +6,7 @@
       "sex": "女",
       "email": "user1@users.com",
       "address": "辽宁省大连市",
-      "tNum": "18304381637",
+      "tNum": "18304381639",
       "password": "password1",
       "hobby": "唱歌",
       "id": 1
@@ -65,6 +65,16 @@
       "password": "password",
       "hobby": "打游戏",
       "id": 6
+    },
+    {
+      "username": "刘洋",
+      "password": "password1",
+      "sex": "女",
+      "email": "852213@13.cn",
+      "address": "wewewee",
+      "tNum": "18300000000",
+      "role": "User",
+      "id": 7
     }
   ]
 }

@@ -29,7 +29,6 @@ const route: Routes = [
   entryComponents: [],
   exports: [
     LoginComponent,
-  ],
-  providers: [LoginUsersService]
+  ]
 })
 export class LoginModule { }

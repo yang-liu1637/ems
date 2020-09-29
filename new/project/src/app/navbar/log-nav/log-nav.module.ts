@@ -24,13 +24,6 @@ const route: Routes = [ { path: 'users', component: UsersComponent }, { path: 'm
   ],
   exports: [
     LogNavComponent
-  ],
-  providers: [
-    HttpClient,
-    LoginUsersService,
-    LoginUser,
-    CommonService,
-    DoUsersService
   ]
 })
 export class LogNavModule {

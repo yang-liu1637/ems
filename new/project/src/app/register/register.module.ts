@@ -18,7 +18,6 @@ const route: Routes = [{ path: 'register', component: RegisterComponent }];
   ],
   exports: [
     RegisterComponent
-  ],
-  providers: [DoUsersService]
+  ]
 })
 export class RegisterModule { }

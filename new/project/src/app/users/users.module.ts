@@ -21,9 +21,6 @@ const route: Routes = [{ path: '', component: UsersComponent }];
     ReactiveFormsModule,
     RouterModule.forChild(route),
     LogNavModule,
-  ],
-  providers: [
-    LoginUsersService
   ]
 })
 export class UsersModule { }
