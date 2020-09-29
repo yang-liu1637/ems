@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
-import {LoginUsersService} from '../service/loginUsers.service';
 import {HttpClientModule} from '@angular/common/http';
 import {NavbarModule} from '../navbar/navbar.module';
 
@@ -23,7 +22,7 @@ const route: Routes = [
     CommonModule,
     HttpClientModule,
     ReactiveFormsModule,
-     RouterModule.forChild(route),
+    RouterModule.forChild(route),
     NavbarModule,
   ],
   entryComponents: [],

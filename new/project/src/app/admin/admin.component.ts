@@ -10,6 +10,8 @@ import {Router} from '@angular/router';
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent implements OnInit {
+  // 管道时间
+  today: Date = new Date();
   // 表单 username
  username: string[];
   constructor(private message: CommonService, private  loginUsersService: LoginUsersService , private router: Router) { }

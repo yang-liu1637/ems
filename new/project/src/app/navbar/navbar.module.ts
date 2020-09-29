@@ -4,10 +4,11 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from '../main/main.component';
 import {UsersComponent} from '../users/users.component';
+import {RegisterComponent} from '../register/register.component';
 
 
 
-const route: Routes = [{ path: 'main', component: MainComponent }, { path: 'users', component: UsersComponent }];
+const route: Routes = [{ path: 'main', component: MainComponent }, { path: 'register', component: RegisterComponent }];
 @NgModule({
   declarations: [NavbarComponent],
   exports: [

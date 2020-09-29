@@ -1,65 +1,39 @@
-import {Component, Directive, ElementRef, EventEmitter, HostListener, Input, OnDestroy, OnInit, Output, Renderer2} from '@angular/core';
-import {throttleTime} from 'rxjs/operators';
-import {Subject, Subscription} from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import {Subject} from 'rxjs';
+import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
 
-/*
+
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit {
+  public subject = new Subject();
+  private searchTerms = new Subject<string>();
   res = false;
-  touch(): void{
-    this.res = true;
+
+  search(serachParam: string): void {
+    this.searchTerms.next(serachParam);
   }
     ngOnInit(): void {
+      this.subject.pipe(debounceTime(500)).subscribe(() => { // 请求防抖 500毫秒
+          console.log(11); // 防抖成功 控制台返回11
+        }
+      );
+      this.searchTerms
+        .pipe(
+          // 请求防抖 300毫秒
+          debounceTime(300),
+          distinctUntilChanged())
+        .subscribe(() => {// 后续操作
+          this.res = true;
+          console.log(this.res); // 用户输入有效控制台刷新res为true的次数
+        });
     }
-
-}*/
-
-@Directive({
-  // tslint:disable-next-line:directive-selector
-  selector: '[click.once]'
-})
-// tslint:disable-next-line:directive-class-suffix
-export class UsersComponent implements OnInit, OnDestroy {
-  // tslint:disable-next-line:no-output-rename
-  @Output('click.once') clickCall: EventEmitter<MouseEvent> = new EventEmitter();
-  @Input() duration = 2000; // 必须是数字，传入时要用绑定语法
-  private $sub = new Subject<any>();
-  private subscription: Subscription;
-
-  constructor(
-    private renderer: Renderer2, // Angular 2.x导入Renderer
-    private element: ElementRef
-  ) {
+  public demo(): void { // 单击demo 控制台返回22 若单击有效 则返回subject11
+    console.log(22);
+    this.subject.next();
   }
 
-  ngOnInit(): void {
-    // 如此绑定事件亦可
-    // this.renderer.listen(
-    //   this.element.nativeElement, 'click', event => {
-    //     event.preventDefault();
-    //     event.stopPropagation();
-    //     this.$sub.next(event);
-    //   }
-    // );
-    this.subscription = this.$sub.pipe(
-      throttleTime(this.duration)
-    ).subscribe(e => {
-      this.clickCall.emit(e);
-    });
-  }
-
-  @HostListener('click', ['$event'])
-  clickEvent(event: MouseEvent): void {
-    event.preventDefault();   // 通常是不需要冒泡的
-    event.stopPropagation();
-    this.$sub.next(event);
-  }
-
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
-  }
 }

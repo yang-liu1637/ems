@@ -1,5 +1,7 @@
 .main{
   width: 100%;
+  margin-top: 7rem;
+  padding: 0;
   .main_body{
     width: 70%;
     margin: 1% auto;
@@ -67,12 +69,47 @@
         li{
           font-size: 2rem;
           line-height: 4rem;
-          text-align: center;
           color: #085063;
           border-bottom: 1px solid #666;
           border-radius: 0.5rem;
           background-color: white;
           margin: 0.5rem;
+          .li_title{
+            width: 100%;
+            font-weight: bold;
+            margin-left: 0.3rem;
+
+          }
+          .li_content{
+            width: 100%;
+            display: flex;
+            .li_img{
+              flex: 2;
+              display: flex;
+              img{
+                width: 25%;
+                margin: 0.3rem;
+                border-radius: 50%;
+              }
+              span{
+                width: 70%;
+                font-size: 1.5rem;
+              }
+            }
+            .li_links{
+              flex: 8.5;
+              font-size: 1.5rem;
+              display: flex;
+            }
+            .li_icon{
+              flex: 1.5;
+              display: flex;
+              span{
+                width: 50%;
+              }
+            }
+          }
+
         }
       }
     }

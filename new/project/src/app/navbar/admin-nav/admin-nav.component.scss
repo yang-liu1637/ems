@@ -17,7 +17,6 @@ nav {
   line-height: 6rem;
   background-color: #24292e;
   font-weight: bold;
-  border-radius: 0.2rem;
   .login_nav{
     width: 100%;
     display: flex;
@@ -47,10 +46,10 @@ nav {
 
 
     .nav_right{
-      width: 5%;
+      width: 4%;
       display: flex;
       padding: 0.3rem;
-      margin-left: 65%;
+      margin-left: 66%;
       flex-wrap: wrap;
       li{
         display: block;

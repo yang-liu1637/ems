@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 
-import {CommonService} from '../service/common.service';
 
 
 
@@ -11,10 +10,12 @@ import {CommonService} from '../service/common.service';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  src: string;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.src = 'assets/images/main/users.jpg' ;
   }
 }
 

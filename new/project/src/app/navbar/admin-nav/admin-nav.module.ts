@@ -4,7 +4,6 @@ import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
 import {AdminComponent} from '../../admin/admin.component';
 import {AddComponent} from '../../admin/add/add.component';
-import {DoUsersService} from '../../service/doUsers.service';
 
 
 const route: Routes = [{ path: 'admin', component: AdminComponent }, { path: '/admin/add', component: AddComponent }];

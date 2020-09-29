@@ -22,7 +22,7 @@ export class RegisterComponent implements OnInit{
     password: new FormControl('')
   });
 // 添加 fb 属性，用来创建表单
-  constructor(private fb: FormBuilder , private service: DoUsersService) { }
+  constructor(private fb: FormBuilder , private service: DoUsersService, private router: Router) { }
 // 表单验证不通过时显示的错误消息
   formErrors = {
     username: '',
@@ -80,8 +80,9 @@ export class RegisterComponent implements OnInit{
       console.log(result);
     });
     this.addUsers.reset({});
-    setTimeout('alert("注册成功！即将跳转登录页面")', 0);
-    setTimeout('window.location.href = "http://localhost:4200/login";', 1500);
+    setTimeout('alert("注册成功！请再次登录")', 0);
+    /*setTimeout('window.location.href = "http://localhost:4200/login";', 1500);*/
+    this.router.navigate(['/login']).then(r => true); // 跳转到新的路由页
   }
 // 构建表单方法
 

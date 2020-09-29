@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BrowserModule} from '@angular/platform-browser';
-import {LoginUsersService} from './service/loginUsers.service';
-import {DoUsersService} from './service/doUsers.service';
 import {AuthorizationGuardService} from './service/authorizationGuard.service';
 import {HttpClientModule} from '@angular/common/http';
 
