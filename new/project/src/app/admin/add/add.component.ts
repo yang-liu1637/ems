@@ -8,24 +8,8 @@ import {DoUsersService} from '../../service/doUsers.service';
   styleUrls: ['./add.component.scss']
 })
 export class AddComponent implements OnInit {
-  // 建立新的FormGroup
-  addUsers = new FormGroup({
-    username: new FormControl(''),
-    email: new FormControl(''),
-    sex: new FormControl(''),
-    address: new FormControl(''),
-    tNum: new FormControl(''),
-    role: new FormControl(''),
-    password: new FormControl(''),
-    hobby: new FormControl('')
-  });
-  // 跳转提示
-  alert: boolean;
 
   constructor(private service: DoUsersService) { }
-
-  ngOnInit(): void {
-  }
   // formControl 更新输入的表单信息
   get username(): any {
     return this.addUsers.get('username');
@@ -54,8 +38,31 @@ export class AddComponent implements OnInit {
   get password(): any {
     return this.addUsers.get('password');
   }
-  get hobby(): any {
-    return this.addUsers.get('hobby');
+
+
+  hobbies = [
+    { id: 1, title: '电影', value: '电影' },
+    { id: 2, title: '音乐', value: '音乐' },
+    { id: 3, title: '登山', value: '登山' },
+    { id: 4, title: '阅读', value: '阅读' },
+    { id: 5, title: '游泳', value: '游泳' },
+  ];
+  // 建立新的FormGroup
+  addUsers = new FormGroup({
+    username: new FormControl(''),
+    email: new FormControl(''),
+    sex: new FormControl(''),
+    address: new FormControl(''),
+    tNum: new FormControl(''),
+    role: new FormControl(''),
+    password: new FormControl(''),
+    hobby: new FormControl('')
+  });
+  // 跳转提示
+  alert: boolean;
+  hobby: any;
+
+  ngOnInit(): void {
   }
 
   onSubmit(): any {
@@ -65,8 +72,6 @@ export class AddComponent implements OnInit {
     });
     this.alert = true;
     this.addUsers.reset({});
-    const {sex} = this.addUsers.value;
-    console.log(sex);
   }
 
 }

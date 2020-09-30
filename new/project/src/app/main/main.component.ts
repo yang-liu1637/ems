@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {DoUsersService} from '../service/doUsers.service';
+import {MainUsersService} from '../service/mainUsers.service';
 
 
 
@@ -10,12 +12,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  src: string;
+  collection: any = [];
 
-  constructor() { }
+  constructor(private users: MainUsersService) { }
 
   ngOnInit(): void {
-    this.src = 'assets/images/main/users.jpg' ;
+    this.users.getList().subscribe((result) => {
+      // 订阅server里面的list
+      this.collection = result;
+    });
   }
 }
 

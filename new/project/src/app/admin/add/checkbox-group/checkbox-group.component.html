@@ -1,0 +1,7 @@
+<label >{{ groupName }}</label>
+<ul *ngFor="let e of options">
+  <input type="checkbox"  [disabled]="disabled"
+         [checked]="this.model.length && this.model.indexOf(e.value) > -1"
+         [value]="e[value]"
+      (change)="setValue(e)">{{ e[display] }}
+</ul>

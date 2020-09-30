@@ -4,6 +4,7 @@ import {LoginUsersService} from './loginUsers.service';
 import {LoginUser} from './models/loginUser.model';
 import {CommonService} from './common.service';
 import {DoUsersService} from './doUsers.service';
+import {MainUsersService} from './mainUsers.service';
 
 @NgModule({
   declarations: [],
@@ -16,6 +17,7 @@ import {DoUsersService} from './doUsers.service';
     LoginUser,
     CommonService,
     DoUsersService,
+    MainUsersService
   ]
 })
 export class LoginUsersServiceModule { }

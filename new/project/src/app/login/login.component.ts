@@ -60,16 +60,11 @@ export class LoginComponent implements OnInit{
           this.loginService.login(this.loginForm.value);
           if (val.role === 'Admin'){
             localStorage.setItem('username', this.username);
-            this.router.navigateByUrl('/admin');
-            this.message.add(this.username);
+            this.router.navigate(['/admin']).then(r =>  this.message.add(this.username));
           }
           if (val.role === 'User'){
             localStorage.setItem('username', this.username);
-            this.router.navigate(['./main']).then(
-              (res) => {
-                res = true ;
-              });
-            this.message.add(this.username);
+            this.router.navigate(['./main']).then(r => {});
           }
         } else{
           this.msg = true;

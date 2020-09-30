@@ -45,7 +45,7 @@
       "id": 4
     },
     {
-      "username": "admin1",
+      "username": "admin4",
       "role": "Admin",
       "sex": "男",
       "email": "admin1@admin.com",
@@ -177,7 +177,7 @@
       "id": 16
     },
     {
-      "username": "admin1",
+      "username": "admin6",
       "role": "Admin",
       "sex": "男",
       "email": "admin1@admin.com",
@@ -197,36 +197,93 @@
       "password": "password",
       "hobby": "打游戏",
       "id": 18
+    },
+    {
+      "username": "0",
+      "email": "0@1",
+      "sex": "女",
+      "address": "辽宁省锦州市",
+      "tNum": "y",
+      "role": "0",
+      "password": "y",
+      "hobby": [
+        "音乐",
+        "电影",
+        "电"
+      ],
+      "id": 19
+    },
+    {
+      "username": "45",
+      "email": "45@1",
+      "sex": "女",
+      "address": "辽宁省大连市",
+      "tNum": "213",
+      "role": "45",
+      "password": "21",
+      "hobby": [
+        "阅读",
+        "登山"
+      ],
+      "id": 20
+    },
+    {
+      "username": "1",
+      "email": "1@1",
+      "sex": "男",
+      "address": "辽宁省锦州市",
+      "tNum": "12",
+      "role": "1",
+      "password": "1",
+      "hobby": [
+        "登山",
+        "阅读"
+      ],
+      "id": 21
+    },
+    {
+      "username": "1",
+      "email": "1@1",
+      "sex": "女",
+      "address": "辽宁省锦州市",
+      "tNum": "13",
+      "role": "1",
+      "password": "1",
+      "hobby": [
+        "电影",
+        "音乐"
+      ],
+      "id": 22
     }
   ],
   "userList": [
     {
       "title": "我是标题1",
-      "images": "../src/assets/images/main/users.jpg",
+      "images": "assets/images/main/users.jpg",
       "name": "用户名字1",
       "links": "转自于链接1"
     },
     {
       "title": "我是标题2",
-      "images": "../src/assets/images/main/users.jpg",
+      "images": "assets/images/main/users.jpg",
       "name": "用户名字2",
       "links": "转自于链接2"
     },
     {
       "title": "我是标题3",
-      "images": "../src/assets/images/main/users.jpg",
+      "images": "assets/images/main/users.jpg",
       "name": "用户名字3",
       "links": "转自于链接3"
     },
     {
       "title": "我是标题4",
-      "images": "../src/assets/images/main/users.jpg",
+      "images": "assets/images/main/users.jpg",
       "name": "用户名字4",
       "links": "转自于链接4"
     },
     {
       "title": "我是标题5",
-      "images": "../src/assets/images/main/users.jpg",
+      "images": "assets/images/main/users.jpg",
       "name": "用户名字5",
       "links": "转自于链接5"
     }

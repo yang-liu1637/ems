@@ -13,8 +13,8 @@ export class UsersComponent implements OnInit {
   private searchTerms = new Subject<string>();
   res = false;
 
-  search(serachParam: string): void {
-    this.searchTerms.next(serachParam);
+  search(searchParam: string): void {
+    this.searchTerms.next(searchParam);
   }
     ngOnInit(): void {
       this.subject.pipe(debounceTime(500)).subscribe(() => { // 请求防抖 500毫秒

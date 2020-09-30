@@ -46,6 +46,12 @@
       <input formControlName="tNum" type="text" class="form-control" placeholder="Telephone Number" required>
       <span class="error" *ngIf="tNum.invalid && tNum.touched">请填写电话号</span>
     </div>
+    <!--<div class="form-group">
+      <label>爱好：</label>
+      <input formControlName="hobby" type="checkbox" value="唱歌" required>唱歌
+    </div>-->
+    <app-checkbox-group [groupName]="'爱好：'" [options]="hobbies" [display]="'title'"
+                        [value]="'value'"  formControlName="hobby"></app-checkbox-group>
     <button type="submit" class="btn btn-primary" [disabled]="addUsers.invalid">添加</button>
   </form>
 </div>
