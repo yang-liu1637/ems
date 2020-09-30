@@ -1,0 +1,32 @@
+<form (ngSubmit)="checkUserInput(txtUserName.value,txtPassword.value)">
+  <div class="container">
+    <p *ngIf="correctMessage">
+      <ngb-alert type="success" [dismissible]="false">欢迎{{txtUserName.value}}!</ngb-alert>
+    </p>
+    <p *ngIf="incorrectMessage">
+      <ngb-alert type="danger" [dismissible]="false">用户名或密码错误</ngb-alert>
+    </p>
+    <div class="form-row">
+      <label>用户名</label>
+      <div class="input-group">
+        <input type="text" class="form-control" [class.is-invalid]="txtUNameIsInvalid" id="validationCustomUsername"
+               #txtUserName required>
+        <div class="invalid-feedback">
+          请输入用户名
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <label>密码</label>
+      <div class="input-group">
+        <input type="password" class="form-control" [class.is-invalid]="txtPWordIsInvalid" id="validationCustomPassword"
+               #txtPassword required>
+        <div class="invalid-feedback">
+          请输入密码
+        </div>
+      </div>
+    </div>
+    <br/>
+    <button class="btn btn-primary" type="submit">登录</button>
+  </div>
+</form>

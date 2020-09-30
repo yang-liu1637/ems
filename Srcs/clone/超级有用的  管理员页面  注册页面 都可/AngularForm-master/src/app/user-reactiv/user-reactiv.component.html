@@ -1,0 +1,126 @@
+<div class="card bg-light mb-2">
+  <div class="card-header"> </div>
+  <div>
+    <a href="#" class="btn btn-light col-lg-2 btn-circle">Button 1</a>
+    <a href="#" class="btn btn-light col-lg-2 btn-circle">Button 2</a>
+  </div>
+</div>
+<div class="m-2">
+  <form [formGroup]="submittedForm" (ngSubmit)="onSubmit()">
+    <h5>Personal user data</h5>
+    <hr />
+    <div class="form-row">
+      <div class="form-group col-md-3">
+        <label for="id">id</label>
+        <input
+          id="id"
+          placeholder="id"
+          class="form-control"
+          disabled>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="userId">User Id</label>
+        <input
+          type="text"
+          class="form-control"
+          id="userId"
+          placeholder="userId"
+          formControlName="userId"
+        >
+      </div>
+      <div class="form-group col-md-6">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="email"
+          formControlName="email">
+        <span
+          *ngIf="!submittedForm.get('email').valid && submittedForm.get('email').touched"
+          class="help-block">Please enter a valid email address!</span>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="firstName">First Name</label>
+        <input type="text"
+               class="form-control"
+               id="firstName"
+               placeholder="firstName"
+               formControlName="firstName">
+      </div>
+      <div class="form-group col-md-3">
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          placeholder="lastName"
+          formControlName="lastName">
+        <span
+          *ngIf="!submittedForm.get('lastName').valid && submittedForm.get('lastName').touched"
+          class="help-block">Please enter a valid name!</span>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="company">Company</label>
+        <select
+          id="company"
+          class="form-control"
+          formControlName="company">
+          <option disabled selected hidden value =''>Company</option>
+          <option *ngFor="let company of company">{{company}}</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="mobilePhone">Mobile Phone</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="mobilePhone"
+          placeholder="mobilePhone"
+          formControlName="mobilePhone">
+        <span
+          *ngIf="!submittedForm.get('mobilePhone').valid && submittedForm.get('mobilePhone').touched"
+          class="help-block">Please enter a valid mobile phone number!</span>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="officePhone">Office Phone</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="officePhone"
+          placeholder="officePhone"
+          formControlName="officePhone">
+        <span
+          *ngIf="!submittedForm.get('officePhone').valid && submittedForm.get('officePhone').touched"
+          class="help-block">Please enter a valid office phone number!</span>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputAddress">Address</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="address"
+          formControlName="address">
+      </div>
+
+    </div>
+    <button
+      type="submit"
+      class="btn btn-danger col-lg-1 btn-md btn-circle float-right">Save</button>
+    <br />
+  </form>
+  <br />
+  <hr />
+  <footer class = 'm-4'>
+    <small class="text-muted">
+      <span>CreatedDate: some date </span>
+      <span>CreatedBy: userId</span>
+    </small>
+    <br/>
+    <small class="text-muted">
+      <span>LastModifiedDate: someDate  </span>
+      <span>LastModifiedBy: userId</span>
+    </small>
+  </footer>
+</div>

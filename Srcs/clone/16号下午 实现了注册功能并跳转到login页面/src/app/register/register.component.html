@@ -1,0 +1,89 @@
+<!--
+<h3 class="text-center">注册</h3>
+<form [formGroup]="registerForm" >
+  <div class="form-group">
+&lt;!&ndash;    <div *ngIf="bothoter" class="showerr alert alert-danger">用户名或密码为空，请正确填写</div>&ndash;&gt;
+    <label>用户名：</label>
+    <input formControlName="userid"
+           type="text" id="username" #username
+           class="form-control" >
+    <div *ngIf="formErrors.userid" class="showerr alert alert-danger">{{ formErrors.userid }}</div>
+    <label>密码：</label>
+    <input formControlName="password"
+           type="text" id="password" #password
+           class="form-control" >
+    <div *ngIf="formErrors.password" class="showerr alert alert-danger">{{ formErrors.password }}</div>
+    <label for="email">邮箱：</label>
+    <input type="email" id="email" #email
+           class="form-control" >
+    <label for="email">生日：</label>
+    <input type="date" id="birthday" #birthday
+           class="form-control" >
+    <label>性别:</label>
+    <input type="radio" name="sex">男
+    <input type="radio" name="sex">女
+
+
+    <label>兴趣:</label>
+    <input type="checkbox">游泳
+    <input type="checkbox">绘画
+    <input type="checkbox">摄影
+    <input type="checkbox">健身
+    <input type="checkbox">唱歌
+
+    <label>是否成为管理员:</label>
+    <input type="radio" name="choose">是
+    <input type="radio" name="choose">否
+  </div>
+  <div class="submit">
+    <button>提交</button>
+  </div>
+</form>
+-->
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>SUCCESS !!!</strong> Data is submitted successfully...!
+  <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<h3 class="text-center">注册</h3>
+<div>
+  <form [formGroup]="addUsers" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>用户名：</label>
+      <input formControlName="username" type="text" class="form-control" placeholder="username" required>
+      <span class="error" *ngIf="username.invalid && username.touched">请填写用户名</span>
+    </div>
+    <div class="form-group">
+      <label>性别：</label>
+      <input formControlName="sex" type="text" class="form-control" placeholder="sex" required>
+      <span class="error" *ngIf="sex.invalid && sex.touched">请填写性别</span>
+    </div>
+   <!-- <div class="form-group">
+      <label>角色：</label>
+      <input formControlName="role" type="text" class="form-control" placeholder="role" required>
+      <span class="error" *ngIf="role.invalid && role.touched">请填写角色</span>
+    </div>-->
+    <div class="form-group">
+      <label>个人邮箱：</label>
+      <input email formControlName="email" type="email" class="form-control" placeholder="email" required>
+      <span class="error" *ngIf="email.invalid && email.touched">请正确填写邮箱</span>
+    </div>
+    <div class="form-group">
+      <label>密码：</label>
+      <input formControlName="password" type="text" class="form-control" placeholder="password" required>
+      <span class="error" *ngIf="password.invalid && password.touched">请填写密码</span>
+    </div>
+    <div class="form-group">
+      <label>公司地址：</label>
+      <input formControlName="address" type="text" class="form-control" placeholder="address" required>
+      <span class="error" *ngIf="address.invalid && address.touched">请填写地址</span>
+    </div>
+    <div class="form-group">
+      <label>电话号码：</label>
+      <input formControlName="tNum" type="text" class="form-control" placeholder="Telephone Number" required>
+      <span class="error" *ngIf="tNum.invalid && tNum.touched">请填写电话号</span>
+    </div> <!-- -->
+    <button type="submit" class="btn btn-primary" [disabled]="addUsers.invalid">提交</button>
+  </form>
+</div>

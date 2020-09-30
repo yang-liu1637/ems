@@ -1,0 +1,28 @@
+{
+  "restaurant": [
+    {
+      "name": "KFC",
+      "email": "kfc@gmail.com",
+      "address": "Shivajinagar, Pune",
+      "id": 1
+    },
+    {
+      "name": "McDonald's",
+      "email": "mcdonalds@gmail.com",
+      "address": "Kothrud, Pune",
+      "id": 2
+    },
+    {
+      "name": "Domino's",
+      "email": "dominos@gmail.com",
+      "address": "Warje, Pune",
+      "id": 3
+    },
+    {
+      "name": "Subway",
+      "email": "subway@gmail.com",
+      "address": "Kothrud, Pune",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<div class="login">
+  <img src="./assets/img/user.jpg">
+  <form [formGroup]="loginForm" class="from_login" (ngSubmit)="login()" >
+    <!-- Username -->
+    <label [ngClass]="{ 'has-error': isSubmitted && formControls.username.errors }">用户名 </label>
+      <input type="text" placeholder="Username" formControlName="username"  class="form-control"  maxlength="11"
+             #txtUserName required>
+    <div *ngIf="isSubmitted && formControls.username.errors" class="help-block">
+      <div *ngIf="formControls.username.errors.required" class="shower alert alert-danger">用户名不能为空</div>
+    </div>
+    <!-- Email -->
+    <label [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }" >邮箱</label>
+    <input type="email" placeholder="Email" formControlName="email" id="email" #email
+           class="form-control">
+    <div *ngIf="isSubmitted && formControls.email.errors" class="help-block">
+      <div *ngIf="formControls.email.errors.required" class="shower alert alert-danger">个人邮箱不能为空</div>
+    </div>
+    <!-- Password -->
+    <label [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">密码 </label>
+    <input type="password" placeholder="Password" formControlName="password" class="form-control" >
+    <div *ngIf="isSubmitted && formControls.password.errors">
+      <div *ngIf="formControls.password.errors.required" class="shower alert alert-danger">密码不能为空</div>
+    </div>
+    <!--Login-->
+    <button class="login_submit" type="submit" >登录</button>
+    <div *ngIf="msg" class="shower alert alert-danger">用户名或密码错误 若您首次登陆请先注册</div><!--用户名密码验证-->
+  </form>
+
+</div>

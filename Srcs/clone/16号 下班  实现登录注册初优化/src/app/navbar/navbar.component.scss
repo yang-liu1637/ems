@@ -1,0 +1,53 @@
+*{
+  list-style: none;
+  display: block;
+  text-decoration:none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+$maxwidth:100%;
+nav {
+  width: $maxwidth;
+  font-size: 2rem;
+  line-height: 4rem;
+  background-color: lightgray;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  .login_nav{
+    width: $maxwidth;
+    display: flex;
+    .nav_left{
+      width: $maxwidth/5;
+      display: flex;
+      padding: 0.3rem;
+      li{
+        width: $maxwidth/3;
+        p{
+          color: black;
+          text-align: center;
+        }
+      }
+    }
+    .nav_centre{
+      width: 65%;
+    }
+    .nav_right{
+      width: 15%;
+      display: flex;
+      padding: 0.3rem;
+      li{
+        width: 50%;
+      }
+    }
+  }
+}
+.out{
+  background-color: #808080;
+  border-radius: 0.3rem;
+  font-size: larger;
+}

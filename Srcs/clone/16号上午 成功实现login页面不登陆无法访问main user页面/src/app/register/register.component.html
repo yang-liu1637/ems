@@ -1,0 +1,40 @@
+<h3 class="text-center">注册</h3>
+<form [formGroup]="registerForm" >
+  <div class="form-group">
+<!--    <div *ngIf="bothoter" class="showerr alert alert-danger">用户名或密码为空，请正确填写</div>-->
+    <label>用户名：</label>
+    <input formControlName="userid"
+           type="text" id="username" #username
+           class="form-control" >
+    <div *ngIf="formErrors.userid" class="showerr alert alert-danger">{{ formErrors.userid }}</div>
+    <label>密码：</label>
+    <input formControlName="password"
+           type="text" id="password" #password
+           class="form-control" >
+    <div *ngIf="formErrors.password" class="showerr alert alert-danger">{{ formErrors.password }}</div>
+    <label for="email">邮箱：</label>
+    <input type="email" id="email" #email
+           class="form-control" >
+    <label for="email">生日：</label>
+    <input type="date" id="birthday" #birthday
+           class="form-control" >
+    <label>性别:</label>
+    <input type="radio" name="sex">男
+    <input type="radio" name="sex">女
+
+
+    <label>兴趣:</label>
+    <input type="checkbox">游泳
+    <input type="checkbox">绘画
+    <input type="checkbox">摄影
+    <input type="checkbox">健身
+    <input type="checkbox">唱歌
+
+    <label>是否成为管理员:</label>
+    <input type="radio" name="choose">是
+    <input type="radio" name="choose">否
+  </div>
+  <div class="submit">
+    <button>提交</button>
+  </div>
+</form>

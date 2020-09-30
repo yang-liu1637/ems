@@ -1,0 +1,23 @@
+form {
+  width: 90%;
+  max-width: 45em;
+  margin: auto;
+  .showerr {
+    white-space: pre-wrap;
+  }
+  label{
+    margin: 1.3rem 0.8rem 0 0;
+  }
+  .submit{
+    width: 100%;
+    margin: 5% 25% 3% 25%;
+  }
+  .submit button{
+    width: 50%;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+  }
+}

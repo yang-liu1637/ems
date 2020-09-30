@@ -1,0 +1,40 @@
+.longin{
+  width: 100%;
+  color: #000;
+  position: relative;
+}
+.login {
+  img {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    left: 45%;
+    top: 10%;
+  }
+}
+.from_login {
+  width: 90%;
+  max-width: 45em;
+  margin: 14% auto;
+  label{
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+  .login_submit{
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: green;
+    color: azure;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    font-weight: bold;
+   }
+}
+
+
+
+
+
+
+
