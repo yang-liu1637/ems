@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {BrowserModule} from '@angular/platform-browser';
 import {AuthorizationGuardService} from './service/authorizationGuard.service';
 import {HttpClientModule} from '@angular/common/http';
+import {Common} from './service/commons/common';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./show/show.module').then(m => m.ShowModule), pathMatch: 'full' },
@@ -20,6 +21,6 @@ const routes: Routes = [
 @NgModule({
   imports: [BrowserModule, RouterModule.forRoot(routes), HttpClientModule],
   exports: [RouterModule],
-  providers: [ AuthorizationGuardService]
+  providers: [ AuthorizationGuardService, Common]
 })
 export class AppRoutingModule { }

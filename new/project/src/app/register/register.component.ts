@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
-import { validateRex } from './validate-register';
+
 import {DoUsersService} from '../service/doUsers.service';
 import {Router} from '@angular/router';
 import {timeInterval} from 'rxjs/operators';
+import {validateRex} from '../../assets/validate-register';
 
 @Component({
   selector: 'app-register',
@@ -82,7 +83,7 @@ export class RegisterComponent implements OnInit{
     this.addUsers.reset({});
     setTimeout('alert("注册成功！请再次登录")', 0);
     /*setTimeout('window.location.href = "http://localhost:4200/login";', 1500);*/
-    this.router.navigate(['/login']).then(r => true); // 跳转到新的路由页
+    this.router.navigate(['/login']); // 跳转到新的路由页
   }
 // 构建表单方法
 
@@ -205,7 +206,6 @@ export class RegisterComponent implements OnInit{
         // tslint:disable-next-line:forin
         for (const key in control.errors) {
           // 把所有验证不通过项的说明文字拼接成错误消息
-
           this.formErrors[field] += messages[key] + '\n';
 
         }

@@ -106,7 +106,14 @@
         </ul>
       </div>
       <div class="find">
-        <input type="text" #searchSource placeholder="请输入搜索的内容" (keyup)='search(searchSource.value)' required="required"></div>
+        <div  style="width: 100%" >
+          <input type="search" #searchSource placeholder="请输入想查询的内容" [(ngModel)]="searchInput"
+                 (keyup)='search(searchSource.value)'/>
+          <div  style="width: 100%; height: 0">
+            <iframe  [src]="treeUrl" [class.show_ms]="showMs" width="100%" id="hh"></iframe>
+          </div>
+        </div>
+      </div>
       <div class="users_session">
         <p>我是用户动态</p>
       </div>

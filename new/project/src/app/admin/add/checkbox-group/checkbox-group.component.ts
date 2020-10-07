@@ -8,7 +8,7 @@ import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
     provide: NG_VALUE_ACCESSOR,
     useExisting: forwardRef(() => CheckboxGroupComponent),
     multi: true
-  }]
+  }] // 控件
 })
 export class CheckboxGroupComponent implements ControlValueAccessor{
 
@@ -26,7 +26,7 @@ export class CheckboxGroupComponent implements ControlValueAccessor{
   }
 
   setValue(obj): void{ // 复选框的状态改变时触发
-    const { value } = obj; // 解构赋值 这里也可以写value
+    const { value } = obj; // 解构赋值 这里的value 可以是数组里的任何属性
     const index = this.model.indexOf(value);
     if (index > -1){
       // model中若存在则移除

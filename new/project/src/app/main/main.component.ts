@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import {DoUsersService} from '../service/doUsers.service';
+import {Component, EventEmitter, Input, OnInit} from '@angular/core';
 import {MainUsersService} from '../service/mainUsers.service';
 import {Subject} from 'rxjs';
+import {Common} from '../service/commons/common';
 import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
+
 
 
 
@@ -14,39 +15,32 @@ import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  collection: any = [];
-  public subject = new Subject();
   private searchTerms = new Subject<string>();
   res = false;
-  constructor(private users: MainUsersService) { }
-
+  constructor(private common: Common, private users: MainUsersService) { }
+  @Input() showMs = false;
+  showView: EventEmitter<string> = new EventEmitter();
+  public treeUrl: any = this.common.setUrl('');
+  public searchInput = '';
+  collection: any = [];
+  search(searchParam: string): void {
+    this.searchTerms.next(searchParam);
+  }
   ngOnInit(): void {
     this.users.getList().subscribe((result) => {
       // 订阅server里面的list
       this.collection = result;
     });
-    this.subject.pipe(debounceTime(500)).subscribe(() => { // 请求防抖 500毫秒
-        console.log(11); // 防抖成功 控制台返回11
-      }
-    );
     this.searchTerms
       .pipe(
         // 请求防抖 300毫秒
         debounceTime(300),
         distinctUntilChanged())
       .subscribe(() => {// 后续操作
-        this.res = true;
-        console.log(this.res); // 用户输入有效控制台刷新res为true的次数
+        this.treeUrl = this.common.setUrl('https://www.baidu.com/s?wd=' + this.searchInput);
+        this.showView.emit(this.searchInput);
+        document.getElementById('hh').style.height = '600px';
       });
-  }
-
-  search(searchParam: string): void {
-    this.searchTerms.next(searchParam);
-  }
-
-  public demo(): void { // 单击demo 控制台返回22 若单击有效 则返回subject11
-    console.log(22);
-    this.subject.next();
   }
 }
 

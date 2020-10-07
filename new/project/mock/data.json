@@ -6,7 +6,7 @@
       "sex": "女",
       "email": "user1@users.com",
       "address": "辽宁省大连市",
-      "tNum": "18304381639",
+      "tNum": "18304381631",
       "password": "password1",
       "hobby": "唱歌",
       "id": 1
@@ -39,7 +39,7 @@
       "sex": "男",
       "email": "user4@users.com",
       "address": "辽宁省锦州市",
-      "tNum": "18304110101",
+      "tNum": "18304110104",
       "password": "password4",
       "hobby": "打篮球",
       "id": 4
@@ -193,67 +193,10 @@
       "sex": "男",
       "email": "admin2@admin.com",
       "address": "辽宁省大连市",
-      "tNum": "18304381637",
+      "tNum": "18304381634",
       "password": "password",
       "hobby": "打游戏",
       "id": 18
-    },
-    {
-      "username": "0",
-      "email": "0@1",
-      "sex": "女",
-      "address": "辽宁省锦州市",
-      "tNum": "y",
-      "role": "0",
-      "password": "y",
-      "hobby": [
-        "音乐",
-        "电影",
-        "电"
-      ],
-      "id": 19
-    },
-    {
-      "username": "45",
-      "email": "45@1",
-      "sex": "女",
-      "address": "辽宁省大连市",
-      "tNum": "213",
-      "role": "45",
-      "password": "21",
-      "hobby": [
-        "阅读",
-        "登山"
-      ],
-      "id": 20
-    },
-    {
-      "username": "1",
-      "email": "1@1",
-      "sex": "男",
-      "address": "辽宁省锦州市",
-      "tNum": "12",
-      "role": "1",
-      "password": "1",
-      "hobby": [
-        "登山",
-        "阅读"
-      ],
-      "id": 21
-    },
-    {
-      "username": "1",
-      "email": "1@1",
-      "sex": "女",
-      "address": "辽宁省锦州市",
-      "tNum": "13",
-      "role": "1",
-      "password": "1",
-      "hobby": [
-        "电影",
-        "音乐"
-      ],
-      "id": 22
     }
   ],
   "userList": [

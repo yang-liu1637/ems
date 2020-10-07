@@ -1,4 +1,4 @@
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MainComponent} from './main.component';
 import {RouterModule, Routes} from '@angular/router';
 import {CommonModule} from '@angular/common';
@@ -18,6 +18,7 @@ const route: Routes = [{ path: '', component: MainComponent }];
     RouterModule.forChild(route),
     ReactiveFormsModule,
     LogNavModule,
+    FormsModule,
   ],
   exports: [
     MainComponent

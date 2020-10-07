@@ -3,7 +3,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {LoginUsersService} from '../service/loginUsers.service';
 import { Router } from '@angular/router';
 import {CommonService} from '../service/common.service';
-import {validateRex} from './validate-register';
+import {validateRex} from '../../assets/validate-register';
 
 
 @Component({

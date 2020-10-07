@@ -23,18 +23,6 @@ export class LoginUsersService {
 // REST - GET
         getUsers(): Observable<LoginUser[]>{
             return this.httpClient.get<LoginUser[]>('http://localhost:3000/users'); }
-          /*.pipe(catchError(this.handleError));
-        }
-        handleError(errorResponse: HttpErrorResponse): Observable<never>{
-          if (errorResponse.error instanceof ErrorEvent){
-            console.error('Client Side Error', errorResponse.error.message);
-          }
-          else {
-            console.error('Server Side Error', errorResponse);
-          }
-          return throwError('There is a problem with the service.Please Try again Later ');
-        }*/
-        /*postCheck():Observable*/
 // Return to login page
   public isLoggedIn(): boolean{
     if (localStorage.getItem('username') == null)
@@ -46,5 +34,6 @@ export class LoginUsersService {
   // Logout
   public logout(): void{
     localStorage.removeItem('username');
+    console.log('已登出');
   }
 }
