@@ -46,6 +46,8 @@ export class AddComponent implements OnInit {
     { id: 3, title: '登山', value: '登山' },
     { id: 4, title: '阅读', value: '阅读' },
     { id: 5, title: '游泳', value: '游泳' },
+    { id: 6, title: '摄影', value: '摄影' },
+    { id: 7, title: '绘画', value: '绘画' },
   ];
   // 建立新的FormGroup
   addUsers = new FormGroup({

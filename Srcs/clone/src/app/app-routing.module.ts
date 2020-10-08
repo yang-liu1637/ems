@@ -1,18 +1,26 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {NavbarComponent} from './navbar/navbar.component';
-import {LoginComponent} from './login/login.component';
-import {RegisterComponent} from './register/register.component';
-import {MainComponent} from './main/main.component';
-import {UsersComponent} from './users/users.component';
+import { AddUsersComponent } from './add/add-users.component';
+import { UpdateUsersComponent } from './update/update-users.component';
+import { ListUsersComponent } from './list/list-users.component';
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
-  { path: 'devicepay/:id', component: MainComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent},
-  {path: 'users', component: UsersComponent},
-  {path: 'main', component: MainComponent}
+  {
+    component: AddUsersComponent,
+    path: 'add'
+  },
+  {
+    component: UpdateUsersComponent,
+    path: 'update/:id'
+  },
+  {
+    component: ListUsersComponent,
+    path: ''
+  },
+  {
+    component: ListUsersComponent,
+    path: 'list'
+  }
 ];
 
 @NgModule({

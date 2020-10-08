@@ -119,6 +119,7 @@
       flex: 2;
       background-color: #085063;
       color:white ;
+      overflow: hidden;
       .users_image{
         width: 100%;
         border: 2px solid #000;
@@ -181,8 +182,30 @@
            width: 80%;
            margin: 2% 10% 2% 10%;
            color: #a7a4a4;
+           border-radius: 0.5rem;
          }
        }
+      .users_session{
+        width: 100%;
+        .lis_right{
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          li{
+            width: 90%;
+            display: flex;
+            margin: 2rem 5% 0 5%;
+            img{
+              width: 20%;
+            }
+            p{
+              width: 78%;
+              margin: 1rem 0 0 2%;
+              text-align: justify;
+            }
+          }
+        }
+      }
     }
   }
 

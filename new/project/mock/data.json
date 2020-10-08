@@ -184,7 +184,7 @@
       "address": "辽宁省大连市",
       "tNum": "18304110101",
       "password": "password",
-      "hobby": "游泳",
+      "hobby": "游泳,摄影",
       "id": 17
     },
     {
@@ -197,6 +197,19 @@
       "password": "password",
       "hobby": "打游戏",
       "id": 18
+    },
+    {
+      "username": "e",
+      "email": "e@1",
+      "sex": "女",
+      "address": "山东省烟台市",
+      "tNum": "1",
+      "role": "e",
+      "password": "1",
+      "hobby": [
+        "登山"
+      ],
+      "id": 19
     }
   ],
   "userList": [

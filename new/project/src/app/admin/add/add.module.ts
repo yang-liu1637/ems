@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { AddComponent } from './add.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
-import {FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AdminNavModule} from '../../navbar/admin-nav/admin-nav.module';
 import { CheckboxGroupComponent } from './checkbox-group/checkbox-group.component';
 const route: Routes = [{ path: '', component: AddComponent }];

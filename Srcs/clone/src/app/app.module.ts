@@ -1,33 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { RegisterComponent } from './register/register.component';
-import { MainComponent } from './main/main.component';
-import { UsersComponent } from './users/users.component';
-import {HttpClientModule} from '@angular/common/http';
-
+import { AddUsersComponent } from './add/add-users.component';
+import { UpdateUsersComponent } from './update/update-users.component';
+import { ListUsersComponent } from './list/list-users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    NavbarComponent,
-    RegisterComponent,
-    MainComponent,
-    UsersComponent
+    AddUsersComponent,
+    UpdateUsersComponent,
+    ListUsersComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, NavbarComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -21,38 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d2a18592-1c5c-47b5-90b9-9b251f4bf0df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/mock/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/mock/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/admin/add/add.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/admin/add/add.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/admin/update/update.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/admin/update/update.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/login/login.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/main/main.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/main/main.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/main/main.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/main/main.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/navbar/log-nav/log-nav.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/navbar/log-nav/log-nav.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/register/register.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/register/register.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/show/show.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/show/show.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/users/users.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/app/users/users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/app/users/users.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/img/jpg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/assets/images/jpg2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/img/jpg3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/assets/images/jpg3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/img/main/s1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/img/main/s2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/img/main/s3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/img/user.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/swiper/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/swiper/swiper.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/swiper/swiper.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/swiper/swiper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/swiper/swiper2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/assets/swiper/swiper3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../project/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../project/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../new/project/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../new/project/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../new/project/src/app/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../new/project/src/app/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../new/project/src/app/main/main.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../new/project/src/app/main/main.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../new/project/src/app/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../new/project/src/app/main/main.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../new/project/src/app/service/commons/common.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/ems/project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,6 +62,7 @@
       <workItem from="1600587110823" duration="70000" />
       <workItem from="1600679652601" duration="2348000" />
       <workItem from="1600743881611" duration="1644000" />
+      <workItem from="1602127354178" duration="1309000" />
     </task>
     <servers />
   </component>
@@ -108,9 +82,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600749668924">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602127463765">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600749668924" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602127463765" />
   </component>
 </project>
