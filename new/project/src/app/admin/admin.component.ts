@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
 import {CommonService} from '../service/common.service';
 import {LoginUsersService} from '../service/loginUsers.service';
 import {Router} from '@angular/router';
@@ -13,7 +12,7 @@ export class AdminComponent implements OnInit {
   // 管道时间
   today: Date = new Date();
   // 表单 username
- username: string[];
+  username: string[];
   constructor(private message: CommonService, private  loginUsersService: LoginUsersService , private router: Router) { }
 
   ngOnInit(): void {

@@ -1,0 +1,28 @@
+1.ng g c navbar   ng new test --style=scss  ng new test --routing --style=scss
+
+ng generate module admin --route admin --module app.module
+
+
+ng generate module login --route login --module app.module
+
+
+json-server 
+1.json-server ./mock/data.json 启动文件
+2.json-server --watch --prot 3002 ./mock/data,json 设置新的监听端口
+
+jsonserver模拟数据            1
+ES5 6 深拷贝  浅拷贝
+JS 鼠标移动效果               1
+数据check                     1
+组件传参                      .5
+管道，自定义管道              1
+多次点击怎么才能做到只响应最后一次  1
+
+懒加载                        1
+Rx js                         1
+路由守卫 rx.jx  es5 6 forech for router typeScript
+
+
+英语  托业 博思
+
+

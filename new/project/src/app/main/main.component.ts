@@ -39,8 +39,7 @@ export class MainComponent implements OnInit {
     this.searchTerms
       .pipe(
         // 请求防抖 300毫秒
-        debounceTime(300),
-        distinctUntilChanged())
+        debounceTime(300))
       .subscribe(() => {// 后续操作
         this.treeUrl = this.setUrl('https://www.baidu.com/s?wd=' + this.searchInput);
         this.showView.emit(this.searchInput);

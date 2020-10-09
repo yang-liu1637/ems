@@ -1,0 +1,46 @@
+ES 5 6 ：
+1.let与const
+
+(1)let: 如下图 let所声明的变量，只在let命令所在的代码块内有效，
+也就是局部变量，如果把下图注释部分放开就会报错
+
+(2)const: const声明的变量是常量，不能被修改 
+
+2.浅拷贝 深拷贝
+   如果你拷贝的对象中引用了某个外部的内容（比如分配在堆上的数据），
+那么在拷贝这个对象的时候，让新旧两个对象指向同一个外部的内容，
+就是浅拷贝；
+   如果在拷贝这个对象的时候为新对象制作了外部对象的独立拷贝，就是深拷贝  
+
+浅复制：仅仅是指向被复制的内存地址，如果原地址发生改变，那么浅复制出来的对象也会相应的改变。
+
+深复制：在计算机中开辟一块新的内存地址用于存放复制的对象。
+
+
+
+深：
+function deepClone(obj): any
+    {
+      const newObj = obj instanceof Array ? [] : {};
+      if (typeof obj !== 'object')
+      {
+        return obj;
+      }else{
+        // tslint:disable-next-line:forin
+        for (const i in obj)
+        {
+          newObj[i] = typeof obj[i] === 'object' ? deepClone(obj[i]) : obj[i];
+        }
+      }
+      return newObj;
+    }
+
+    const a = [1, 2, 4, 6, 'a', '12', [1, 2]];
+    const b = deepClone(a);
+    a[3] = 7;
+    a[6] = [1, 1];
+    console.log(a);
+    console.log(b);
+
+
+angular.foreach遍历数组，for.in遍历对象(虽然也可以遍历数组但不建议)
