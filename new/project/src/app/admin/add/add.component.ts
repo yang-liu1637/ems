@@ -39,7 +39,7 @@ export class AddComponent implements OnInit {
     return this.addUsers.get('password');
   }
 
-
+  // 多选数组
   hobbies = [
     { id: 1, title: '电影', value: '电影' },
     { id: 2, title: '音乐', value: '音乐' },

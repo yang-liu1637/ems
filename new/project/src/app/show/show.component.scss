@@ -16,7 +16,7 @@
     width: 100%;
     .infor{
       position: relative;
-      left: 23%;
+      left: 26%;
       top: 26rem;
       width: 30%;
       .infor-title{
@@ -32,11 +32,11 @@
       }
     }
     .register{
-      width: 50%;
+      background-color: rgba(232, 245, 245, 0.02);
+      border-radius: 0.5rem;
+      width: 25%;
       position: relative;
-      left: 50%;
-      height: 70rem;
-      overflow:hidden;
+      left: 65%;
     }
   }
 }

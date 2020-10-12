@@ -43,7 +43,7 @@ export class MainComponent implements OnInit {
       .subscribe(() => {// 后续操作
         this.treeUrl = this.setUrl('https://www.baidu.com/s?wd=' + this.searchInput);
         this.showView.emit(this.searchInput);
-        document.getElementById('hh').style.height = '600px';
+        document.getElementById('baidu').style.height = '600px';
       });
   }
   setUrl(url: string): any {

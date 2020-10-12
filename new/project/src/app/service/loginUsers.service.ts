@@ -20,13 +20,13 @@ export class LoginUsersService {
     localStorage.setItem('ACCESS_TOKEN', 'access_token');
   }
 
-// REST - GET
-        getUsers(): Observable<LoginUser[]>{
-            return this.httpClient.get<LoginUser[]>('http://localhost:3000/users'); }
-// Return to login page
+  getUsers(): Observable<LoginUser[]>{
+    return this.httpClient.get<LoginUser[]>('http://localhost:3000/users'); }
+// login
   public isLoggedIn(): boolean{
     if (localStorage.getItem('username') == null)
     {
+      alert('请先登录');
       this.router.navigateByUrl('/login');
     }
     return localStorage.getItem('username') !== null;

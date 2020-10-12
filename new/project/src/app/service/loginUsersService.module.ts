@@ -12,7 +12,6 @@ import {MainUsersService} from './mainUsers.service';
     HttpClientModule,
   ],
   providers: [
-    HttpClient,
     LoginUsersService,
     LoginUser,
     CommonService,

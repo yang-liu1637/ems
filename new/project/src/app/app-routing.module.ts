@@ -18,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [BrowserModule, RouterModule.forRoot(routes), HttpClientModule],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: [ AuthorizationGuardService]
 })

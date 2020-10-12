@@ -137,7 +137,7 @@
       "role": "User",
       "sex": "女",
       "email": "user1@users.com",
-      "address": "辽宁省大连市",
+      "address": "辽宁省锦州市",
       "tNum": "18304381639",
       "password": "password1",
       "hobby": "唱歌",
@@ -197,6 +197,30 @@
       "password": "password",
       "hobby": "打游戏",
       "id": 18
+    },
+    {
+      "username": "13",
+      "email": "we@12",
+      "sex": "女",
+      "address": "辽宁省锦州市",
+      "tNum": "et",
+      "role": "1",
+      "password": "wr",
+      "hobby": [
+        "电影",
+        "音乐"
+      ],
+      "id": 19
+    },
+    {
+      "username": "刘洋",
+      "password": "password1",
+      "sex": "女",
+      "email": "45@12.cn",
+      "address": "adsddad",
+      "tNum": "18300000000",
+      "role": "User",
+      "id": 20
     }
   ],
   "userList": [
