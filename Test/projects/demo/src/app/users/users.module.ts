@@ -13,13 +13,13 @@ const route: Routes = [{ path: '', component: UsersComponent }];
 @NgModule({
   declarations: [UsersComponent],
     imports: [
-      CommonModule,
-      HttpClientModule,
-      ReactiveFormsModule,
-      RouterModule.forChild(route),
-      LogNavModule,
-      FormsModule,
-      NgxUsefulSwiperModule
+        CommonModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        RouterModule.forChild(route),
+        LogNavModule,
+        FormsModule,    NgxUsefulSwiperModule,
+
     ]
 })
 export class UsersModule { }

@@ -5,6 +5,6 @@ import { SwiperComponent } from './swiper/swiper.component';
 @NgModule({
   declarations: [SwiperComponent],
   imports: [CommonModule],
-  exports: [SwiperComponent]
+  exports: [SwiperComponent],
 })
 export class NgxUsefulSwiperModule {}

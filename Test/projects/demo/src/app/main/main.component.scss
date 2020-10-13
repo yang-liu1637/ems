@@ -60,9 +60,15 @@
       height: 100rem;
       background-color: #b42525 ;
       color: white;
-      swiper{
+      .images{
         width: 80rem;
         height: 30rem;
+        overflow: hidden;
+        p{
+          color: #fff;
+          font-size: 14px;
+          margin-top: -150px;
+        }
       }
       .main_lis{
         width: 100%;
