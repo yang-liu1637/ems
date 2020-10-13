@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {LoginUsersService} from './service/loginUsers.service';
 import { Router } from '@angular/router';
-import {CommonService} from '../service/common.service';
+import {CommonService} from '../shared/server/common.service';
 import {validateRex} from '../../assets/validate-register';
 
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./css/login.component.scss']
 })
 export class LoginComponent implements OnInit{
   constructor(private loginService: LoginUsersService, private router: Router,

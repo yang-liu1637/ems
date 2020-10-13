@@ -4,8 +4,8 @@ import {RouterModule, Routes} from '@angular/router';
 import {CommonModule} from '@angular/common';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {NavbarModule} from '../navbar/navbar.module';
-import {RegisterModule} from '../register/register.module';
+import {NavbarModule} from '../shared/navbar/navbar.module';
+import {RegisterModule} from '../shared/register/register.module';
 
 const route: Routes = [{ path: '', component: ShowComponent }];
 

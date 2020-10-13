@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BrowserModule} from '@angular/platform-browser';
-import {AuthorizationGuardService} from './service/authorizationGuard.service';
-import {HttpClientModule} from '@angular/common/http';
+import {AuthorizationGuardService} from './shared/server/authorizationGuard.service';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./show/show.module').then(m => m.ShowModule), pathMatch: 'full' },
@@ -10,9 +9,8 @@ const routes: Routes = [
     canActivate: [AuthorizationGuardService] },
   { path: 'admin/add', loadChildren: () => import('./admin/add/add.module').then(m => m.AddModule) },
   { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
-  { path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) },
-  { path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule) },
-  { path: 'main', loadChildren: () => import('./main/main.module').then(m => m.MainModule) },
+  { path: 'users', loadChildren: () => import('./user/users/users.module').then(m => m.UsersModule) },
+  { path: 'main', loadChildren: () => import('./user/main/main.module').then(m => m.MainModule) },
   { path: 'admin/list', loadChildren: () => import('./admin/list/list.module').then(m => m.ListModule) },
   { path: 'admin/update/:id', loadChildren: () => import('./admin/update/update.module').then(m => m.UpdateModule) },
 ];

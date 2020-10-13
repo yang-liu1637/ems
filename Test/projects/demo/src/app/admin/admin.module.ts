@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { AdminComponent } from './admin.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
-import {AdminNavModule} from '../navbar/admin-nav/admin-nav.module';
+import {AdminNavModule} from '../shared/navbar/admin-nav/admin-nav.module';
 
 
 const route: Routes = [{ path: '', component: AdminComponent }];
