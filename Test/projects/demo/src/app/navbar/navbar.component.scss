@@ -1,0 +1,63 @@
+*{
+  list-style: none;
+  text-decoration:none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Gill Sans MT Condensed", serif;
+}
+$maxwidth:100%;
+nav {
+  width: $maxwidth;
+  font-size: 2rem;
+  line-height: 6rem;
+  background-color: #24292e;
+  font-weight: bold;
+  .login_nav{
+    width: $maxwidth;
+    display: flex;
+    .nav_left{
+      flex: 2;
+      display: flex;
+      li:nth-child(1){
+        width: 15%;
+      }
+      li:nth-child(2){
+        width: 15%;
+
+      }
+      li:nth-child(3){
+        width: 18%;
+      }
+      li:nth-child(4){
+        width: 40%;
+      }
+      p{
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+  .nav-center{
+    flex: 3.5;
+  }
+  .nav_right{
+    flex: 0.25;
+    display: flex;
+    li{
+      width: 100%;
+    }
+  }
+}
+.out{
+  padding: 0;
+  margin: 0;
+  color: #a7a4a4;
+  font-size:1.8rem;
+  line-height: 3.6rem;
+  font-family: "Gill Sans MT Condensed", "Segoe MDL2 Assets", serif;
+}

@@ -1,0 +1,30 @@
+ <div class="register_body">
+   <h3 class="text-center" style="margin-top: 2rem">注册</h3>
+   <form [formGroup]="addUsers" (ngSubmit)="onSubmit()">
+     <div class="form-group">
+       <label>用户名：</label>
+       <input formControlName="username"
+              type="text" id="username" #username
+              class="form-control" placeholder="username">
+       <div *ngIf="formErrors.username" class="error">{{ formErrors.username }}</div>
+       <label>密码：</label>
+       <input formControlName="password"
+              type="text" id="password" #password
+              class="form-control"  placeholder="password">
+       <div *ngIf="formErrors.password" class="error">{{ formErrors.password }}</div>
+       <label>性别：</label>
+       <input formControlName="sex" type="text" class="form-control" placeholder="sex" required>
+       <div *ngIf="formErrors.sex" class="error">{{ formErrors.sex }}</div>
+       <label>个人邮箱：</label>
+       <input formControlName="email" type="email" class="form-control" placeholder="email" required>
+       <div *ngIf="formErrors.email" class="error">{{ formErrors.email }}</div>
+       <label>公司地址：</label>
+       <input formControlName="address" type="text" class="form-control" placeholder="address" required>
+       <div *ngIf="formErrors.address" class="error">{{ formErrors.address }}</div>
+       <label>手机号码：</label>
+       <input formControlName="tNum" type="text" class="form-control" placeholder="Telephone Number" maxlength="11" required>
+       <div *ngIf="formErrors.tNum" class="error">{{ formErrors.tNum }}</div>
+     </div>
+     <button type="submit" class="btn btn-primary" [disabled]="addUsers.invalid">Sign in</button>
+   </form>
+ </div>

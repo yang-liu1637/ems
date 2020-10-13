@@ -1,0 +1,47 @@
+.control {
+  color: #fff;
+  width: 100%;
+  background: url("../../../assets/images/jpg3.svg"), center 10%, #2b3137;
+  height: 87.1rem;
+  position: absolute;
+  margin-top: 6.6rem;
+  form {
+    width: 90%;
+    max-width: 45em;
+    margin: 0 auto;
+
+    label {
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      font-family: "Gill Sans MT Condensed", serif;
+    }
+
+    button {
+      text-align: center;
+      width: 50%;
+      margin: 2% 0 2% 25%;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      font-family: "Gill Sans MT Condensed", serif;
+    }
+  }
+}
+
+
+input.ng-invalid {
+  border-left: 5px solid red;
+}
+
+input.ng-valid {
+  border-left: 5px solid green;
+}
+
+.error {
+  color: red;
+}
+
+p {
+  font-size: 2.3rem;
+  line-height: 4.6rem;
+  font-family: "Gill Sans MT Condensed", serif;
+}
