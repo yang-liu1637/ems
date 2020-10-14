@@ -1,29 +1,34 @@
 .main{
   width: 100%;
-  margin-top: 7rem;
+  margin-top: 6rem;
   padding: 0;
+  background: linear-gradient(#b7eae8, #eeeeee);
   .main_body{
-    width: 70%;
-    margin: 1% auto;
-    background-color: #2b3137;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1rem;
     height: 100%;
     display: flex;
     border-radius: 0.5rem;
     .main_left{
-      flex: 1;
+      width: 12.5%;
       height: 100rem;
-      background-color: #51d5e2;
       color: #24292e;
       border-radius: 0.5rem;
       overflow: hidden;
+
       ul {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
         position: relative;
         z-index: 0;
         border-radius: 0.5rem;
-        background: #d25858;
+        background: rgba(102, 106, 106, 0.02);
         padding: 60px 20px 70px;
+        font-size: 1.6rem;
+        font-family: "Gill Sans MT Condensed", serif;
+        font-weight: bold;
+        height: 100rem;
 
         li {
           height: 40px;
@@ -45,12 +50,11 @@
       }
     }
     .main_center{
-      flex: 4;
-      height: 100rem;
-      background-color: #b42525 ;
+      width: 62.5%;
+      background: rgba(102, 106, 106, 0.02);
       color: white;
       .images{
-        width: 80rem;
+        width: 100%;
         height: 30rem;
         overflow: hidden;
         p{
@@ -109,39 +113,48 @@
       }
     }
 
-    .main_right{
-      flex: 2;
-      background-color: #085063;
-      color:white ;
-      overflow: hidden;
-      .users_image{
+    .main_right {
+      width: 25%;
+      color: #000;
+      background: rgba(102, 106, 106, 0.02);
+
+      .main-right-padding {
+        width: 90%;
+        margin: 0 auto;
+
+      .users_image {
         width: 100%;
         border: 2px solid #000;
         text-align: center;
-        .top{
+
+        .top {
           width: 100%;
           display: flex;
-          .image{
+
+          .image {
             width: 16%;
             margin: 1rem;
-            img{
+
+            img {
               width: 100%;
               border-radius: 50%;
             }
           }
-          .txt{
+
+          .txt {
             width: 82%;
             display: flex;
             flex-wrap: wrap;
 
-            .user{
+            .user {
               width: 100%;
               text-align: left;
               font-size: 1rem;
               color: #000;
               margin-top: 2rem;
             }
-            .year{
+
+            .year {
               width: 100%;
               text-align: left;
               font-size: 1rem;
@@ -150,49 +163,67 @@
             }
           }
         }
-        .content{
+
+        .content {
           width: 100%;
           display: flex;
           flex-wrap: wrap;
-          li{
+
+          li {
             width: 20%;
             font-size: 1.5rem;
             line-height: 3rem;
           }
-          .btn{
+
+          .btn {
             width: 30%;
-            margin:3%  1.6%  3% 1.6%;
+            margin: 3% 1.6% 3% 1.6%;
             border: 1px solid #a7a4a4;
-           a{
-             font-size: 1.5rem;
-           }
+
+            a {
+              font-size: 1.5rem;
+            }
           }
         }
 
       }
-      .find{
-         width: 100%;
-         input{
-           width: 80%;
-           margin: 2% 10% 2% 10%;
-           color: #a7a4a4;
-           border-radius: 0.5rem;
-         }
-       }
-      .users_session{
+
+      .find {
         width: 100%;
-        .lis_right{
+        input {
+          width: 80%;
+          margin: 2% 10% 2% 10%;
+          color: #a7a4a4;
+          border-radius: 0.5rem;
+        }
+        .frame{
+          width: 100%;
+          height: 0;
+
+          iframe{
+            width: 100%; overflow: hidden;
+          }
+        }
+      }
+
+      .users_session {
+        width: 100%;
+
+        .lis_right {
           width: 100%;
           display: flex;
           flex-wrap: wrap;
-          li{
+
+          li {
             width: 90%;
             display: flex;
             margin: 2rem 5% 0 5%;
-            img{
+
+            img {
               width: 20%;
             }
-            p{
+
+            p {
               width: 78%;
               margin: 1rem 0 0 2%;
               text-align: justify;
@@ -200,6 +231,7 @@
           }
         }
       }
+    }
     }
   }
 

@@ -42,6 +42,7 @@
       </div>
     </div>
     <div class="main_right">
+      <div class="main-right-padding">
       <div class="users_image">
         <ul class="top">
           <li class="image">
@@ -79,13 +80,11 @@
         </ul>
       </div>
       <div class="find">
-        <div  style="width: 100%" >
           <input type="search" #searchSource placeholder="请输入想查询的内容" [(ngModel)]="searchInput"
                  (keyup)='search(searchSource.value)'/>
-          <div  style="width: 100%; height: 0">
-            <iframe  [src]="treeUrl" [class.show_ms]="showMs" style="width:115%;margin-left: -2rem;"  id="baidu"></iframe >
+          <div class="frame">
+            <iframe  [src]="treeUrl" [class.show_ms]="showMs" id="baidu" style="width: 110%"></iframe >
           </div>
-        </div>
       </div>
       <div class="users_session">
         <ul class="lis_right">
@@ -118,6 +117,7 @@
             <p>这里是一些实时资讯，这里是一些实时资讯，这里是一些实时资讯</p>
           </li>
         </ul>
+      </div>
       </div>
     </div>
   </div>

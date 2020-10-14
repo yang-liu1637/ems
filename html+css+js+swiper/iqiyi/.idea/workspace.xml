@@ -20,67 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2a18592-1c5c-47b5-90b9-9b251f4bf0df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Test/mock/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/mock/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/add/add.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/add/add.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/add/add.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/add/add.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/add/add.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/add/add.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/add/checkbox-group/checkbox-group.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/checkbox-group/checkbox-group.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/add/checkbox-group/checkbox-group.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/checkbox-group/css/checkbox-group.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/add/checkbox-group/checkbox-group.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/checkbox-group/checkbox-group.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/add/checkbox-group/checkbox-group.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/checkbox-group/checkbox-group.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/admin.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/admin.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/admin.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/admin.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/list/list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/list/list.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/list/list.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/update/update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/update/update.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/update/update.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/admin/update/update.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/login/css/login.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/login/login.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/login/login.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/main/main.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/main/main.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/main/css/main.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/main/main.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/main/main.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/main/main.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/main/main.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/main/main.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/admin-nav/admin-nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/admin-nav/admin-nav.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/admin-nav/admin-nav.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/admin-nav/css/admin-nav.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/admin-nav/admin-nav.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/admin-nav/admin-nav.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/admin-nav/admin-nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/admin-nav/admin-nav.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/admin-nav/admin-nav.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/admin-nav/admin-nav.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/log-nav/log-nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/log-nav/log-nav.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/log-nav/log-nav.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/log-nav/css/log-nav.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/log-nav/log-nav.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/log-nav/log-nav.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/log-nav/log-nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/log-nav/log-nav.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/log-nav/log-nav.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/log-nav/log-nav.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/navbar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/css/navbar.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/navbar.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/navbar.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/navbar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/navbar/navbar.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/navbar/navbar.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/register/register.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/register/css/register.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/register/register.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/register/register.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/register/register.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/service/authorizationGuard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/server/authorizationGuard.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/service/common.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/server/common.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/service/doUsers.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/server/doUsers.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/service/mainUsers.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/server/mainUsers.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/service/service.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/server/service.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/show/show.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/show/css/show.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/show/show.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/show/show.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/show/show.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/show/show.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/swiper/swiper.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/swiper/swiper.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/swiper/swiper.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/swiper/css/swiper.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/swiper/swiper.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/swiper/swiper.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/swiper/swiper.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/shared/swiper/swiper.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/swiper/swiper.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/users/users.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/users/users.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/users/css/users.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/users/users.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/users/users.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/users/users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/users/users.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/users/users.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/users/users.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/main/main.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/projects/demo/src/app/user/main/main.component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -120,6 +61,7 @@
       <workItem from="1602127354178" duration="1309000" />
       <workItem from="1602489376057" duration="172000" />
       <workItem from="1602567304713" duration="4398000" />
+      <workItem from="1602666787186" duration="679000" />
     </task>
     <servers />
   </component>
@@ -143,9 +85,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="706" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602571703526" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602579395382">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602666866186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602579395382" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602666866186" />
   </component>
 </project>
