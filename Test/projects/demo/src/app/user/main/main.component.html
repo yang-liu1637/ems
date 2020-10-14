@@ -5,12 +5,11 @@
       <div class="top">
         <ul>
         <li><A class="hover" routerLink="/main">前端交流</A></li>
-        <li><A>交互设计</A></li>
+        <li><A>知识梳理</A></li>
         <li><A>视觉设计</A></li>
         <li><A >用户研究</A></li>
         <li><A >设计茶吧</A></li>
         <li><A >团队生活</A></li>
-        <div id="lanPos" style="margin-top: -7.9rem; width: 105%"></div>
       </ul></div>
     </div>
     <div class="main_center">
@@ -19,26 +18,6 @@
       </div>
       <div class="main_lis">
         <ul>
-          <li>
-            <div class="li_title">
-              我是列表标题
-            </div>
-            <div class="li_content">
-              <div class="li_img">
-                <img src="../../../assets/images/main/users.jpg">
-                <span>
-                  一只皮卡丘
-                </span>
-              </div>
-              <div class="li_links">
-                转载自：https://www.baidu.com/3242442qwqw.html
-              </div>
-              <div class="li_icon">
-                <span>[@]</span>
-                <span>[@]</span>
-              </div>
-            </div>
-          </li>
           <li *ngFor="let item of collection">
             <div class="li_title" >
               {{item.title}}

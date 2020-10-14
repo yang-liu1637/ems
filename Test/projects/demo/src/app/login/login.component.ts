@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {LoginUsersService} from './service/loginUsers.service';
-import { NavigationEnd, Router } from '@angular/router';
+import {Router} from '@angular/router';
 import {validateRex} from '../../assets/validate-register';
-import { CommonService } from '../shared/service/common.service';
+import {CommonService} from '../shared/service/common.service';
 
 
 @Component({

@@ -17,7 +17,7 @@ const route: Routes = [{ path: '', component: UsersComponent }];
     ReactiveFormsModule,
     RouterModule.forChild(route),
     LogNavModule,
-    FormsModule,
+    FormsModule
 
   ]
 })

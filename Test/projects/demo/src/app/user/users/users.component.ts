@@ -10,7 +10,6 @@ import { DoUsersService } from '../../shared/service/doUsers.service';
   styleUrls: ['./css/users.component.scss']
 })
 export class UsersComponent implements OnInit {
-  user = false;
   showUsers = new FormGroup({
     username: new FormControl(''),
     role: new FormControl(''),
