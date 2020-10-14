@@ -17,5 +17,4 @@ export class CommonService {
   getMessage(): Observable<string[]> {
     return of(this.messages);
   }
-
 }

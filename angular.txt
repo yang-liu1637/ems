@@ -1,4 +1,4 @@
-1.ng g c navbar   ng new test --style=scss  ng new test --routing --style=scss
+1.ng g c navbar   ng new test --style=scss  ng new Test --routing --style=scss
 
 ng generate module admin --route admin --module app.module
 

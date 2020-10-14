@@ -12,6 +12,9 @@ import {validateRex} from '../../assets/validate-register';
   styleUrls: ['./css/login.component.scss']
 })
 export class LoginComponent implements OnInit{
+  userId: number;
+  // tslint:disable-next-line:variable-name
+  private _data: any;
   constructor(private loginService: LoginUsersService, private router: Router,
               private formBuilder: FormBuilder , private message: CommonService) { }
   formErrors = {
@@ -57,14 +60,15 @@ export class LoginComponent implements OnInit{
       this.users = data;
       for ( const val of data) {
         if (val.username === this.username && val.email === this.email && val.password === this.password) {
+          this.userId  = val.id;
           this.loginService.login(this.loginForm.value);
           if (val.role === 'Admin'){
             localStorage.setItem('username', this.username);
             this.router.navigate(['/admin']).then(r =>  this.message.add(this.username));
           }
           if (val.role === 'User'){
-            localStorage.setItem('username', this.username);
-            this.router.navigate(['./main']).then(r => {});
+            localStorage.setItem( 'id', String(this.userId)); // 存
+            this.router.navigate(['./main']).then(r =>  this.message.add(localStorage.getItem('id'))); // 取
           }
         } else{
           this.msg = true;
@@ -133,6 +137,7 @@ export class LoginComponent implements OnInit{
 
   }
   onValueChanged(data?: any): void {
+    this._data = data;
 
     // 如果表单不存在则返回
 

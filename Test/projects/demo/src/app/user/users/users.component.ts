@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {Subject} from 'rxjs';
 import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
+import { CommonService } from '../../shared/server/common.service';
+import { LoginUsersService } from '../../login/service/loginUsers.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { FormControl, FormGroup } from '@angular/forms';
+import { DoUsersService } from '../../shared/server/doUsers.service';
 
 
 @Component({
@@ -9,31 +14,48 @@ import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
   styleUrls: ['./css/users.component.scss']
 })
 export class UsersComponent implements OnInit {
-  public subject = new Subject();
-  private searchTerms = new Subject<string>();
-  res = false;
+  showUsers = new FormGroup({
+    username: new FormControl(''),
+    role: new FormControl(''),
+    email: new FormControl(''),
+    sex: new FormControl(''),
+    address: new FormControl(''),
+    tNum: new FormControl(''),
+    password: new FormControl(''),
+    hobby: new FormControl('')
+  });
 
-  search(searchParam: string): void {
-    this.searchTerms.next(searchParam);
-  }
-    ngOnInit(): void {
-      this.subject.pipe(debounceTime(500)).subscribe(() => { // 请求防抖 500毫秒
-          console.log(11); // 防抖成功 控制台返回11
-        }
-      );
-      this.searchTerms
-        .pipe(
-          // 请求防抖 300毫秒
-          debounceTime(300),
-          distinctUntilChanged())
-        .subscribe(() => {// 后续操作
-          this.res = true;
-          console.log(this.res); // 用户输入有效控制台刷新res为true的次数
-        });
+  get username(): any { return this.showUsers.get('username'); }
+  get role(): any { return this.showUsers.get('role'); }
+  get sex(): any { return this.showUsers.get('sex'); }
+  get email(): any { return this.showUsers.get('email'); }
+  get address(): any { return this.showUsers.get('address'); }
+  get tNum(): any { return this.showUsers.get('tNum'); }
+  get password(): any { return this.showUsers.get('password'); }
+  get hobby(): any { return this.showUsers.get('password'); }
+
+  constructor(private message: CommonService , private router: ActivatedRoute, private service: DoUsersService, private run: Router) { }
+
+  userId: string[];
+
+
+  ngOnInit(): void {
+    this.message.getMessage().subscribe((result) => { // 通过 login更新ID
+    this.userId = result;
+  });
+    this.service.getCurrentUsers(this.userId).subscribe((result) => { // 通过id把相应的users信息显示在update表单
+      this.showUsers = new FormGroup({
+        username: new FormControl(result.username),
+        role: new FormControl(result.role),
+        sex: new FormControl(result.sex),
+        email: new FormControl(result.email),
+        address: new FormControl(result.address),
+        tNum: new FormControl(result.tNum),
+        password: new FormControl(result.password),
+        hobby: new FormControl(result.hobby)
+      });
+    });
     }
-  public demo(): void { // 单击demo 控制台返回22 若单击有效 则返回subject11
-    console.log(22);
-    this.subject.next();
-  }
+
 
 }

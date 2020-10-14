@@ -1,5 +1,5 @@
 <app-log-nav></app-log-nav>
-<div class="users_view">
+<!--<div class="users_view">
 <h3 style="text-align: center">多次点击怎么才能做到只响应最后一次 angular防抖</h3>
 <div class="try">
   <label>只有用户停止输入(300ms)才会进行数据交互</label>
@@ -10,4 +10,39 @@
   </div>
 </div>
 
-</div>
+</div>-->
+<!--<div>当前管理员 {{userId }} </div>-->
+<form [formGroup]="showUsers">
+  <div class="form-group">
+    <label>Name</label>
+    <input formControlName="username" type="text" class="form-control" placeholder="Enter username" required>
+  </div>
+  <div class="form-group">
+    <label>Role</label>
+    <input formControlName="role" type="text" class="form-control" placeholder="Enter role" required>
+  </div>
+  <div class="form-group">
+    <label>Sex</label>
+    <input formControlName="sex" type="text" class="form-control" placeholder="Enter sex" required>
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input email formControlName="email" type="email" class="form-control" placeholder="Enter email" required>
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input formControlName="password" type="text" class="form-control" placeholder="Enter password" required>
+  </div>
+  <div class="form-group">
+    <label>Address</label>
+    <input formControlName="address" type="text" class="form-control" placeholder="Enter address" required>
+  </div>
+  <div class="form-group">
+    <label>Hobby</label>
+    <input formControlName="hobby" type="text" class="form-control" placeholder="Enter Hobby" required>
+  </div>
+  <div class="form-group">
+    <label>Telephone Number</label>
+    <input formControlName="tNum" type="text" class="form-control" placeholder="Enter tNum" required>
+  </div>
+</form>

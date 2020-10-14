@@ -12,7 +12,7 @@ export class LogNavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  logout(): any{
+  logout(): any {
     this.loginUsersService.logout();
     this.router.navigateByUrl('');
   }
