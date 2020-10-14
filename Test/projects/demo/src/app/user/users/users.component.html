@@ -12,37 +12,34 @@
 
 </div>-->
 <!--<div>当前管理员 {{userId }} </div>-->
-<form [formGroup]="showUsers">
+<form [formGroup]="showUsers" style="margin: 8rem auto;width: 80%">
+  <p style="color: #000; text-align: center">用户信息</p>
   <div class="form-group">
     <label>Name</label>
-    <input formControlName="username" type="text" class="form-control" placeholder="Enter username" required>
-  </div>
-  <div class="form-group">
-    <label>Role</label>
-    <input formControlName="role" type="text" class="form-control" placeholder="Enter role" required>
+    <input formControlName="username" type="text" class="form-control" placeholder="username" readonly>
   </div>
   <div class="form-group">
     <label>Sex</label>
-    <input formControlName="sex" type="text" class="form-control" placeholder="Enter sex" required>
+    <input formControlName="sex" type="text" class="form-control" placeholder="sex" readonly>
   </div>
   <div class="form-group">
     <label>Email</label>
-    <input email formControlName="email" type="email" class="form-control" placeholder="Enter email" required>
+    <input email formControlName="email" type="email" class="form-control" placeholder="email" readonly>
   </div>
   <div class="form-group">
     <label>Password</label>
-    <input formControlName="password" type="text" class="form-control" placeholder="Enter password" required>
+    <input formControlName="password" type="text" class="form-control" placeholder="password" readonly>
   </div>
   <div class="form-group">
     <label>Address</label>
-    <input formControlName="address" type="text" class="form-control" placeholder="Enter address" required>
+    <input formControlName="address" type="text" class="form-control" placeholder="address" readonly>
   </div>
   <div class="form-group">
     <label>Hobby</label>
-    <input formControlName="hobby" type="text" class="form-control" placeholder="Enter Hobby" required>
+    <input formControlName="hobby" type="text" class="form-control" placeholder="hobby" readonly>
   </div>
   <div class="form-group">
     <label>Telephone Number</label>
-    <input formControlName="tNum" type="text" class="form-control" placeholder="Enter tNum" required>
+    <input formControlName="tNum" type="text" class="form-control" placeholder="telephoneNumber" readonly>
   </div>
 </form>

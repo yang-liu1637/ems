@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
-import {DoUsersService} from '../../shared/server/doUsers.service';
+import {DoUsersService} from '../../shared/service/doUsers.service';
 
 @Component({
   selector: 'app-add',

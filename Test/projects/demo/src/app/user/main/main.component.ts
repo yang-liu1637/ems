@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit} from '@angular/core';
-import {MainUsersService} from '../../shared/server/mainUsers.service';
+import {MainUsersService} from '../../shared/service/mainUsers.service';
 import {Subject} from 'rxjs';
 import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
 import {DomSanitizer} from '@angular/platform-browser';
@@ -13,7 +13,7 @@ import { SwiperOptions } from 'swiper';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./css/main.component.scss']
+  styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
   private searchTerms = new Subject<string>();

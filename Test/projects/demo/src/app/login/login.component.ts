@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {LoginUsersService} from './service/loginUsers.service';
-import { Router } from '@angular/router';
-import {CommonService} from '../shared/server/common.service';
+import { NavigationEnd, Router } from '@angular/router';
 import {validateRex} from '../../assets/validate-register';
+import { CommonService } from '../shared/service/common.service';
 
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./css/login.component.scss']
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit{
   userId: number;
   // tslint:disable-next-line:variable-name
   private _data: any;
   constructor(private loginService: LoginUsersService, private router: Router,
-              private formBuilder: FormBuilder , private message: CommonService) { }
+              private formBuilder: FormBuilder , private message: CommonService) {}
   formErrors = {
     username: '',
     password: '',
@@ -51,6 +51,7 @@ export class LoginComponent implements OnInit{
     });
     this.buildForm();
   }
+
   login(): void {
     this.username = this.loginForm.value.username;
     this.email = this.loginForm.value.email;

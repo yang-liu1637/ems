@@ -1,4 +1,4 @@
-import {DoUsersService} from '../server/doUsers.service';
+import {DoUsersService} from '../service/doUsers.service';
 import {RouterModule, Routes} from '@angular/router';
 import {CommonModule} from '@angular/common';
 import {RegisterComponent} from './register.component';

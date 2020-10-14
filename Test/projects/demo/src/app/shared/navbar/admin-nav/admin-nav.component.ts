@@ -5,7 +5,7 @@ import {Router} from '@angular/router';
 @Component({
   selector: 'app-admin-nav',
   templateUrl: './admin-nav.component.html',
-  styleUrls: ['./css/admin-nav.component.scss']
+  styleUrls: ['./admin-nav.component.scss']
 })
 export class AdminNavComponent implements OnInit {
 

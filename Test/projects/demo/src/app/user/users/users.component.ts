@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Subject} from 'rxjs';
-import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
-import { CommonService } from '../../shared/server/common.service';
-import { LoginUsersService } from '../../login/service/loginUsers.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute} from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
-import { DoUsersService } from '../../shared/server/doUsers.service';
-
+import { CommonService } from '../../shared/service/common.service';
+import { DoUsersService } from '../../shared/service/doUsers.service';
 
 @Component({
   selector: 'app-users',
@@ -14,6 +10,7 @@ import { DoUsersService } from '../../shared/server/doUsers.service';
   styleUrls: ['./css/users.component.scss']
 })
 export class UsersComponent implements OnInit {
+  user = false;
   showUsers = new FormGroup({
     username: new FormControl(''),
     role: new FormControl(''),
@@ -24,26 +21,17 @@ export class UsersComponent implements OnInit {
     password: new FormControl(''),
     hobby: new FormControl('')
   });
-
-  get username(): any { return this.showUsers.get('username'); }
-  get role(): any { return this.showUsers.get('role'); }
-  get sex(): any { return this.showUsers.get('sex'); }
-  get email(): any { return this.showUsers.get('email'); }
-  get address(): any { return this.showUsers.get('address'); }
-  get tNum(): any { return this.showUsers.get('tNum'); }
-  get password(): any { return this.showUsers.get('password'); }
-  get hobby(): any { return this.showUsers.get('password'); }
-
-  constructor(private message: CommonService , private router: ActivatedRoute, private service: DoUsersService, private run: Router) { }
+  constructor(private message: CommonService ,
+              private router: ActivatedRoute,
+              private service: DoUsersService) {}
 
   userId: string[];
-
 
   ngOnInit(): void {
     this.message.getMessage().subscribe((result) => { // 通过 login更新ID
     this.userId = result;
   });
-    this.service.getCurrentUsers(this.userId).subscribe((result) => { // 通过id把相应的users信息显示在update表单
+    this.service.getCurrentUsers(this.userId).subscribe((result) => { // 通过id把相应的users信息显示在表单
       this.showUsers = new FormGroup({
         username: new FormControl(result.username),
         role: new FormControl(result.role),
@@ -56,6 +44,5 @@ export class UsersComponent implements OnInit {
       });
     });
     }
-
 
 }
