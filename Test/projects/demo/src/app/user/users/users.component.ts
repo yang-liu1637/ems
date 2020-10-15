@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
-import { CommonService } from '../../shared/service/common.service';
+import { SendmessageService } from '../../shared/service/sendmessage.service';
 import { DoUsersService } from '../../shared/service/doUsers.service';
 
 @Component({
@@ -20,7 +20,7 @@ export class UsersComponent implements OnInit {
     password: new FormControl(''),
     hobby: new FormControl('')
   });
-  constructor(private message: CommonService ,
+  constructor(private message: SendmessageService ,
               private router: ActivatedRoute,
               private service: DoUsersService) {}
 

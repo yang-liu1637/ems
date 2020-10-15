@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { HttpClient, HttpClientModule} from '@angular/common/http';
 import {LoginUsersService} from '../../login/service/loginUsers.service';
 import {LoginUser} from '../../login/models/loginUser.model';
-import {CommonService} from './common.service';
+import {SendmessageService} from './sendmessage.service';
 import {DoUsersService} from './doUsers.service';
 import {MainUsersService} from './mainUsers.service';
 
@@ -14,7 +14,7 @@ import {MainUsersService} from './mainUsers.service';
   providers: [
     LoginUsersService,
     LoginUser,
-    CommonService,
+    SendmessageService,
     DoUsersService,
     MainUsersService
   ]

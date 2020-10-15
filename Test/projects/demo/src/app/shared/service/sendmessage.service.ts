@@ -5,7 +5,7 @@ import {Observable, of} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class CommonService {
+export class SendmessageService {
 
   messages: string[] = [];
 

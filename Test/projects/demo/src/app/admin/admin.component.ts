@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CommonService} from '../shared/service/common.service';
+import {SendmessageService} from '../shared/service/sendmessage.service';
 import {LoginUsersService} from '../login/service/loginUsers.service';
 import {Router} from '@angular/router';
 
@@ -13,7 +13,7 @@ export class AdminComponent implements OnInit {
   today: Date = new Date();
   // 表单 username
   username: string[];
-  constructor(private message: CommonService, private  loginUsersService: LoginUsersService , private router: Router) { }
+  constructor(private message: SendmessageService, private  loginUsersService: LoginUsersService , private router: Router) { }
 
   ngOnInit(): void {
     // 通过 login更新用户名

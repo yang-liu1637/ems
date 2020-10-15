@@ -3,7 +3,8 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {LoginUsersService} from './service/loginUsers.service';
 import {Router} from '@angular/router';
 import {validateRex} from '../shared/validate-register';
-import {CommonService} from '../shared/service/common.service';
+import {SendmessageService} from '../shared/service/sendmessage.service';
+import { CommonService } from '../shared/service/common.service';
 
 
 @Component({
@@ -15,8 +16,11 @@ export class LoginComponent implements OnInit{
   userId: number;
   // tslint:disable-next-line:variable-name
   private _data: any;
-  constructor(private loginService: LoginUsersService, private router: Router,
-              private formBuilder: FormBuilder , private message: CommonService) {}
+  constructor(private loginService: LoginUsersService,
+              private router: Router,
+              private formBuilder: FormBuilder ,
+              private message: SendmessageService,
+              private common: CommonService) {}
   formErrors = {
     username: '',
     password: '',
@@ -66,10 +70,12 @@ export class LoginComponent implements OnInit{
           if (val.role === 'Admin'){
             localStorage.setItem('username', this.username);
             this.router.navigate(['/admin']).then(r =>  this.message.add(this.username));
+            this.common.showSnackBarMessage('Login Successful ' + '欢迎 ' + this.username + ' ' + this.email);
           }
           if (val.role === 'User'){
             localStorage.setItem( 'id', String(this.userId)); // 存
             this.router.navigate(['./main']).then(r =>  this.message.add(localStorage.getItem('id'))); // 取
+            this.common.showSnackBarMessage('Login Successful ' + '欢迎 ' + this.username + ' ' + this.email);
           }
         } else{
           this.msg = true;
