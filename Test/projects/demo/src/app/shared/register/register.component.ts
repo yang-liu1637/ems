@@ -4,8 +4,7 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 import {DoUsersService} from '../service/doUsers.service';
 import {Router} from '@angular/router';
-import {timeInterval} from 'rxjs/operators';
-import {validateRex} from '../../../assets/validate-register';
+import {validateRex} from '../validate-register';
 
 @Component({
   selector: 'app-register',
