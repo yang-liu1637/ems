@@ -1,9 +1,8 @@
 import {Component, EventEmitter, Input, OnInit} from '@angular/core';
 import {MainUsersService} from '../../shared/service/mainUsers.service';
 import {Subject} from 'rxjs';
-import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
+import {debounceTime} from 'rxjs/operators';
 import {DomSanitizer} from '@angular/platform-browser';
-import { SwiperOptions } from 'swiper';
 
 
 
@@ -16,12 +15,21 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  @Input() showMs = false; // search input
+
+  imgList = [ // 轮播图
+    'assets/images/jpg3.svg',
+    'assets/images/jpg3.svg',
+    'assets/images/jpg3.svg',
+    'assets/images/jpg3.svg',
+    'assets/images/jpg3.svg',
+    'assets/images/jpg3.svg',
+    'assets/images/jpg3.svg'
+  ];
   private searchTerms = new Subject<string>();
   res = false;
   constructor( private users: MainUsersService, private sanitizer: DomSanitizer) {
   }
-
-  @Input() showMs = false;
   showView: EventEmitter<string> = new EventEmitter();
   public treeUrl: any = this.setUrl('');
   public searchInput = '';

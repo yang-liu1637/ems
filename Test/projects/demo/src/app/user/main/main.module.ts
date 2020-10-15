@@ -25,7 +25,7 @@ const route: Routes = [{ path: '', component: MainComponent }];
   ],
   exports: [
     MainComponent,
-    SwiperComponent
+    SwiperComponent,
   ]
 })
 export class MainModule { }

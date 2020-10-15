@@ -15,24 +15,18 @@
     <div id="main_center">
       <div class="main-center-padding">
         <div class="images">
-          <app-swiper></app-swiper>
+          <app-swiper [swiperList]="imgList"></app-swiper>
         </div>
         <div class="main_lis">
           <ul>
             <li *ngFor="let item of collection">
-              <div class="li_title" >
-                {{item.title}}
-              </div>
+              <div class="li_title" >{{item.title}}</div>
               <div class="li_content">
                 <div class="li_img">
                   <img src="{{item.images}}" >
-                  <span>
-                  {{item.name}}
-                </span>
+                  <span>{{item.name}}</span>
                 </div>
-                <div class="li_links">
-                  {{item.links}}
-                </div>
+                <div class="li_links">{{item.links}}</div>
                 <div class="li_icon">
                   <span>[@]</span>
                   <span>[@]</span>
@@ -85,7 +79,7 @@
           <input type="search" #searchSource placeholder="请输入想查询的内容" [(ngModel)]="searchInput"
                  (keyup)='search(searchSource.value)'/>
           <div class="frame">
-            <iframe  [src]="treeUrl" [class.show_ms]="showMs" id="baidu" style="width: 110%"></iframe >
+            <iframe [src]="treeUrl" [class.show_ms]="showMs" id="baidu" style="width: 110%"></iframe >
           </div>
       </div>
       <div class="users_session">
