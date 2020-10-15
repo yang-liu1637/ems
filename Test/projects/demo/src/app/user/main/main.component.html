@@ -1,7 +1,7 @@
 <app-log-nav></app-log-nav>
-<div class="main">
+<div id="main">
   <div class="main_body">
-    <div class="main_left" >
+    <div id="main_left" >
       <div class="top">
         <ul>
         <li><A class="hover" routerLink="/main">前端交流</A></li>
@@ -12,36 +12,38 @@
         <li><A >团队生活</A></li>
       </ul></div>
     </div>
-    <div class="main_center">
-      <div class="images">
-        <app-swiper></app-swiper>
-      </div>
-      <div class="main_lis">
-        <ul>
-          <li *ngFor="let item of collection">
-            <div class="li_title" >
-              {{item.title}}
-          </div>
-            <div class="li_content">
-              <div class="li_img">
-                <img src="{{item.images}}" >
-                <span>
+    <div id="main_center">
+      <div class="main-center-padding">
+        <div class="images">
+          <app-swiper></app-swiper>
+        </div>
+        <div class="main_lis">
+          <ul>
+            <li *ngFor="let item of collection">
+              <div class="li_title" >
+                {{item.title}}
+              </div>
+              <div class="li_content">
+                <div class="li_img">
+                  <img src="{{item.images}}" >
+                  <span>
                   {{item.name}}
                 </span>
+                </div>
+                <div class="li_links">
+                  {{item.links}}
+                </div>
+                <div class="li_icon">
+                  <span>[@]</span>
+                  <span>[@]</span>
+                </div>
               </div>
-              <div class="li_links">
-                {{item.links}}
-              </div>
-              <div class="li_icon">
-                <span>[@]</span>
-                <span>[@]</span>
-              </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="main_right">
+    <div id="main_right">
       <div class="main-right-padding">
       <div class="users_image">
         <ul class="top">
@@ -121,5 +123,4 @@
       </div>
     </div>
   </div>
-
 </div>
