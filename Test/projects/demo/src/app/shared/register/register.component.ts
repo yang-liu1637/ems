@@ -14,7 +14,7 @@ import { LoginUsersService } from '../../login/service/loginUsers.service';
 })
 export class RegisterComponent implements OnInit{
   history: any = [];
-  aa = true;
+  register = true;
   addUsers = new FormGroup({
     username: new FormControl(''),
     email: new FormControl(''),
@@ -82,24 +82,24 @@ export class RegisterComponent implements OnInit{
     this.userCheck.getUsers().subscribe((data: any ) => {
       console.log(this.addUsers.value.username);
       for (const val of data) {
-        if (val.username === this.addUsers.value.username && val.email === this.addUsers.value.email && val.password ===
-          this.addUsers.value.password) {
-          alert('用户名密码已存在');
-          this.addUsers.reset({});
+        if (val.username === this.addUsers.value.username &&
+          val.email === this.addUsers.value.email &&
+          val.password === this.addUsers.value.password) {
+          alert('该用户已存在 请重新check您的用户名密码以及个人能邮箱');
+          this.addUsers.reset({}); // 表单清空
         }
         else {
-          this.aa = true;
+          this.register = true;
         }
       }
       if (this.addUsers.value.username === null){
-        this.aa = false;
+        this.register = false;
       }else {
         this.service.saveUsers(this.addUsers.value).subscribe((result) => {
           console.log(result);
         });
-        this.addUsers.reset({});
+        this.addUsers.reset({}); // 清空表单
         setTimeout('alert("注册成功！请再次登录")', 0);
-        /*setTimeout('window.location.href = "http://localhost:4200/login";', 1500);*/
         this.router.navigate(['/login']); // 跳转到新的路由页
       }
     });

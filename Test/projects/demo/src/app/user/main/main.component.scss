@@ -2,8 +2,7 @@
   width: 100%;
   margin-top: 6rem;
   padding: 0;
-  background: url("../../../assets/images/jpg3.svg"), center 10%, #2b3137;
-  color: #dedada;
+  background-color: #fff;
   .main_body {
     width: 80%;
     margin: 0 auto;
@@ -13,6 +12,7 @@
 
     #main_left {
       width: 12.5%;
+      color: #24292e;
       border-radius: 0.5rem;
       overflow: hidden;
 
@@ -23,7 +23,7 @@
         z-index: 0;
         border-radius: 0.5rem;
 
-        background: rgba(232, 245, 245, 0.02);
+        background: rgba(102, 106, 106, 0.02);
         padding: 60px 20px 70px;
         font-size: 1.6rem;
         font-family: "Gill Sans MT Condensed", serif;
@@ -32,21 +32,22 @@
           height: 4rem;
           line-height: 4rem;
           text-align: center;
-          border-bottom: 1px solid #F8F8F8;
+          border-bottom: 1px solid #666;
+          border-radius: 0.5rem;
           font-weight: bold;
 
           a {
-            color: #666;
+            color: #666666;
             display: block;
           }
 
           a:hover {
-            color: #ffffff;
+            color: #FF5F3E;
             text-decoration: none;
           }
 
           a.hover {
-            color: #fff;
+            color: #FF5F3E;
           }
         }
       }
@@ -55,11 +56,12 @@
   }
     #main_center {
       width: 62.5%;
+      color: white;
 
       .main-center-padding {
         width: 95%;
         margin: 0 auto;
-        background: rgba(232, 245, 245, 0.02);
+        background: rgba(102, 106, 106, 0.02);
         border-radius: 0.5rem;
 
         .images {
@@ -68,6 +70,7 @@
           overflow: hidden;
 
           p {
+            color: #fff;
             font-size: 14px;
             margin-top: -150px;
           }
@@ -80,9 +83,10 @@
           li {
             font-size: 2rem;
             line-height: 4rem;
+            color: #085063;
             border-bottom: 1px solid #666;
-            border-top: 1px solid #666;
             border-radius: 0.5rem;
+            background-color: white;
             margin: 0.5rem;
 
             .li_title {
@@ -135,13 +139,13 @@
 
     #main_right {
       width: 25%;
-      background: rgba(232, 245, 245, 0.02);
+      color: #000;
+      background: rgba(102, 106, 106, 0.02);
       border-radius: 0.5rem;
-      overflow: hidden;
+
       .main-right-padding {
         width: 90%;
         margin: 0 auto;
-
 
         .users_image {
           width: 100%;
@@ -169,6 +173,7 @@
                 width: 100%;
                 text-align: left;
                 font-size: 1rem;
+                color: #000;
                 margin-top: 2rem;
               }
 
@@ -176,6 +181,7 @@
                 width: 100%;
                 text-align: left;
                 font-size: 1rem;
+                color: #666;
                 margin-top: -2rem;
               }
             }
@@ -186,21 +192,15 @@
             display: flex;
             flex-wrap: wrap;
             text-align: center;
-
+            .btn {
+              width: 30%;
+              margin: 2% 1.6% 2% 1.6%;
+              border: 1px solid #a7a4a4;
+            }
             li {
               width: 20%;
               font-size: 1.5rem;
               line-height: 3rem;
-            }
-
-            .btn {
-              width: 30%;
-              margin: 3% 1.6% 3% 1.6%;
-              border: 1px solid #a7a4a4;
-
-              a {
-                font-size: 1.5rem;
-              }
             }
           }
         }
@@ -211,6 +211,7 @@
           input {
             width: 80%;
             margin: 2% 10% 2% 10%;
+            color: #a7a4a4;
             border-radius: 0.5rem;
           }
 
