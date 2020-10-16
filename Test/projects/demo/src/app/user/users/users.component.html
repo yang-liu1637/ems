@@ -1,32 +1,15 @@
 <app-log-nav></app-log-nav>
-<form [formGroup]="showUsers" style="margin: 8rem auto;width: 80%">
-  <p style="color: #000; text-align: center">用户信息</p>
-  <div class="form-group">
-    <label>Name</label>
-    <input formControlName="username" type="text"  [placeholder]="'username'" readonly>
-  </div>
-  <div class="form-group">
-    <label>Sex</label>
-    <input formControlName="sex" type="text" placeholder="sex" readonly>
-  </div>
-  <div class="form-group">
-    <label>Email</label>
-    <input email formControlName="email" type="email"  placeholder="email" readonly>
-  </div>
-  <div class="form-group">
-    <label>Password</label>
-    <input formControlName="password" type="text" placeholder="password" readonly>
-  </div>
-  <div class="form-group">
-    <label>Address</label>
-    <input formControlName="address" type="text" placeholder="address" readonly>
-  </div>
-  <div class="form-group">
-    <label>Hobby</label>
-    <input formControlName="hobby" type="text" placeholder="hobby" readonly>
-  </div>
-  <div class="form-group">
-    <label>Telephone Number</label>
-    <input formControlName="tNum" type="text" placeholder="telephoneNumber" readonly>
-  </div>
-</form>
+<div id="showUsers">
+  <p class="user-p">个人信息</p>
+  <ul class="users">
+    <li><p>Name:</p><div>{{showUsers.username}}</div></li>
+    <li><p>Sex:</p><div> {{showUsers.sex}}</div></li>
+    <li><p>Email:</p><div> {{showUsers.email}}</div></li>
+    <li><p>Address:</p><div> {{showUsers.address}}</div></li>
+    <li><p>Hobby:</p><div> {{showUsers.hobby}}</div></li>
+    <li><p class="number">Telephone Number:</p><div class="number">{{showUsers.tNum}}</div></li>
+  </ul>
+</div>
+
+
+

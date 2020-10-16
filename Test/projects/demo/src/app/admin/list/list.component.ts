@@ -17,6 +17,7 @@ export class ListComponent implements OnInit {
     this.users.getList().subscribe((result) => {
       // 订阅server里面的list
       this.collection = result;
+      console.log(this.collection);
     });
   }
 

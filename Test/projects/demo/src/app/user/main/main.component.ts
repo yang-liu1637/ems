@@ -16,7 +16,6 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class MainComponent implements OnInit {
   @Input() showMs = false; // search input
-
   imgList = [ // 轮播图
     'assets/images/jpg3.svg',
     'assets/images/jpg3.svg',

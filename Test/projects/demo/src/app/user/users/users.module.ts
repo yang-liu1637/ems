@@ -11,6 +11,9 @@ const route: Routes = [{ path: '', component: UsersComponent }];
 
 @NgModule({
   declarations: [UsersComponent],
+  exports: [
+    UsersComponent
+  ],
   imports: [
     CommonModule,
     HttpClientModule,

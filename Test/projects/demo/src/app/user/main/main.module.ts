@@ -7,6 +7,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { SwiperComponent } from '../../shared/swiper/swiper.component';
 import { LogNavModule } from '../../shared/navbar/log-nav/log-nav.module';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { UsersModule } from '../users/users.module';
 
 
 
@@ -21,7 +22,7 @@ const route: Routes = [{ path: '', component: MainComponent }];
     ReactiveFormsModule,
     FormsModule,
     LogNavModule,
-    NgxUsefulSwiperModule
+    NgxUsefulSwiperModule,
   ],
   exports: [
     MainComponent,

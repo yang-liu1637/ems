@@ -197,17 +197,6 @@
       "password": "password",
       "hobby": "打游戏，摄影",
       "id": 18
-    },
-    {
-      "username": "刘洋",
-      "role": "User",
-      "sex": "女",
-      "email": "123@123.cn",
-      "address": "辽宁省大连市",
-      "tNum": "18304381637",
-      "password": "password",
-      "hobby": "唱歌",
-      "id": 19
     }
   ],
   "userList": [

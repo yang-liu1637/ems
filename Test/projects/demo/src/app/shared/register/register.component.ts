@@ -5,6 +5,7 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {DoUsersService} from '../service/doUsers.service';
 import {Router} from '@angular/router';
 import {validateRex} from '../validate-register';
+import { LoginUsersService } from '../../login/service/loginUsers.service';
 
 @Component({
   selector: 'app-register',
@@ -12,6 +13,8 @@ import {validateRex} from '../validate-register';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit{
+  history: any = [];
+  aa = true;
   addUsers = new FormGroup({
     username: new FormControl(''),
     email: new FormControl(''),
@@ -22,7 +25,7 @@ export class RegisterComponent implements OnInit{
     password: new FormControl('')
   });
 // 添加 fb 属性，用来创建表单
-  constructor(private fb: FormBuilder , private service: DoUsersService, private router: Router) { }
+  constructor(private fb: FormBuilder , private service: DoUsersService, private router: Router, private userCheck: LoginUsersService) { }
 // 表单验证不通过时显示的错误消息
   formErrors = {
     username: '',
@@ -76,13 +79,30 @@ export class RegisterComponent implements OnInit{
 
 
   onSubmit(): any {
-    this.service.saveUsers(this.addUsers.value).subscribe((result) => {
-      console.log(result);
+    this.userCheck.getUsers().subscribe((data: any ) => {
+      console.log(this.addUsers.value.username);
+      for (const val of data) {
+        if (val.username === this.addUsers.value.username && val.email === this.addUsers.value.email && val.password ===
+          this.addUsers.value.password) {
+          alert('用户名密码已存在');
+          this.addUsers.reset({});
+        }
+        else {
+          this.aa = true;
+        }
+      }
+      if (this.addUsers.value.username === null){
+        this.aa = false;
+      }else {
+        this.service.saveUsers(this.addUsers.value).subscribe((result) => {
+          console.log(result);
+        });
+        this.addUsers.reset({});
+        setTimeout('alert("注册成功！请再次登录")', 0);
+        /*setTimeout('window.location.href = "http://localhost:4200/login";', 1500);*/
+        this.router.navigate(['/login']); // 跳转到新的路由页
+      }
     });
-    this.addUsers.reset({});
-    setTimeout('alert("注册成功！请再次登录")', 0);
-    /*setTimeout('window.location.href = "http://localhost:4200/login";', 1500);*/
-    this.router.navigate(['/login']); // 跳转到新的路由页
   }
 // 构建表单方法
 
