@@ -5,11 +5,12 @@ import {LoginUser} from '../../login/models/loginUser.model';
 import {SendmessageService} from './sendmessage.service';
 import {DoUsersService} from './doUsers.service';
 import {MainUsersService} from './mainUsers.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [],
   imports: [
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [
     LoginUsersService,

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BrowserModule} from '@angular/platform-browser';
 import {AuthorizationGuardService} from './shared/service/authorizationGuard.service';
-import {HttpClientModule} from '@angular/common/http';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./show/show.module').then(m => m.ShowModule), pathMatch: 'full' },

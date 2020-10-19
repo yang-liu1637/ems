@@ -21,7 +21,7 @@ export class RegisterComponent implements OnInit{
     sex: new FormControl(''),
     address: new FormControl(''),
     tNum: new FormControl(''),
-    role: new FormControl(''),
+    role: new FormControl('User'),
     password: new FormControl('')
   });
 // 添加 fb 属性，用来创建表单

@@ -17,7 +17,6 @@ const route: Routes = [{ path: '', component: UsersComponent }];
   imports: [
     CommonModule,
     HttpClientModule,
-    ReactiveFormsModule,
     RouterModule.forChild(route),
     LogNavModule,
     FormsModule
