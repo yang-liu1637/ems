@@ -1,8 +1,8 @@
  <div class="register_body">
-   <h3 class="text-center" style="margin-top: 2rem">注册</h3>
    <form [formGroup]="addUsers" (ngSubmit)="onSubmit()">
-     <div class="form-group">
-       <label>用户名：</label>
+     <span class="iconfont icon-yonghu" style="font-size: 6rem; color: #e2e2e2; display: block; text-align: center;padding: 0;margin: 0"></span>
+     <div class="form-group" style="color: #fff">
+       <label >用户名：</label>
        <input formControlName="username"
               type="text" id="username" #username
               class="form-control" placeholder="username">
@@ -24,12 +24,13 @@
        <label>手机号码：</label>
        <input formControlName="tNum" type="text" class="form-control" placeholder="Telephone Number" maxlength="11" required>
        <div *ngIf="formErrors.tNum" class="error">{{ formErrors.tNum }}</div>
-       <div  class="form-control"  style="background: white; margin-top: 3rem; font-size: 1.5rem; line-height: 3rem; height: 6rem;">
-         <checkbox-group  formControlName="hobby" [groupName]="'hobbies：'" [options]="hobbies" [display]="'title'"
+       <label>兴趣爱好：</label>
+       <div  class="form-control"  style="background: white; font-size: 1.5rem; line-height: 3rem; height: 6rem;">
+         <checkbox-group  formControlName="hobby" [options]="hobbies" [display]="'title'"
                          [value]="'value'"  ></checkbox-group>
        </div>
 
      </div>
-     <button type="submit" class="btn btn-primary" [disabled]="addUsers.invalid">Sign in</button>
+     <button type="submit" class="btn btn-primary" [disabled]="addUsers.invalid">注册</button>
    </form>
  </div>

@@ -117,7 +117,7 @@
               }
 
               .li_links {
-                flex: 8.5;
+                flex: 6;
                 font-size: 1.5rem;
                 display: flex;
               }
@@ -125,9 +125,19 @@
               .li_icon {
                 flex: 1.5;
                 display: flex;
-
+                cursor:pointer;
+                color: #666;
                 span {
-                  width: 50%;
+                  width: 20%;
+                  font-size: 2rem;
+                }
+                p{
+                  width: 30%;
+                  font-size: 1.5rem;
+                }
+                p:hover{
+                  color: #337ab7;
+                  text-decoration:underline;
                 }
               }
             }
