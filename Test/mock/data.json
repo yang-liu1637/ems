@@ -200,12 +200,13 @@
     },
     {
       "username": "刘洋",
-      "password": "password",
+      "role": "User",
       "sex": "女",
       "email": "123@123.cn",
-      "address": "aweweweeq",
+      "address": "辽宁省大连市",
       "tNum": "18300000000",
-      "role": "User",
+      "password": "password",
+      "hobby": "游泳，音乐",
       "id": 19
     }
   ],

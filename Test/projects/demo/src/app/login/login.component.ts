@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit{
   email;
   password;
   msg = false;
+  success = false;
   users: object;
   validationMessage = {
     username: {
@@ -76,6 +77,7 @@ export class LoginComponent implements OnInit{
             localStorage.setItem( 'id', String(this.userId)); // 存
             this.router.navigate(['./main']).then(r =>  this.message.add(localStorage.getItem('id'))); // 取
             this.common.showSnackBarMessage('Login Successful ' + '欢迎 ' + this.username + ' ' + this.email);
+            this.success = true;
           }
         } else{
           this.msg = true;

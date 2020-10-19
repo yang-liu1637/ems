@@ -15,6 +15,7 @@ import { LoginUsersService } from '../../login/service/loginUsers.service';
 export class RegisterComponent implements OnInit{
   history: any = [];
   register = true;
+  hobby: any;
   addUsers = new FormGroup({
     username: new FormControl(''),
     email: new FormControl(''),
@@ -22,8 +23,18 @@ export class RegisterComponent implements OnInit{
     address: new FormControl(''),
     tNum: new FormControl(''),
     role: new FormControl('User'),
-    password: new FormControl('')
+    password: new FormControl(''),
+    hobby: new FormControl('')
   });
+  hobbies = [
+    { id: 1, title: '电影', value: '电影' },
+    { id: 2, title: '音乐', value: '音乐' },
+    { id: 3, title: '登山', value: '登山' },
+    { id: 4, title: '阅读', value: '阅读' },
+    { id: 5, title: '游泳', value: '游泳' },
+    { id: 6, title: '摄影', value: '摄影' },
+    { id: 7, title: '绘画', value: '绘画' },
+  ];
 // 添加 fb 属性，用来创建表单
   constructor(private fb: FormBuilder , private service: DoUsersService, private router: Router, private userCheck: LoginUsersService) { }
 // 表单验证不通过时显示的错误消息
@@ -34,7 +45,8 @@ export class RegisterComponent implements OnInit{
     email: '',
     address: '',
     tNum: '',
-    role: ''
+    role: '',
+    hobby: ''
   };
 // 为每一项表单验证添加说明文字
   validationMessage = {
@@ -61,6 +73,8 @@ export class RegisterComponent implements OnInit{
     tNum: {
       minlength: '手机号码必须由11个数字组成', required: '请正确填写手机号',
       notdown: '手机号码只能为数字', only: '请正确填写手机号（中国大陆）'
+    },
+    hobby: {
     }
   };
 // 每次数据发生改变时触发此方法
@@ -111,6 +125,13 @@ export class RegisterComponent implements OnInit{
     // 通过 formBuilder构建表单
 
     this.addUsers = this.fb.group({
+      hobby: ['', [
+
+        Validators.required,
+
+        Validators.minLength(1),
+
+      ]],
 
       username: [ '', [
 

@@ -24,6 +24,11 @@
        <label>手机号码：</label>
        <input formControlName="tNum" type="text" class="form-control" placeholder="Telephone Number" maxlength="11" required>
        <div *ngIf="formErrors.tNum" class="error">{{ formErrors.tNum }}</div>
+       <div  class="form-control"  style="background: white; margin-top: 3rem; font-size: 1.5rem; line-height: 3rem; height: 6rem;">
+         <checkbox-group  formControlName="hobby" [groupName]="'hobbies：'" [options]="hobbies" [display]="'title'"
+                         [value]="'value'"  ></checkbox-group>
+       </div>
+
      </div>
      <button type="submit" class="btn btn-primary" [disabled]="addUsers.invalid">Sign in</button>
    </form>

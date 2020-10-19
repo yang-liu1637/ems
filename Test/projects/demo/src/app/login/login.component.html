@@ -30,7 +30,8 @@
         <!--Login-->
         <button class="login_submit btn btn-primary"
                 type="submit" [disabled]="loginForm.invalid">登入</button>
-        <div *ngIf="msg" class="log-alert">用户名用户信息有误 若您首次登陆请先注册</div><!--用户名密码验证-->
+        <div *ngIf="msg" class="log-alert">用户名用户信息有误 若您首次登陆请先注册</div>
+        <div *ngIf="success" class="log-success">验证成功 即将跳转登录</div><!--用户名密码验证-->
       </form>
     </div>
   </div>

@@ -12,20 +12,6 @@
     </div>
 
     <div class="form-group">
-      <label>性别:</label>
-      <input type="radio" id="male" name="sex" value='男' formControlName="sex" checked>
-      <label for="male">男</label>
-      <input type="radio" id="female" name="sex"  value='女' formControlName="sex">
-      <label for="female">女</label>
-    </div>
-
-    <div class="form-group">
-      <label>角色：</label>
-      <input formControlName="role" type="text" class="form-control" placeholder="role" required>
-      <span class="error" *ngIf="role.invalid && role.touched">请填写角色</span>
-    </div>
-
-    <div class="form-group">
       <label>个人邮箱：</label>
       <input email formControlName="email" type="email" class="form-control" placeholder="email" required>
       <span class="error" *ngIf="email.invalid && email.touched">请正确填写邮箱</span>
@@ -52,8 +38,21 @@
       <span class="error" *ngIf="tNum.invalid && tNum.touched">请填写电话号</span>
     </div>
 
-    <app-checkbox-group style="font-size: 2rem" [groupName]="'爱好：'" [options]="hobbies" [display]="'title'"
-                        [value]="'value'"  formControlName="hobby"></app-checkbox-group>
+    <checkbox-group style="font-size: 2rem" [groupName]="'爱好：'" [options]="hobbies" [display]="'title'"
+                        [value]="'value'"  formControlName="hobby"></checkbox-group>
+
+    <div class="form-group">
+      <label>性别:</label>
+      <input type="radio" id="male" name="sex" value='男' formControlName="sex" checked>
+      <label for="male">男</label>
+      <input type="radio" id="female" name="sex"  value='女' formControlName="sex">
+      <label for="female">女 </label>
+      <label> 角色:</label>
+      <input type="radio" id="User" name="role" value='User' formControlName="role" checked>
+      <label for="User">User</label>
+      <input type="radio" id="Admin" name="role"  value='Admin' formControlName="role">
+      <label for="Admin">Admin</label>
+    </div>
     <button type="submit" class="btn btn-primary" [disabled]="addUsers.invalid">添加</button>
   </form>
 </div>

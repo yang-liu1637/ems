@@ -2,13 +2,16 @@ import {AdminNavComponent} from './admin-nav.component';
 import {RouterModule, Routes} from '@angular/router';
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
+import { AdminComponent } from '../../../admin/admin.component';
+import { CheckboxGroupComponent } from '../../checkbox-group/checkbox-group.component';
 
 
-const route: Routes = [];
+const route: Routes = [{ path: 'admin/add', component: AdminComponent }];
 @NgModule({
-  declarations: [AdminNavComponent],
+  declarations: [AdminNavComponent, CheckboxGroupComponent],
   exports: [
-    AdminNavComponent
+    AdminNavComponent,
+    CheckboxGroupComponent
   ],
   imports: [
     CommonModule,

@@ -62,7 +62,7 @@ export class AddComponent implements OnInit {
   });
   // 跳转提示
   alert: boolean;
-  hobby: any;
+
 
   ngOnInit(): void {
   }

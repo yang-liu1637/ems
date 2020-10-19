@@ -11,7 +11,7 @@ export function validateRex(type: string, validateRex: RegExp): ValidatorFn {
 
     const str = control.value;
 
-    // 设置我们自定义的严重类型
+    // 设置我们自定义的验证类型
 
     const res = {};
 

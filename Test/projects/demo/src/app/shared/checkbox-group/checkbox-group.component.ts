@@ -1,8 +1,9 @@
-import {Component, forwardRef, Input, OnInit} from '@angular/core';
+import { Component, forwardRef, Input, NgModule, OnInit } from '@angular/core';
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
 
 @Component({
-  selector: 'app-checkbox-group',
+  // tslint:disable-next-line:component-selector
+  selector: 'checkbox-group',
   templateUrl: './checkbox-group.component.html',
   providers: [{
     provide: NG_VALUE_ACCESSOR,
