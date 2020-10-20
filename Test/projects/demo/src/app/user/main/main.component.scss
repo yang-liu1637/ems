@@ -1,8 +1,9 @@
-#main{
+#main {
   width: 100%;
   margin-top: 6rem;
   padding: 0;
   background-color: #fff;
+
   .main_body {
     width: 80%;
     margin: 0 auto;
@@ -54,217 +55,233 @@
 
     }
   }
-    #main_center {
-      width: 62.5%;
-      color: white;
 
-      .main-center-padding {
-        width: 95%;
-        margin: 0 auto;
-        background: rgba(102, 106, 106, 0.02);
-        border-radius: 0.5rem;
+  #main_center {
+    width: 62.5%;
+    color: white;
 
-        .images {
-          width: 100%;
-          height: 30rem;
-          overflow: hidden;
-
-          p {
-            color: #fff;
-            font-size: 14px;
-            margin-top: -150px;
-          }
-        }
-
-        .main_lis {
-          width: 97%;
-          margin: 0 auto;
-
-          li {
-            font-size: 2rem;
-            line-height: 4rem;
-            color: #085063;
-            border-bottom: 1px solid #666;
-            border-radius: 0.5rem;
-            background-color: white;
-            margin: 0.5rem;
-
-            .li_title {
-              width: 100%;
-              font-weight: bold;
-              margin-left: 0.3rem;
-
-            }
-
-            .li_content {
-              width: 100%;
-              display: flex;
-
-              .li_img {
-                flex: 2;
-                display: flex;
-
-                img {
-                  width: 25%;
-                  margin: 0.3rem;
-                  border-radius: 50%;
-                }
-
-                span {
-                  width: 70%;
-                  font-size: 1.5rem;
-                }
-              }
-
-              .li_links {
-                flex: 6;
-                font-size: 1.5rem;
-                display: flex;
-              }
-
-              .li_icon {
-                flex: 1.5;
-                display: flex;
-                cursor:pointer;
-                color: #666;
-                span {
-                  width: 20%;
-                  font-size: 2rem;
-                }
-                p{
-                  width: 30%;
-                  font-size: 1.5rem;
-                }
-                p:hover{
-                  color: #337ab7;
-                  text-decoration:underline;
-                }
-              }
-            }
-
-          }
-        }
-      }
-    }
-
-    #main_right {
-      width: 25%;
-      color: #000;
+    .main-center-padding {
+      width: 95%;
+      margin: 0 auto;
       background: rgba(102, 106, 106, 0.02);
       border-radius: 0.5rem;
 
-      .main-right-padding {
-        width: 90%;
+      .images {
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+
+        p {
+          color: #fff;
+          font-size: 14px;
+          margin-top: -150px;
+        }
+      }
+
+      .main_lis {
+        width: 97%;
         margin: 0 auto;
 
-        .users_image {
-          width: 100%;
+        li {
+          font-size: 2rem;
+          line-height: 4rem;
+          color: #085063;
+          border-bottom: 1px solid #666;
+          border-radius: 0.5rem;
+          background-color: white;
+          margin: 0.5rem;
 
-          .top {
+          .li_title {
+            width: 100%;
+            font-weight: bold;
+            margin-left: 0.3rem;
+
+          }
+
+          .li_content {
             width: 100%;
             display: flex;
 
-            .image {
-              width: 16%;
-              margin: 1rem;
+            .li_img {
+              flex: 2;
+              display: flex;
 
               img {
-                width: 100%;
+                width: 25%;
+                margin: 0.3rem;
                 border-radius: 50%;
               }
-            }
 
-            .txt {
-              width: 82%;
-              display: flex;
-              flex-wrap: wrap;
-
-              .user {
-                width: 100%;
-                text-align: left;
-                font-size: 1rem;
-                color: #000;
-                margin-top: 2rem;
-              }
-
-              .year {
-                width: 100%;
-                text-align: left;
-                font-size: 1rem;
-                color: #666;
-                margin-top: -2rem;
+              span {
+                width: 70%;
+                font-size: 1.5rem;
               }
             }
-          }
 
-          .content {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            text-align: center;
-            .btn {
-              width: 30%;
-              margin: 2% 1.6% 2% 1.6%;
-              border: 1px solid #a7a4a4;
-            }
-            li {
-              width: 20%;
+            .li_links {
+              flex: 6;
               font-size: 1.5rem;
-              line-height: 3rem;
-            }
-          }
-        }
-
-        .find {
-          width: 100%;
-
-          input {
-            width: 80%;
-            margin: 2% 10% 2% 10%;
-            color: #a7a4a4;
-            border-radius: 0.5rem;
-          }
-
-          .frame {
-            width: 100%;
-            height: 0;
-
-            iframe {
-              width: 100%;
-              overflow: hidden;
-            }
-          }
-        }
-
-        .users_session {
-          width: 100%;
-
-          .lis_right {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-
-            li {
-              width: 90%;
               display: flex;
-              margin: 2rem 5% 0 5%;
+            }
 
-              img {
+            .li_icon {
+              flex: 1.5;
+              display: flex;
+              cursor: pointer;
+              color: #666;
+              font-weight: bold;
+
+              .icon-jinzhichakan {
+                width: 50%;
+                font-size: 1.5rem;
+                font-weight: normal;
+              }
+              .icon-chakan {
                 width: 20%;
+                font-size: 2rem;
+              }
+
+              .icon-zan2{
+                width: 20%;
+                font-size: 2rem;
               }
 
               p {
-                width: 78%;
-                margin: 1rem 0 0 2%;
-                text-align: justify;
+                width: 30%;
+                font-size: 1.5rem;
               }
+
+              p:hover {
+                color: #337ab7;
+                text-decoration: underline;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  #main_right {
+    width: 25%;
+    color: #000;
+    background: rgba(102, 106, 106, 0.02);
+    border-radius: 0.5rem;
+
+    .main-right-padding {
+      width: 90%;
+      margin: 0 auto;
+
+      .users_image {
+        width: 100%;
+
+        .top {
+          width: 100%;
+          display: flex;
+
+          .image {
+            width: 16%;
+            margin: 1rem;
+
+            img {
+              width: 100%;
+              border-radius: 50%;
+            }
+          }
+
+          .txt {
+            width: 82%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .user {
+              width: 100%;
+              text-align: left;
+              font-size: 1rem;
+              color: #000;
+              margin-top: 2rem;
+            }
+
+            .year {
+              width: 100%;
+              text-align: left;
+              font-size: 1rem;
+              color: #666;
+              margin-top: -2rem;
+            }
+          }
+        }
+
+        .content {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+
+          .btn {
+            width: 30%;
+            margin: 2% 1.6% 2% 1.6%;
+            border: 1px solid #a7a4a4;
+          }
+
+          li {
+            width: 20%;
+            font-size: 1.5rem;
+            line-height: 3rem;
+          }
+        }
+      }
+
+      .find {
+        width: 100%;
+
+        input {
+          width: 80%;
+          margin: 2% 10% 2% 10%;
+          color: #a7a4a4;
+          border-radius: 0.5rem;
+        }
+
+        .frame {
+          width: 100%;
+          height: 0;
+
+          iframe {
+            width: 100%;
+            overflow: hidden;
+          }
+        }
+      }
+
+      .users_session {
+        width: 100%;
+
+        .lis_right {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+
+          li {
+            width: 90%;
+            display: flex;
+            margin: 2rem 5% 0 5%;
+
+            img {
+              width: 20%;
+            }
+
+            p {
+              width: 78%;
+              margin: 1rem 0 0 2%;
+              text-align: justify;
             }
           }
         }
       }
     }
   }
-
+}
 
 
 

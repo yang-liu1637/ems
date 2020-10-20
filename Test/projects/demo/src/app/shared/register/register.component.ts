@@ -99,7 +99,7 @@ export class RegisterComponent implements OnInit{
         if (val.username === this.addUsers.value.username &&
           val.email === this.addUsers.value.email &&
           val.password === this.addUsers.value.password) {
-          alert('该用户已存在 请重新check您的用户名密码以及个人能邮箱');
+          alert('该用户已存在 请重新check您的用户名、密码以及个人能邮箱');
           this.addUsers.reset({}); // 表单清空
         }
         else {

@@ -28,8 +28,9 @@
                 </div>
                 <div class="li_links">{{item.links}}</div>
                 <div class="li_icon">
-                  <span class="iconfont icon-zan2"></span><p>{{item.zan}}</p>
-                  <span class="iconfont icon-chakan"></span><p>{{item.chakan}}</p>
+                  <span class="iconfont icon-zan2" (click)="onUpdate(item)"></span><p>{{item.zan}}</p>
+                  <span class="iconfont icon-chakan" (click)="show()" *ngIf="chakan"></span><p *ngIf="chakan">{{item.chakan}}</p>
+                  <span class="iconfont icon-jinzhichakan" (click)="show()" *ngIf="!chakan"></span>
                 </div>
               </div>
             </li>
