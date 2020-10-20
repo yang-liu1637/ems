@@ -15,7 +15,8 @@ export class MainUsersService {
   getList(): any {
     return this.http.get(this.url);
   }
-  update(id, data): any {
+/*  update(id, data): any {
     return this.http.put(`${this.url}/${id}`, data);
-  }
+  }*/
+
 }

@@ -12,6 +12,7 @@ ES 5 6 ：
 就是浅拷贝；
    如果在拷贝这个对象的时候为新对象制作了外部对象的独立拷贝，就是深拷贝  
 
+angular 小结===》https://github.com/yinminghao19/angular4helpChm  （明昊老师）
 浅复制：仅仅是指向被复制的内存地址，如果原地址发生改变，那么浅复制出来的对象也会相应的改变。
 
 深复制：在计算机中开辟一块新的内存地址用于存放复制的对象。
@@ -44,3 +45,6 @@ function deepClone(obj): any
 
 
 angular.foreach遍历数组，for.in遍历对象(虽然也可以遍历数组但不建议)
+
+
+模板内的局部变量  <input type="text" formControlNmae = username  #username >#username==>模板内局部变量
