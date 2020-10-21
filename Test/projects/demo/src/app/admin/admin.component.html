@@ -1,9 +1,29 @@
-<app-admin-nav></app-admin-nav>
-<div class="admin_view">
-  <div>当前管理员 {{username }} </div>
-  <footer>
-    <p>登入时间是{{today | date:'yyyy-MM-dd HH:mm:ss'}}</p>
-  </footer>
-</div>
-<div class="clearfix"></div>
-
+<nz-layout>
+  <nz-header>
+    <div class="logo">utyututy</div>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal">
+      <li nz-menu-item>nav 1</li>
+      <li nz-menu-item>nav 2</li>
+      <li nz-menu-item>nav 3</li>
+      <li nz-menu-item>nav 3</li>
+      <li nz-menu-item>nav 1</li>
+      <li nz-menu-item>nav 2</li>
+      <li nz-menu-item>nav 3</li>
+      <li nz-menu-item>nav 3</li>
+      <li nz-menu-item>nav 1</li>
+      <li nz-menu-item>nav 2</li>
+      <li nz-menu-item>nav 3</li>
+      <li nz-menu-item>nav 3</li>
+    </ul>
+  </nz-header>
+  <nz-content>
+    <nz-breadcrumb>
+      <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+      <nz-breadcrumb-item>List</nz-breadcrumb-item>
+      <nz-breadcrumb-item>App</nz-breadcrumb-item>
+    </nz-breadcrumb>
+    <div class="inner-content">Content
+    </div>
+  </nz-content>
+  <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+</nz-layout>
