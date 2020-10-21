@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <meta name="keywords" content="keywords">
+  <meta name="description" content="description">
+  <meta name="author" content="danew">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    body{font-family: "Microsoft YaHei",serif;}
+    body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+    ol,ul,li{margin:0;padding:0;list-style:none;}
+    img{border:none;}
+
+    #wrap{
+      width: 440px;
+      line-height: 50px;
+      margin:50px auto;
+      box-shadow: #ccc 1px 2px 10px;
+    }
+    #input{
+      width: 400px;
+      height: 50px;
+      font-size: 16px;
+      border:none;
+      outline: none;
+    }
+    .list{
+      width: 100%;
+      overflow: hidden;
+    }
+    .list.off li{
+      height: 0;
+    }
+    .list li{
+      position: relative;
+      width: 400px;
+      height: 50px;
+      padding-left: 40px;
+      border-top:1px solid #eee;
+    }
+    .list li .delete{
+      position: absolute;
+      right:20px;
+      color:#654321;
+      cursor: pointer;
+    }
+    .list li .delete:hover{
+      color:red;
+    }
+  </style>
+</head>
+<body>
+<div id="wrap">
+  <input id="input" type="text">
+  <ul class="list ">
+  </ul>
+</div>
+
+<script>
+  let Inp = document.getElementById("input");
+  let list = document.getElementsByClassName("list")[0];
+  let oContent = document.getElementsByClassName("content");
+
+  let arr = {};
+
+  function dele(e){
+    let node = e.target.parentNode;
+    let content = node.children[0].innerHTML;
+    list.removeChild(node)
+    delete arr[content];
+  }
+
+  function createLi(val){
+    if(arr[val])return;
+
+    let oF = document.createDocumentFragment();
+    let oLi = document.createElement("li");
+    let span = document.createElement("span");
+
+    let spanC = span.cloneNode();
+    let spanX = span.cloneNode();
+    spanC.className = "content";
+    spanC.innerHTML = val;
+    spanX.className = "delete";
+    spanX.innerHTML = "X";
+    spanX.onclick = dele;
+
+    oLi.appendChild(spanC)
+    oLi.appendChild(spanX)
+    oF.appendChild(oLi);
+    list.appendChild(oF);
+  }
+
+  Inp.onkeyup=function (e) {
+    if(e.keyCode === 13){  //回车键
+      createLi(this.value);
+      arr[this.value]=1;
+      this.value='';
+    }
+    // 匹配节点
+    if(this.value && this.value!==' '){
+      list.classList.remove("off")
+      const val = this.value;
+      let len = oContent.length;     //所有可匹配节点
+      for(let i=0;i<len;i++){
+        let txt = oContent[i].innerText;
+        if(txt.includes(val)){
+          let reg = new RegExp(val,'g');
+          let result = txt.replace(reg,"<span  style='color:red'>"+val+"</span>")
+          oContent[i].innerHTML = result;
+          oContent[i].parentNode.style.display = "block";
+        }else{
+          oContent[i].parentNode.style.display = "none";
+        }
+      }
+    }else{
+      list.classList.add("off")
+    }
+  }
+</script>
+</body>
+</html>

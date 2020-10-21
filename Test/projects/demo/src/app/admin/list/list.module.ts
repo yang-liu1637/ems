@@ -4,6 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {AdminNavModule} from '../../shared/navbar/admin-nav/admin-nav.module';
 import {ListComponent} from './list.component';
+import { FormsModule } from '@angular/forms';
 
 const route: Routes = [{ path: '', component: ListComponent }];
 
@@ -14,6 +15,7 @@ const route: Routes = [{ path: '', component: ListComponent }];
     HttpClientModule,
     RouterModule.forChild(route),
     AdminNavModule,
+    FormsModule
 
   ]
 })

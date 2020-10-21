@@ -1,6 +1,6 @@
 // login
 import { Injectable } from '@angular/core';
-import { LoginUser } from '../models/loginUser.model';
+import { LoginUser } from '../../login/loginUser.model';
 import { Observable } from 'rxjs';
 import { HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';

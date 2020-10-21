@@ -26,9 +26,9 @@
                   <img src="{{item.images}}" >
                   <span>{{item.name}}</span>
                 </div>
-                <div class="li_links" >{{item.links}}</div><!--[ngClass]="{'text-danger': i==0}"-->  // 循环数组的第一条标红
+                <div class="li_links" >{{item.links}}</div><!--[ngClass]="{'text-danger': i==0}"-->  <!--循环数组的第一条标红-->
                 <div class="li_icon">
-                  <span class="iconfont icon-zan2" (click)="onUpdate(item)"></span><p>{{item.zan}}</p>
+                  <span class="iconfont icon-zan2" (click)="onUpdate(item)" #zanStyle ></span><p>{{item.zan}}</p>
                   <span class="iconfont icon-chakan" (click)="show()" *ngIf="chakan"></span><p *ngIf="chakan">{{item.chakan}}</p>
                   <span class="iconfont icon-jinzhichakan" (click)="show()" *ngIf="!chakan"></span>
                 </div>

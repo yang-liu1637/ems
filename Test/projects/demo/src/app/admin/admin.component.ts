@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SendmessageService} from '../shared/service/sendmessage.service';
-import {LoginUsersService} from '../login/service/loginUsers.service';
+import {LoginUsersService} from '../shared/service/loginUsers.service';
 import {Router} from '@angular/router';
 
 @Component({

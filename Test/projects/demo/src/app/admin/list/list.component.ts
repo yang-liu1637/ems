@@ -10,6 +10,7 @@ export class ListComponent implements OnInit {
 
   collection: any = [];
   alert = true;
+  text: any;
 
   constructor(private users: DoUsersService) { }
 
@@ -27,7 +28,6 @@ export class ListComponent implements OnInit {
       console.log(result);
     });
   }
-
 }
 
 

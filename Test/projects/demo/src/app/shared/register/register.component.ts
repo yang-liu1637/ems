@@ -5,7 +5,7 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {DoUsersService} from '../service/doUsers.service';
 import {Router} from '@angular/router';
 import {validateRex} from '../validate-register';
-import { LoginUsersService } from '../../login/service/loginUsers.service';
+import { LoginUsersService } from '../service/loginUsers.service';
 
 @Component({
   selector: 'app-register',

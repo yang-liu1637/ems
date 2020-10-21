@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {LoginUsersService} from './service/loginUsers.service';
+import {LoginUsersService} from '../shared/service/loginUsers.service';
 import {Router} from '@angular/router';
 import {validateRex} from '../shared/validate-register';
 import {SendmessageService} from '../shared/service/sendmessage.service';
