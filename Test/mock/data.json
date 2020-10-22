@@ -34,50 +34,6 @@
       "id": 3
     },
     {
-      "username": "user4",
-      "role": "User",
-      "sex": "男",
-      "email": "user4@users.com",
-      "address": "辽宁省锦州市",
-      "tNum": "18304110104",
-      "password": "password4",
-      "hobby": "打篮球",
-      "id": 4
-    },
-    {
-      "username": "admin4",
-      "role": "Admin",
-      "sex": "男",
-      "email": "admin1@admin.com",
-      "address": "辽宁省大连市",
-      "tNum": "18304110101",
-      "password": "password",
-      "hobby": "游泳",
-      "id": 5
-    },
-    {
-      "username": "admin2",
-      "role": "Admin",
-      "sex": "男",
-      "email": "admin2@admin.com",
-      "address": "辽宁省大连市",
-      "tNum": "18304381637",
-      "password": "password",
-      "hobby": "打游戏",
-      "id": 6
-    },
-    {
-      "username": "user11",
-      "role": "User",
-      "sex": "女",
-      "email": "user1@users.com",
-      "address": "辽宁省大连市",
-      "tNum": "18304381639",
-      "password": "password1",
-      "hobby": "唱歌",
-      "id": 7
-    },
-    {
       "username": "user2",
       "role": "User",
       "sex": "男",
@@ -98,17 +54,6 @@
       "password": "password3",
       "hobby": "下棋",
       "id": 9
-    },
-    {
-      "username": "user4",
-      "role": "User",
-      "sex": "男",
-      "email": "user4@users.com",
-      "address": "辽宁省锦州市",
-      "tNum": "18304110101",
-      "password": "password4",
-      "hobby": "打篮球",
-      "id": 10
     },
     {
       "username": "admin1",
@@ -166,17 +111,6 @@
       "id": 15
     },
     {
-      "username": "user4",
-      "role": "User",
-      "sex": "男",
-      "email": "user4@users.com",
-      "address": "辽宁省锦州市",
-      "tNum": "18304110101",
-      "password": "password4",
-      "hobby": "打篮球",
-      "id": 16
-    },
-    {
       "username": "admin6",
       "role": "Admin",
       "sex": "男",
@@ -197,17 +131,6 @@
       "password": "password",
       "hobby": "打游戏，摄影",
       "id": 18
-    },
-    {
-      "username": "刘洋",
-      "role": "User",
-      "sex": "女",
-      "email": "123@123.cn",
-      "address": "辽宁省大连市",
-      "tNum": "18300000000",
-      "password": "password",
-      "hobby": "游泳，音乐",
-      "id": 19
     }
   ],
   "userList": [

@@ -18,14 +18,14 @@
     </thead>
     <tbody>
     <tr *ngFor="let item of collection">
-      <th>{{item.id}}</th>
-      <th>{{item.username}}</th>
-      <th>{{item.role}}</th>
-      <th>{{item.sex}}</th>
-      <th>{{item.email}}</th>
-      <th>{{item.password}}</th>
-      <th>{{item.address}}</th>
-      <th>{{item.tNum}}</th>
+      <td>{{item.id}}</td>
+      <td>{{item.username}}</td>
+      <td>{{item.role}}</td>
+      <td>{{item.sex}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.password}}</td>
+      <td>{{item.address}}</td>
+      <td>{{item.tNum}}</td>
        <th>{{item.hobby}}</th>
       <th>
         <a routerLink="/admin/update/{{item.id}}">
