@@ -8,7 +8,7 @@
        <label >用户名：</label>
        <input formControlName="username"
               type="text" id="username" #username
-              class="form-control" placeholder="username">
+               placeholder="username">
        <div *ngIf="formErrors.username" class="error">{{ formErrors.username }}</div>
        <label>密码：</label>
        <input formControlName="password"
