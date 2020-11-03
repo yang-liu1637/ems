@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "antProject": {
+    "Store": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/antProject",
+            "outputPath": "dist/Store",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,8 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -67,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "antProject:build"
+            "browserTarget": "Store:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "antProject:build:production"
+              "browserTarget": "Store:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "antProject:build"
+            "browserTarget": "Store:build"
           }
         },
         "test": {
@@ -115,19 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "antProject:serve"
+            "devServerTarget": "Store:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "antProject:serve:production"
+              "devServerTarget": "Store:serve:production"
             }
           }
         }
       }
-    }
-  },
-  "defaultProject": "antProject",
-  "cli": {
-    "analytics": "2fc85b36-0120-445a-9cff-1fa1c1314cc7"
-  }
+    }},
+  "defaultProject": "Store"
 }

@@ -20,10 +20,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92b4d57c-a55d-44df-9ae6-ecfb2a03a8df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/login/login.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/login/login.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/app/login/login.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/antProject/tslint.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest" beforeDir="false" afterPath="$PROJECT_DIR$/newTest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/mock/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/mock/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/admin/admin.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/admin/admin.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/src/app/admin/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/admin/list/list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/src/app/admin/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/admin/list/list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/src/app/admin/list/list.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/admin/list/list.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/app.component.spec.ts" afterDir="false" />
@@ -33,10 +74,14 @@
       <change beforePath="$PROJECT_DIR$/newTest/src/app/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/login/login.component.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/login/login.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/login/login.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/src/app/shared/navbar/admin-nav/admin-nav.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/shared/navbar/admin-nav/admin-nav.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/src/app/shared/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/shared/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/src/app/shared/register/register.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/shared/register/register.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/src/app/shared/service/mainUsers.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/shared/service/mainUsers.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newTest/src/app/shared/service/service.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/shared/service/service.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/user/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/user/main/main.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/user/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/user/main/main.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/user/main/main.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/user/main/main.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newTest/src/app/user/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/user/users/users.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/user/users/users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/user/users/users.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/app/user/users/users.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/app/user/users/users.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/environments/environment.prod.ts" afterDir="false" />
@@ -46,6 +91,7 @@
       <change beforePath="$PROJECT_DIR$/newTest/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/polyfills.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newTest/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newTest/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/周次.docx" beforeDir="false" afterPath="$PROJECT_DIR$/周次.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/实习介绍.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/实习总结.txt" beforeDir="false" />
     </list>
@@ -66,7 +112,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/antProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pet-tags-ngrx" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -81,6 +127,7 @@
       <workItem from="1600670660045" duration="35000" />
       <workItem from="1602140293852" duration="15000" />
       <workItem from="1604025140394" duration="1233000" />
+      <workItem from="1604374512759" duration="1836000" />
     </task>
     <servers />
   </component>
@@ -100,9 +147,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604025763230">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604381320269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604025763230" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604381320269" />
   </component>
 </project>
