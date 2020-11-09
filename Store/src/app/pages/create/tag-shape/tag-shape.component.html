@@ -1,0 +1,49 @@
+<!-- src/app/pages/create/tag-shape/tag-shape.component.html -->
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h3>Shape</h3>
+    <p class="form-text text-muted">Choose a tag shape to get started!</p>
+  </div>
+</div>
+
+<div class="row">
+  <label class="tagShape col-sm-3">
+    <img src="/assets/jpg3.svg">
+    <input
+      type="radio"
+      name="shape"
+      [(ngModel)]="tagShape"
+      (change)="selectShape(tagShape)"
+      value="bone">
+  </label>
+
+  <label class="tagShape col-sm-3">
+    <img src="/assets/jpg3.svg">
+    <input
+      type="radio"
+      name="shape"
+      [(ngModel)]="tagShape"
+      (change)="selectShape(tagShape)"
+      value="rectangle">
+  </label>
+
+  <label class="tagShape col-sm-3">
+    <img src="/assets/jpg3.svg">
+    <input
+      type="radio"
+      name="shape"
+      [(ngModel)]="tagShape"
+      (change)="selectShape(tagShape)"
+      value="circle">
+  </label>
+
+  <label class="tagShape col-sm-3">
+    <img src="/assets/jpg3.svg">
+    <input
+      type="radio"
+      name="shape"
+      [(ngModel)]="tagShape"
+      (change)="selectShape(tagShape)"
+      value="heart">
+  </label>
+</div>

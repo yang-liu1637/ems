@@ -7,5 +7,11 @@ http://www.360doc.com/content/19/0224/10/13819_817162385.shtml
 angular spring mybatis 项目
 https://blog.csdn.net/rotating_windmill/article/details/104135314
 https://download.csdn.net/download/lichaomin1314/9766652
+最新：https://github.com/clkj1989/spring-boot-angular{github源码}
+https://github.com/shenjindui/spring-boot-angular
 天官赐福
 http://www.shanhaimiwenlu.com/tianguancifu/361.html
+
+spring boot+angular 教程
+https://www.kancloud.cn/yunzhiclub/springboot_angular_guide/1286653
+104  据说开虐了
